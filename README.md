@@ -13,3 +13,6 @@ Starting Bid for 2 Callum's:
 
 we need to sell them ASAP
 please buy them
+
+
+SHUSH MR NOLAN!!!!!!
