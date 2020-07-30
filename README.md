@@ -13,3 +13,8 @@ Starting Bid for 2 Callum's:
 
 we need to sell them ASAP
 please buy them
+
+PogU PogU
+
+no callums please
+get-rid-of-CB's
