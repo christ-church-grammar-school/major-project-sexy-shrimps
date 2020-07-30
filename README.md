@@ -6,7 +6,7 @@ Hey I just had a great idea, here goes.
 
 PogU PogU
 
-Starting Bid for 2 Callum's:
+Starting Bid for Salty and Luke:
 14 Coding Hours
 
 14 each or for both?
