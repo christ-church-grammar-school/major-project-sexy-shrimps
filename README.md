@@ -1,3 +1,5 @@
+# Major Project for Sexy Shrimps
+
 Created a readme, yay!
 
 Added some more stuff
