@@ -6,7 +6,7 @@ Hey I just had a great idea, here goes.
 
 PogU PogU
 
-Starting Bid for Callum and Callum:
+Starting Bid for LUKE AND SALTY:
 14 Coding Hours
 
 we need to sell them ASAP
