@@ -10,3 +10,4 @@ Starting Bid for 2 Callum's:
 14 Coding Hours
 
 we need to sell them ASAP
+please buy them
