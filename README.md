@@ -2,7 +2,10 @@
 # _Welcome to the Sexy Shrimps!!_
 
 ```diff
-- CALLUM BREEN - + THOMAS SALTER + ! LUKE COVENEY ! @ CALLUM BURNET @
+- CALLUM BREEN
++ THOMAS SALTER
+! LUKE COVENEY
+@ CALLUM BURNET
 ```
  
 ![Sexy Shrimp](https://cdn.shopify.com/s/files/1/0339/2831/5013/products/The-_Sexy_-Shrimp-Thor-amboinensis.jpg?v=1584449331)
@@ -13,16 +16,6 @@
 - ![#0000FF](https://placehold.it/15/0000FF/000000?text=+) `#0000FF`
 - ![#091F92](https://placehold.it/15/091F92/000000?text=+) `#091F92`
 - ![#EE82EE](https://placehold.it/15/EE82EE/000000?text=+) `#EE82EE`
-
-:shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit:
-
-```diff
-- VIEW
-+ THIS
-! IN
-# GIT
-@@ HUB@@
-```
 
 ███████▓█████▓▓╬╬╬╬╬╬╬╬▓███▓╬╬╬╬╬╬╬▓╬╬▓█ 
 ████▓▓▓▓╬╬▓█████╬╬╬╬╬╬███▓╬╬╬╬╬╬╬╬╬╬╬╬╬█ 
