@@ -1,5 +1,13 @@
 
 # _Welcome to the Sexy Shrimps!!_
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
  
 ![Sexy Shrimp](https://cdn.shopify.com/s/files/1/0339/2831/5013/products/The-_Sexy_-Shrimp-Thor-amboinensis.jpg?v=1584449331)
 - ![#FF0000](https://placehold.it/15/FF0000/000000?text=+) `#FF0000`
