@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Height="422" VerticalAlignment="Top" Width="632" Source="The-_Sexy_-Shrimp-Thor-amboinensis.jpg" Margin="74,0,0,0"/>
+
     </Grid>
 </Window>
