@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Created a readme, yay!
 
 Added some more stuff
@@ -18,3 +19,8 @@ Mr Nolan's Code:
 - GitHub Desktop seems pretty cool yo
 - The command line is also good but has a steep learning curve and can be difficult to visualise what's going on.
 
+=======
+Callum did you really just delete our read me??
+
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+>>>>>>> Stashed changes
