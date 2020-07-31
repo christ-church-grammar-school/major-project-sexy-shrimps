@@ -56,14 +56,13 @@
 ██████████████▓▓▓███▓▓╬╬╬╬╬╬╬╬██████████ 
 ███████████████▓▓▓██▓▓╬╬╬╬╬╬▓███████████
 
-Plan for reuniting salt and brown:
-
-Step 1 - 
-Step 2 - 
-Step 3 - 
-
-
-                                                                                                                                                          .///,                                     
+:black_large_square:
+:black_medium_square:
+:black_medium_small_square:
+:black_small_square:
+:black_medium_small_square:
+:black_medium_square:
+:black_large_square:                                                                                                                                                        .///,                                     
                                                                                                                                                           /(*.. .                                       
                                                                                                                                                        .,*#%##,/                                        
                                                                                                                                                     (((/./#(*                                           
