@@ -2,7 +2,7 @@
 # _Welcome to the Sexy Shrimps!!_
 
 ```diff
-- VIEW
+VIEW
 + THIS
 ! IN
 # GIT
