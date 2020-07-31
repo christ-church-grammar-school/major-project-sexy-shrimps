@@ -2,7 +2,7 @@
 # _Welcome to the Sexy Shrimps!!_
 
 ```diff
-- CALLUM BREEN + THOMAS SALTER ! LUKE COVENEY @ CALLUM BURNET
+- CALLUM BREEN - + THOMAS SALTER + ! LUKE COVENEY ! @ CALLUM BURNET @
 ```
  
 ![Sexy Shrimp](https://cdn.shopify.com/s/files/1/0339/2831/5013/products/The-_Sexy_-Shrimp-Thor-amboinensis.jpg?v=1584449331)
