@@ -5,15 +5,13 @@
 - CALLUM BREEN
 + THOMAS SALTER
 ! LUKE COVENEY
-@@ CALLUM BURNET @@
-
-
-
-
-# FOR BEST VIEWING EXPERIENCE, ACCESS THIS README ON GITHUB.
+@ CALLUM BURNET @
 ```
  
 ![Sexy Shrimp](https://cdn.shopify.com/s/files/1/0339/2831/5013/products/The-_Sexy_-Shrimp-Thor-amboinensis.jpg?v=1584449331)
+
+:shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit:
+
 - ![#FF0000](https://placehold.it/15/FF0000/000000?text=+) `#FF0000`
 - ![#FFA500](https://placehold.it/15/FFA500/000000?text=+) `#FFA500`
 - ![#FFFF00](https://placehold.it/15/FFFF00/000000?text=+) `#FFFF00`
@@ -166,7 +164,12 @@ Step 3 -
 .
 .
 .
-
+    ____.___________ _____________ ___  _________
+    |    |\_   _____//   _____/    |   \/   _____/
+    |    | |    __)_ \_____  \|    |   /\_____  \ 
+/\__|    | |        \/        \    |  / /        \
+\________|/_______  /_______  /______/ /_______  /
+                  \/        \/                 \/ 
 OLD README:
 
 Created a readme, yay!
