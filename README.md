@@ -8,7 +8,7 @@ Hey I just had a great idea, here goes.
 
 PogU PogU
 
-Starting Bid for LUKE AND SALTY:
+Starting Bid for CALLUM AND CALLUM:
 14 Coding Hours
 
 we need to sell them ASAP
@@ -20,3 +20,4 @@ Mr Nolan's Code:
 - GitHub Desktop seems pretty cool yo
 - The command line is also good but has a steep learning curve and can be difficult to visualise what's going on.
 
+WE NEED TO GET 100 COMMITS WITHOUT EVEN CODING, JUST THE READ ME
