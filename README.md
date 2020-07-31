@@ -54,118 +54,521 @@
 ██████████████▓▓▓███▓▓╬╬╬╬╬╬╬╬██████████ 
 ███████████████▓▓▓██▓▓╬╬╬╬╬╬▓███████████
 
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-.
-.
-.
-
-.
-..
-.
-.
-.
-.
-..
-.
-.
-.
-.
-.
-.
-.
-.
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+ i'm bored
+  i'm bored
+   i'm bored
+    i'm bored
+     i'm bored
+      i'm bored
+       i'm bored
+        i'm bored
+         i'm bored
+          i'm bored
+           i'm bored
+            i'm bored
+             i'm bored
+              i'm bored
+               i'm bored
+                i'm bored
+                 i'm bored
+                  i'm bored
+                   i'm bored
+                    i'm bored
+                    i'm bored
+                   i'm bored
+                  i'm bored
+                 i'm bored
+                i'm bored
+               i'm bored
+              i'm bored
+             i'm bored
+            i'm bored
+           i'm bored
+          i'm bored
+         i'm bored
+        i'm bored
+       i'm bored
+      i'm bored
+     i'm bored
+    i'm bored
+   i'm bored
+  i'm bored
+ i'm bored
+i'm bored
+i'm bored
+ i'm bored
+  i'm bored
+   i'm bored
+    i'm bored
+     i'm bored
+      i'm bored
+       i'm bored
+        i'm bored
+         i'm bored
+          i'm bored
+           i'm bored
+            i'm bored
+             i'm bored
+              i'm bored
+               i'm bored
+                i'm bored
+                 i'm bored
+                  i'm bored
+                   i'm bored
+                    i'm bored
+                    i'm bored
+                   i'm bored
+                  i'm bored
+                 i'm bored
+                i'm bored
+               i'm bored
+              i'm bored
+             i'm bored
+            i'm bored
+           i'm bored
+          i'm bored
+         i'm bored
+        i'm bored
+       i'm bored
+      i'm bored
+     i'm bored
+    i'm bored
+   i'm bored
+  i'm bored
+ i'm bored
+i'm bored
+i'm bored
+i'm bore d
+i'm bore  d
+i'm bore   d
+i'm bore    d
+i'm bor e    d
+i'm bor  e    d
+i'm bor   e    d
+i'm bor    e    d
+i'm bo r    e    d
+i'm bo  r    e    d
+i'm bo   r    e    d
+i'm bo    r    e    d
+i'm b o    r    e    d
+i'm b  o    r    e    d
+i'm b   o    r    e    d
+i'm b    o    r    e    d
+i'm  b    o    r    e    d
+i'm   b    o    r    e    d
+i'm    b    o    r    e    d
+i'm     b    o    r    e    d
+i'm      b    o    r    e    d
+i'm       b    o    r    e    d
+i'm        b    o    r    e    d
+i'm         b    o    r    e    d
+i' m         b    o    r    e    d
+i'  m         b    o    r    e    d
+i'   m         b    o    r    e    d
+i'    m         b    o    r    e    d
+i '    m         b    o    r    e    d
+i  '    m         b    o    r    e    d
+i   '    m         b    o    r    e    d
+i    '    m         b    o    r    e    d
+ i    '    m         b    o    r    e    d
+  i    '    m         b    o    r    e    d
+   i    '    m         b    o    r    e    d
+    i    '    m         b    o    r    e    d
+     i    '    m         b    o    r    e   d
+      i    '    m         b    o    r    e  d
+       i    '    m         b    o    r    e d
+        i    '    m         b    o    r    ed
+         i    '    m         b    o    r   ed
+          i    '    m         b    o    r  ed
+           i    '    m         b    o    r ed
+            i    '    m         b    o    red
+             i    '    m         b    o   red
+              i    '    m         b    o  red
+               i    '    m         b    o red
+                i    '    m         b    ored
+                 i    '    m         b   ored
+                  i    '    m         b  ored
+                   i    '    m         b ored
+                    i    '    m         bored
+                     i    '    m        bored
+                      i    '    m       bored
+                       i    '    m      bored
+                        i    '    m     bored
+                         i    '    m    bored
+                          i    '    m   bored
+                           i    '    m  bored
+                            i    '    m bored
+                             i    '    mbored
+                              i    '   mbored
+                               i    '  mbored
+                                i    ' mbored
+                                 i    'mbored
+                                  i   'mbored
+                                   i  'mbored
+                                    i 'mbored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                   i'm  b ored
+                                  i'm   b  ored
+                                 i'm    b   ored
+                                i'm     b    ored
+                               i'm      b     ored
+                              i'm       b      ored
+                             i'm        b       ored
+                            i'm         b        ored
+                           i'm          b         ored
+                          i'm           b          ored
+                          i'm          b           ored
+                          i'm         b            ored
+                          i'm        b             ored
+                          i'm         b            ored
+                          i'm          b           ored
+                          i'm           b          ored
+                          i'm            b         ored
+                          i'm             b        ored
+                          i'm              b       ored
+                          i'm             b        ored
+                          i'm            b         ored
+                          i'm           b          ored
+                          i'm          b           ored
+                          i'm         b            ored
+                          i'm        b             ored
+                          i'm         b            ored
+                          i'm          b           ored
+                          i'm           b          ored
+                          i'm            b         ored
+                          i'm             b        ored
+                          i'm              b       ored
+                          i'm             b        ored
+                          i'm            b         ored
+                          i'm           b          ored
+                           i'm          b         ored
+                            i'm         b        ored
+                             i'm        b       ored
+                              i'm       b      ored
+                               i'm      b     ored
+                                i'm     b    ored
+                                 i'm    b   ored
+                                  i'm   b  ored
+                                   i'm  b ored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                    i'm bored
+                                   i'm bored
+                                  i'm bored
+                                 i'm bored
+                                i'm bored
+                               i'm bored
+                              i'm bored
+                             i'm bored
+                            i'm bored
+                           i'm bored
+                          i'm bored
+                         i'm bored
+                        i'm bored
+                       i'm bored
+                      i'm bored
+                     i'm bored
+                    i'm bored
+                   i'm bored
+                  i'm bored
+                 i'm bored
+                i'm bored
+               i'm bored
+              i'm bored
+             i'm bored
+            i'm bored
+           i'm bored
+          i'm bored
+         i'm bored
+        i'm bored
+       i'm bored
+      i'm bored
+     i'm bored
+    i'm bored
+   i'm bored
+  i'm bored
+ i'm bored
+i'm bored
+ i'm bored
+  i'm bored
+   i'm bored
+    i'm bored
+     i'm bored
+    i 'm bored
+   i  'm bored
+  i   'm bored
+ i    'm bored
+i     'm bored
+i    ' m bored
+i   '  m bored
+i  '   m bored
+i '    m bored
+i'     m bored
+i'    m  bored
+i'   m   bored
+i'  m    bored
+i' m     bored
+i'm      bored
+i'm      bored
+i'm      bored
+i'm      bored
+i'm      bored
+i'm      bored
+i'm     b ored
+i'm    b  ored
+i'm   b   ored
+i'm  b    ored
+i'm b     ored
+i'm b    o red
+i'm b   o  red
+i'm b  o   red
+i'm b o    red
+i'm bo     red
+i'm bo    r ed
+i'm bo   r  ed
+i'm bo  r   ed
+i'm bo r    ed
+i'm bor     ed
+i'm bor    e d
+i'm bor   e  d
+i'm bor  e   d
+i'm bor e    d
+i'm bore     d
+i'm bore    d 
+i'm bore   d  
+i'm bore  d   
+i'm bore d    
+i'm bored     
+i'm bored
+di'm bore
+edi'm bor
+redi'm bo
+oredi'm b
+boredi'm 
+ boredi'm
+m boredi'
+'m boredi
+i'm bored
+di'm bore
+edi'm bor
+redi'm bo
+oredi'm b
+boredi'm 
+ boredi'm
+m boredi'
+'m boredi
+i'm bored
+di'm bore
+edi'm bor
+redi'm bo
+oredi'm b
+boredi'm 
+ boredi'm
+m boredi'
+'m boredi
+i'm bored
+i'm bored
+ i'm bored
+  i'm bored
+   i'm bored
+    i'm bored
+     i'm bored
+      i'm bored
+       i'm bored
+        i'm bored
+         i'm bored
+          i'm bored
+         i'm b  ored
+        i'm b    ored
+       i'm b      ored
+      i'm b        ored
+     i'm b          ored
+    i'm b            ored
+   i'm b              ored
+  i'm b                ored
+ i'm b                  ored
+i'm b                    ored
+ i'm b                  ored
+  i'm b                ored
+   i'm b              ored
+    i'm b            ored
+     i'm b          ored
+      i'm b        ored
+       i'm b      ored
+        i'm b    ored
+         i'm b  ored
+          i'm bored
+           i'm ored
+            i'mored
+             i'ored
+              iored
+              oredb
+             ored b
+            oredm b
+           ored'm b
+          oredi'm b
+         ored  i'm b
+        ored    i'm b
+       ored      i'm b
+      ored        i'm b
+     ored          i'm b
+    ored            i'm b
+   ored              i'm b
+  ored                i'm b
+ ored                  i'm b
+ored                    i'm b
+ ored                  i'm b
+  ored                i'm b
+   ored              i'm b
+    ored            i'm b
+     ored          i'm b
+      ored        i'm b
+       ored      i'm b
+        ored    i'm b
+         ored  i'm b
+          oredi'm b
+           orei'm b
+            ori'm b
+             oi'm b
+              i'm b
+             i'm bd
+            i'm bed
+           i'm bred
+          i'm bored
+         i'm b  ored
+        i'm b    ored
+       i'm b      ored
+      i'm b        ored
+     i'm b          ored
+    i'm b            ored
+   i'm b              ored
+  i'm b                ored
+ i'm b                  ored
+i'm b                    ored
+ i'm b                  ored
+  i'm b                ored
+   i'm b              ored
+    i'm b            ored
+     i'm b          ored
+      i'm b        ored
+       i'm b      ored
+        i'm b    ored
+         i'm b  ored
+          i'm bored
+           i'm ored
+            i'mored
+             i'ored
+              iored
+              oredb
+             ored b
+            oredm b
+           ored'm b
+          oredi'm b
+         ored  i'm b
+        ored    i'm b
+       ored      i'm b
+      ored        i'm b
+     ored          i'm b
+    ored            i'm b
+   ored              i'm b
+  ored                i'm b
+ ored                  i'm b
+ored                    i'm b
+ ored                  i'm b
+  ored                i'm b
+   ored              i'm b
+    ored            i'm b
+     ored          i'm b
+      ored        i'm b
+       ored      i'm b
+        ored    i'm b
+         ored  i'm b
+          oredi'm b
+           orei'm b
+            ori'm b
+             oi'm b
+              i'm b
+             i'm bd
+            i'm bed
+           i'm bred
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+          i'm bored
+         i'm bored
+        i'm bored
+       i'm bored
+      i'm bored
+     i'm bored
+    i'm bored
+   i'm bored
+  i'm bored
+ i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
+i'm bored
 
 OLD README:
 
