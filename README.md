@@ -2,6 +2,8 @@
 
 # _Welcome to the Sexy Shrimps!!_
 
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+
 ```diff
 - CALLUM BREEN
 + THOMAS SALTER
