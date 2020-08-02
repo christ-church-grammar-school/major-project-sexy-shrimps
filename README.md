@@ -2,7 +2,7 @@
 
 # _Welcome to the Sexy Shrimps!!_
 
-[![Tom's github stats](https://github-readme-stats.vercel.app/api?username=salty-salter)](https://github.com/anuraghazra/github-readme-stats) [![Breen's github stats](https://github-readme-stats.vercel.app/api?username=callumbreen)](https://github.com/anuraghazra/github-readme-stats)
+[![Tom's github stats](https://github-readme-stats.vercel.app/api?username=salty-salter&theme=algolia)](https://github.com/anuraghazra/github-readme-stats) [![Breen's github stats](https://github-readme-stats.vercel.app/api?username=callumbreen)](https://github.com/anuraghazra/github-readme-stats)
 [![Luke's github stats](https://github-readme-stats.vercel.app/api?username=1018752)](https://github.com/anuraghazra/github-readme-stats) [![Burnet's github stats](https://github-readme-stats.vercel.app/api?username=calcal29)](https://github.com/anuraghazra/github-readme-stats)
 ```diff
 - CALLUM BREEN
