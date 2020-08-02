@@ -20,7 +20,7 @@
 :shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit:
 
 ![Coronavirus](covid.gif)
-![Coronavirus](https://media3.giphy.com/media/YPhuwt9pV2XLM2HIq4/giphy-downsized-large.gif)
+![Coronavirus](ImageGif/covid.gif)
 
 - ![#FF0000](https://placehold.it/15/FF0000/000000?text=+) `#FF0000`
 - ![#FFA500](https://placehold.it/15/FFA500/000000?text=+) `#FFA500`
