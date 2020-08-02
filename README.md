@@ -1,7 +1,7 @@
 # Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
 # _Welcome to the Sexy Shrimps!!_
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=salty-salter&repo=christ-church-grammar-school/major-project-sexy-shrimps)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=salty-salter)](https://github.com/anuraghazra/github-readme-stats)
 [![Tom's github stats](https://github-readme-stats.vercel.app/api?username=salty-salter&theme=algolia)](https://github.com/anuraghazra/github-readme-stats) [![Breen's github stats](https://github-readme-stats.vercel.app/api?username=callumbreen&theme=highcontrast)](https://github.com/anuraghazra/github-readme-stats)
 [![Luke's github stats](https://github-readme-stats.vercel.app/api?username=1018752&theme=dracula)](https://github.com/anuraghazra/github-readme-stats) [![Burnet's github stats](https://github-readme-stats.vercel.app/api?username=calcal29&theme=buefy)](https://github.com/anuraghazra/github-readme-stats)
 ```diff
