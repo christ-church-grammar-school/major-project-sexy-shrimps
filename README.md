@@ -1,7 +1,7 @@
 # Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
 # _Welcome to the Sexy Shrimps!!_
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=salty-salter)](https://github.com/anuraghazra/github-readme-stats)
 [![Tom's github stats](https://github-readme-stats.vercel.app/api?username=salty-salter&theme=algolia&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats) [![Breen's github stats](https://github-readme-stats.vercel.app/api?username=callumbreen&theme=highcontrast&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats)
 [![Luke's github stats](https://github-readme-stats.vercel.app/api?username=1018752&theme=dracula&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats) [![Burnet's github stats](https://github-readme-stats.vercel.app/api?username=calcal29&theme=buefy&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats)
 ```diff
