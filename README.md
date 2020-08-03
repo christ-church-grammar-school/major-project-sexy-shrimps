@@ -7,7 +7,7 @@
 - CALLUM BREEN
 + THOMAS SALTER
 ! LUKE COVENEY
-@@ CALLUM BURNET @@
+@@ CALLUM BURNET @@  useless...
 ```
  
 ![Sexy Shrimp](https://cdn.shopify.com/s/files/1/0339/2831/5013/products/The-_Sexy_-Shrimp-Thor-amboinensis.jpg?v=1584449331)
@@ -231,6 +231,14 @@ Starting Bid for CALLUM AND CALLUM: 14 Coding Hours
 
 we need to sell them ASAP
 
+please buy them
+
+PogU PogU
+
+no callums please
+get-rid-of-CB's
+
+
 Ignore Mr Nolan
 
 Mr Nolan's Code:
@@ -239,3 +247,4 @@ I think we should keep both Callums
 GitHub Desktop seems pretty cool yo
 The command line is also good but has a steep learning curve and can be difficult to visualise what's going on.
 WE NEED TO GET 100 COMMITS WITHOUT EVEN CODING, JUST THE READ ME
+
