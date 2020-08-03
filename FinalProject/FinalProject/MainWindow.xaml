@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="422" Margin="220,0,0,0" VerticalAlignment="Top" Width="575" Source="CCGS.png" Stretch="Fill"/>
-        <Label Name="LiveTimeLabel" Content="%TIME%" HorizontalAlignment="Left" Height="40" Margin="6,10,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Name="Date" Content="Date" HorizontalAlignment="Left" Height="40" Margin="6,10,0,0" VerticalAlignment="Top" Width="176"/>
         <Button Content="Log In" HorizontalAlignment="Left" Height="40" Margin="22,340,0,0" VerticalAlignment="Top" Width="175" Background="#FF39C1FA" IsDefault="True" BorderBrush="Black" FontWeight="Bold" FontFamily="Arial" Foreground="White" IsCancel="True"/>
         <PasswordBox HorizontalAlignment="Left" Height="40" Margin="22,260,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E"/>
         <TextBox HorizontalAlignment="Left" Height="40" Margin="22,200,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E"/>
@@ -16,5 +16,6 @@
         <TextBlock HorizontalAlignment="Left" Height="15" Margin="22,185,0,0" TextWrapping="Wrap" Text="Student Number" VerticalAlignment="Top" Width="107" FontFamily="Arial" Foreground="#FF464646"/>
         <Image HorizontalAlignment="Left" Height="99" Margin="50,50,0,0" VerticalAlignment="Top" Width="105" Source="CCGSCrest.jpg"/>
         <CheckBox Content="Remember Me" HorizontalAlignment="Left" Height="16" Margin="22,310,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="-0.378,0.844"/>
+        <Label x:Name="Time" Content="Time" HorizontalAlignment="Left" Height="32" Margin="6,25,0,0" VerticalAlignment="Top" Width="171"/>
     </Grid>
 </Window>

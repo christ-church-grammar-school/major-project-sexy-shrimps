@@ -32,7 +32,8 @@ namespace FinalProject
 
         void timer_Tick(object sender, EventArgs e)
         {
-            LiveTimeLabel.Content = DateTime.Now.ToString("HH:mm:ss");
+            Date.Content = DateTime.Now.ToString("D");
+            Time.Content = DateTime.Now.ToString("hh:mm:ss");
         }
     }
 }
