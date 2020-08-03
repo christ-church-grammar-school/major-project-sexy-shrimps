@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System;
+using System.IO;
 
 namespace FinalProject
 {
@@ -24,6 +26,9 @@ namespace FinalProject
         public MainWindow()
         {
             InitializeComponent();
+
+            //label.Content = File.ReadAllText("Details.txt");
+
             DispatcherTimer LiveTime = new DispatcherTimer();
             LiveTime.Interval = TimeSpan.FromSeconds(1);
             LiveTime.Tick += timer_Tick;

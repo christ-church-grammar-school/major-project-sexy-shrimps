@@ -2,7 +2,7 @@
 
 # _Welcome to the Sexy Shrimps!!_
 [![Tom's github stats](https://github-readme-stats.vercel.app/api?username=salty-salter&theme=algolia&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats) [![Breen's github stats](https://github-readme-stats.vercel.app/api?username=callumbreen&theme=highcontrast&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats)
-[![Luke's github stats](https://github-readme-stats.vercel.app/api?username=1018752&theme=dracula&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats) [![Burnet's github stats](https://github-readme-stats.vercel.app/api?username=calcal29&theme=buefy&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats)
+[![Luke's github stats](https://github-readme-stats.vercel.app/api?username=1018752&theme=dracula&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats) [![Burnet's github stats](https://github-readme-stats.vercel.app/api?username=calcal29&theme=buefy&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
 ```diff
 - CALLUM BREEN
 + THOMAS SALTER

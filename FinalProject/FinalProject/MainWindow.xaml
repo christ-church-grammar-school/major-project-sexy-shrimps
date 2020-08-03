@@ -17,5 +17,6 @@
         <Image HorizontalAlignment="Left" Height="99" Margin="50,50,0,0" VerticalAlignment="Top" Width="105" Source="CCGSCrest.jpg"/>
         <CheckBox Content="Remember Me" HorizontalAlignment="Left" Height="16" Margin="22,310,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="-0.378,0.844"/>
         <Label x:Name="Time" Content="Time" HorizontalAlignment="Left" Height="32" Margin="6,25,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Height="64" Margin="137,112,0,0" VerticalAlignment="Top" Width="153" RenderTransformOrigin="-0.052,0.408"/>
     </Grid>
 </Window>
