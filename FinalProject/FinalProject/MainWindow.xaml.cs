@@ -23,6 +23,12 @@ namespace FinalProject
         public MainWindow()
         {
             InitializeComponent();
+
+            var a = true;
+            while (a == true)
+            {
+
+            }
             time.Content = DateTime.Now.ToString();
         }
     }
