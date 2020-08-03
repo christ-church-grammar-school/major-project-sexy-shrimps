@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="422" Margin="220,0,0,0" VerticalAlignment="Top" Width="575" Source="CCGS.png" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="6,10,0,0" TextWrapping="Wrap" Text="Add Name/Logo " VerticalAlignment="Top" Width="176"/>
+        <Label Name="LiveTimeLabel" Content="%TIME%" HorizontalAlignment="Left" Height="40" Margin="6,10,0,0" VerticalAlignment="Top" Width="176"/>
         <Button Content="Log In" HorizontalAlignment="Left" Height="40" Margin="22,340,0,0" VerticalAlignment="Top" Width="175" Background="#FF39C1FA" IsDefault="True" BorderBrush="Black" FontWeight="Bold" FontFamily="Arial" Foreground="White" IsCancel="True"/>
         <PasswordBox HorizontalAlignment="Left" Height="40" Margin="22,260,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E"/>
         <TextBox HorizontalAlignment="Left" Height="40" Margin="22,200,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E"/>
