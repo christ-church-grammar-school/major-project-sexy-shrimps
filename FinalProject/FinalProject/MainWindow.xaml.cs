@@ -39,5 +39,10 @@ namespace FinalProject
             Date.Content = DateTime.Now.ToString("D");
             Time.Content = DateTime.Now.ToString("hh:mm:ss");
         }
+
+        private void LogIn_Clicked(object sender, RoutedEventArgs e)
+        {
+            StartPage.Content = new NavigationPage();
+        }
     }
 }
