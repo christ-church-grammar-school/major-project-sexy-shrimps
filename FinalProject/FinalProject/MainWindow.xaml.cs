@@ -42,7 +42,7 @@ namespace FinalProject
 
         private void LogIn_Clicked(object sender, RoutedEventArgs e)
         {
-            StartPage.Content = new NavigationPage();
+            MainFrame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
         }
     }
 }

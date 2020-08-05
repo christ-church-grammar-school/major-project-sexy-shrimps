@@ -3,16 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FinalProject"
+        xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.LayoutTransform>
-        <ScaleTransform ScaleX="1.5" ScaleY="1.5" CenterX=".5" CenterY=".5" />
-    </Window.LayoutTransform>
     <Grid>
         <Image HorizontalAlignment="Left" Height="422" Margin="220,0,0,0" VerticalAlignment="Top" Width="575" Source="CCGS.png" Stretch="Fill"/>
         <Label Name="Date" Content="Date" HorizontalAlignment="Left" Height="40" Margin="5,10,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button Content="Log In" HorizontalAlignment="Left" Height="40" Margin="22.5,340,0,0" VerticalAlignment="Top" Width="175" Background="#FF39C1FA" IsDefault="True" BorderBrush="Black" FontWeight="Bold" FontFamily="Arial" Foreground="White" IsCancel="True"/>
+        <Button Content="Log In" HorizontalAlignment="Left" Height="40" Margin="22.5,340,0,0" VerticalAlignment="Top" Width="175" Background="#FF39C1FA" IsDefault="True" BorderBrush="Black" FontWeight="Bold" FontFamily="Arial" Foreground="White" IsCancel="True" Click="LogIn_Clicked"/>
         <PasswordBox HorizontalAlignment="Left" Height="40" Margin="22.5,260,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E" FontSize="18"/>
         <TextBox HorizontalAlignment="Left" Height="40" Margin="22.5,200,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Height="15" Margin="22.5,245,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="107" FontFamily="Arial" Foreground="#FF464646"/>
@@ -20,5 +17,7 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="60,50,0,0" VerticalAlignment="Top" Width="100" Source="CCGSCrest.jpg"/>
         <CheckBox Content="Remember Me" HorizontalAlignment="Left" Height="16" Margin="22.5,310,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="-0.378,0.844"/>
         <Label x:Name="Time" Content="Time" HorizontalAlignment="Left" Height="32" Margin="5,25,0,0" VerticalAlignment="Top" Width="171"/>
+        <local:Frame Name="MainFrame" NavigationUIVisibility="Hidden" >
+        </local:Frame>
     </Grid>
 </Window>
