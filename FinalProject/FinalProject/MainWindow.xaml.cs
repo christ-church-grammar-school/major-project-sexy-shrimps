@@ -26,6 +26,8 @@ namespace FinalProject
         {
             InitializeComponent();
 
+            
+
             //label.Content = File.ReadAllText("Details.txt");
 
             DispatcherTimer LiveTime = new DispatcherTimer();
@@ -49,6 +51,8 @@ namespace FinalProject
         {
 
         }
-        
+       
+
+
     }
 }
