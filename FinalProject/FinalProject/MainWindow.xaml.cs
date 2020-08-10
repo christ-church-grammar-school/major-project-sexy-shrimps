@@ -44,5 +44,11 @@ namespace FinalProject
         {
             MainFrame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
         }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+        
     }
 }
