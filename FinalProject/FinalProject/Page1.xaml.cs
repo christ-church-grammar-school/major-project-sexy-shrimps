@@ -40,5 +40,11 @@ namespace FinalProject
             tw.WriteLine(Diary.Text);
             tw.Close();
         }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            NavigationService nav = NavigationService.GetNavigationService(this);
+            nav.Navigate(new Uri("Page2.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
