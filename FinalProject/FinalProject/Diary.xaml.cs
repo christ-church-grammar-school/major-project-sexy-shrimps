@@ -29,7 +29,7 @@ namespace FinalProject
             string path = "../../Diary.txt";
             string hs = File.ReadAllText(path);
             Diary.Text = hs;
-            
+
         }
 
         private void Save(object sender, RoutedEventArgs e)
@@ -39,12 +39,6 @@ namespace FinalProject
             TextWriter tw = new StreamWriter(path, true);
             tw.WriteLine(Diary.Text);
             tw.Close();
-        }
-
-        private void Back(object sender, RoutedEventArgs e)
-        {
-            NavigationService nav = NavigationService.GetNavigationService(this);
-            nav.Navigate(new Uri("Page2.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }
