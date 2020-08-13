@@ -129,13 +129,7 @@
     <Resource Include="Images\CCGS.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="CCGS.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\CCGSCrest.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="CCGSCrest.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
