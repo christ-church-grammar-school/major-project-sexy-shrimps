@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace FinalProject
 {
@@ -23,6 +24,11 @@ namespace FinalProject
         public Page1()
         {
             InitializeComponent();
+
+
+            string path = "../../Diary.txt";
+            string hs = File.ReadAllText(path);
+            Diary.Content = hs;
         }
     }
 }
