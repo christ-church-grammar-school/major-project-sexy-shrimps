@@ -32,10 +32,14 @@ namespace FinalProject
             LiveTime.Start();
 
             string path = "../../password.txt";
-            string stu = File.ReadLines(path).First();
-            string pass = File.ReadLines(path).ElementAt(1);
-            student.Text = stu;
-            password.Password = pass;
+            if (File.ReadLines(path).First() != "..")
+            {
+                string stu = File.ReadLines(path).First();
+                string pass = File.ReadLines(path).ElementAt(1);
+                student.Text = stu;
+                password.Password = pass;
+                remember.IsChecked = true;
+            }
         }
 
         void timer_Tick(object sender, EventArgs e)
@@ -46,6 +50,21 @@ namespace FinalProject
 
         private void LogIn_Clicked(object sender, RoutedEventArgs e)
         {
+            string path = "../../password.txt";
+            File.WriteAllText(path, String.Empty);
+            TextWriter tw = new StreamWriter(path, true);
+            if (remember.IsChecked == true)
+            {
+                tw.WriteLine(student.Text);
+                tw.WriteLine(password.Password);
+                tw.Close();
+            }
+            else
+            {
+                tw.WriteLine("..");
+                tw.Close();
+            }
+
             MainFrame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
         }
 
