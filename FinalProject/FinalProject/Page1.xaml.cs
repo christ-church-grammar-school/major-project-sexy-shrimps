@@ -28,7 +28,17 @@ namespace FinalProject
 
             string path = "../../Diary.txt";
             string hs = File.ReadAllText(path);
-            Diary.Content = hs;
+            Diary.Text = hs;
+            
+        }
+
+        private void Save(object sender, RoutedEventArgs e)
+        {
+            string path = "../../Diary.txt";
+            File.WriteAllText(path, String.Empty);
+            TextWriter tw = new StreamWriter(path, true);
+            tw.WriteLine(Diary.Text);
+            tw.Close();
         }
     }
 }
