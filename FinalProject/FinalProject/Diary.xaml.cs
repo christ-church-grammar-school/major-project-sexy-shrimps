@@ -40,5 +40,15 @@ namespace FinalProject
             tw.WriteLine(Diary.Text);
             tw.Close();
         }
+
+        private void Return_Clicked(object sender, RoutedEventArgs e)
+        {
+            DiaryFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+        }
+
+        private void DiaryFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

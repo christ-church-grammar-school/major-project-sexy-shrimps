@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:FinalProject"
+      xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1"
@@ -13,6 +13,8 @@
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="450" Stroke="Black" VerticalAlignment="Top" Width="220" StrokeThickness="0"/>
         <TextBox Name="Diary" HorizontalAlignment="Left" Height="80" Margin="302,80,0,0" VerticalAlignment="Top" Width="375" RenderTransformOrigin="0.49,0.436"/>
         <Button Content="Save" HorizontalAlignment="Left" Margin="502,334,0,0" VerticalAlignment="Top" Width="75" Click="Save"/>
-
+        <Button x:Name="Return" Content="Home" HorizontalAlignment="Left" Height="43" Margin="10,24,0,0" VerticalAlignment="Top" Width="124" Click="Return_Clicked"/>
+        <local:Frame Name="DiaryFrame" NavigationUIVisibility="Hidden" Navigated="DiaryFrame_Navigated" >
+        </local:Frame>
     </Grid>
 </Page>
