@@ -26,14 +26,16 @@ namespace FinalProject
         {
             InitializeComponent();
 
-            
-
-            //label.Content = File.ReadAllText("Details.txt");
-
             DispatcherTimer LiveTime = new DispatcherTimer();
             LiveTime.Interval = TimeSpan.FromSeconds(1);
             LiveTime.Tick += timer_Tick;
             LiveTime.Start();
+
+            string path = "../../password.txt";
+            string stu = File.ReadLines(path).First();
+            string pass = File.ReadLines(path).ElementAt(1);
+            student.Text = stu;
+            password.Password = pass;
         }
 
         void timer_Tick(object sender, EventArgs e)
@@ -51,8 +53,5 @@ namespace FinalProject
         {
 
         }
-
-       
-
     }
 }
