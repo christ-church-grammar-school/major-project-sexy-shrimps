@@ -24,7 +24,7 @@ namespace FinalProject
     {
         public Hub()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
         private void Diary_Clicked(object sender, RoutedEventArgs e)
         {
