@@ -9,7 +9,7 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="450" Margin="220,0,0,0" VerticalAlignment="Top" Width="575" Source="Images/CCGS.png" Stretch="Fill"/>
         <Label Name="Date" Content="Date" HorizontalAlignment="Left" Height="40" Margin="5,10,0,0" VerticalAlignment="Top" Width="176"/>
-        <Button Content="Log In" HorizontalAlignment="Left" Height="40" Margin="22.5,340,0,0" VerticalAlignment="Top" Width="175" Background="#FF39C1FA" IsDefault="True" BorderBrush="Black" FontWeight="Bold" FontFamily="Arial" Foreground="White" IsCancel="True" Click="LogIn_Clicked"/>
+        <Button x:Name="log" Content="Log In" HorizontalAlignment="Left" Height="40" Margin="22.5,340,0,0" VerticalAlignment="Top" Width="175" Background="#FF39C1FA" IsDefault="True" BorderBrush="Black" FontWeight="Bold" FontFamily="Arial" Foreground="White" IsCancel="True" Click="LogIn_Clicked"/>
         <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="40" Margin="22.5,260,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E" FontSize="18"/>
         <TextBox x:Name="student" HorizontalAlignment="Left" Height="40" Margin="22.5,200,0,0" VerticalAlignment="Top" Width="175" Background="Silver" BorderBrush="#FF6E6E6E" FontSize="18" SpellCheck.IsEnabled="True"/>
         <TextBlock HorizontalAlignment="Left" Height="15" Margin="22.5,245,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="107" FontFamily="Arial" Foreground="#FF464646"/>
@@ -17,9 +17,10 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="60,50,0,0" VerticalAlignment="Top" Width="100" Source="Images/CCGSCrest.jpg"/>
         <CheckBox x:Name="remember" Content="Remember Me" HorizontalAlignment="Left" Height="16" Margin="22.5,310,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="-0.378,0.844"/>
         <Label x:Name="Time" Content="Time" HorizontalAlignment="Left" Height="32" Margin="5,25,0,0" VerticalAlignment="Top" Width="171"/>
+        <Rectangle x:Name="message" Fill="Ivory" HorizontalAlignment="Center" Height="225" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="400" StrokeThickness="2" Opacity="0"/>
+        <Button x:Name="close" Content="❌" HorizontalAlignment="Left" Margin="206,107,0,0" VerticalAlignment="Top" Width="20" BorderBrush="#00707070" Background="#00DDDDDD" Click="ErrorClosed" IsEnabled="False" Opacity="0"/>
         <local:Frame Name="MainFrame" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated" >
         </local:Frame>
-
     </Grid>
 </Window>
 

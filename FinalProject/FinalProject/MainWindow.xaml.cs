@@ -47,6 +47,27 @@ namespace FinalProject
             Date.Content = DateTime.Now.ToString("D");
             Time.Content = DateTime.Now.ToString("hh:mm:ss");
         }
+        private void ErrorClosed(object sender, RoutedEventArgs e)
+        {
+            close.Opacity = 0;
+            close.IsEnabled = false;
+            message.Opacity = 0;
+            password.IsEnabled = true;
+            student.IsEnabled = true;
+            remember.IsEnabled = true;
+            log.IsEnabled = true;
+        }
+
+        private void ShowError()
+        {
+            close.Opacity = 100;
+            close.IsEnabled = true;
+            message.Opacity = 100;
+            password.IsEnabled = false;
+            student.IsEnabled = false;
+            remember.IsEnabled = false;
+            log.IsEnabled = false;
+        }
 
         private void LogIn_Clicked(object sender, RoutedEventArgs e)
         {
@@ -70,6 +91,11 @@ namespace FinalProject
             {
                 MainFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
             }
+            else
+            {
+                ShowError();
+            }
+               
         }
 
         private void MainFrame_Navigated(object sender, NavigationEventArgs e)
