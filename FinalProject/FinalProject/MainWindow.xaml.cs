@@ -91,12 +91,19 @@ namespace FinalProject
             string login = "../../Users/" + student.Text + ".txt";
             if (File.Exists(login))
             {
-                MainFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
-                string userpath = "../../user.txt";
-                File.WriteAllText(userpath, String.Empty);
-                TextWriter ww = new StreamWriter(userpath, true);
-                ww.WriteLine(student.Text);
-                ww.Close();
+                if (File.ReadLines(login).ElementAt(1) == password.Password)
+                {
+                    MainFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+                    string userpath = "../../user.txt";
+                    File.WriteAllText(userpath, String.Empty);
+                    TextWriter ww = new StreamWriter(userpath, true);
+                    ww.WriteLine(student.Text);
+                    ww.Close();
+                }
+                else
+                {
+                    ShowError();
+                }
             }
             else
             {
