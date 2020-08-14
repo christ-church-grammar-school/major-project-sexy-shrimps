@@ -42,7 +42,7 @@
         <TextBlock x:Name="sub5" HorizontalAlignment="Left" Margin="551,135,0,0" TextWrapping="Wrap" Text="Subject 5 " VerticalAlignment="Top" Width="62"/>
         <TextBlock x:Name="sub6" HorizontalAlignment="Left" Margin="623,135,0,0" TextWrapping="Wrap" Text="Subject 6 " VerticalAlignment="Top" Width="62"/>
         <TextBlock x:Name="sub7" HorizontalAlignment="Left" Margin="695,135,0,0" TextWrapping="Wrap" Text="Subject 7 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock HorizontalAlignment="Left" Margin="258,50,0,0" TextWrapping="Wrap" Text="Good Evening," VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
+        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Margin="258,50,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
         <TextBlock HorizontalAlignment="Left" Margin="265,100,0,0" TextWrapping="Wrap" Text="Today's Timetable" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF111111"/>
         <TextBlock HorizontalAlignment="Left" Margin="265,220,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF111111" RenderTransformOrigin="0.47,5.432"/>
         <ListBox HorizontalAlignment="Left" Height="140" Margin="258,245,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-1.145,0.824">

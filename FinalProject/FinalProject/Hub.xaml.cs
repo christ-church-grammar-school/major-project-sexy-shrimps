@@ -25,6 +25,13 @@ namespace FinalProject
         public Hub()
         {
             InitializeComponent();
+
+            string path = "../../user.txt";
+            string user = File.ReadLines(path).First();
+
+            string path2 = "../../Users/" + user + ".txt";
+            string name = File.ReadLines(path2).ElementAt(3);
+            welcome.Text = welcome.Text + name;          
         }
         private void Diary_Clicked(object sender, RoutedEventArgs e)
         {

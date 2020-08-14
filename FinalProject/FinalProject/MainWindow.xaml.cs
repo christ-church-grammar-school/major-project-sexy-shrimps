@@ -52,6 +52,7 @@ namespace FinalProject
             close.Opacity = 0;
             close.IsEnabled = false;
             message.Opacity = 0;
+            warning.Opacity = 0;
             password.IsEnabled = true;
             student.IsEnabled = true;
             remember.IsEnabled = true;
@@ -63,6 +64,7 @@ namespace FinalProject
             close.Opacity = 100;
             close.IsEnabled = true;
             message.Opacity = 100;
+            warning.Opacity = 100;
             password.IsEnabled = false;
             student.IsEnabled = false;
             remember.IsEnabled = false;
@@ -90,6 +92,11 @@ namespace FinalProject
             if (File.Exists(login))
             {
                 MainFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+                string userpath = "../../user.txt";
+                File.WriteAllText(userpath, String.Empty);
+                TextWriter ww = new StreamWriter(userpath, true);
+                ww.WriteLine(student.Text);
+                ww.Close();
             }
             else
             {
