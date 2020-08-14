@@ -26,12 +26,35 @@ namespace FinalProject
         {
             InitializeComponent();
 
+            WelcomeUser();
+            LoadTimetable();
+        }
+
+        private void WelcomeUser()
+        {
             string path = "../../user.txt";
             string user = File.ReadLines(path).First();
 
             string path2 = "../../Users/" + user + ".txt";
             string name = File.ReadLines(path2).ElementAt(3);
-            welcome.Text = welcome.Text + name;          
+            welcome.Text = welcome.Text + name;
+        }
+        private void LoadTimetable()
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                string path = "../../user.txt";
+                string user = File.ReadLines(path).First();
+                string path2 = "../../Users/" + user + ".txt";
+
+                sub1.Text = File.ReadLines(path2).ElementAt(5);
+                sub2.Text = File.ReadLines(path2).ElementAt(6);
+                sub3.Text = File.ReadLines(path2).ElementAt(7);
+                sub4.Text = File.ReadLines(path2).ElementAt(8);
+                sub5.Text = File.ReadLines(path2).ElementAt(9);
+                sub6.Text = File.ReadLines(path2).ElementAt(10);
+                sub7.Text = File.ReadLines(path2).ElementAt(11);
+            }
         }
         private void Diary_Clicked(object sender, RoutedEventArgs e)
         {
@@ -41,6 +64,7 @@ namespace FinalProject
         {
 
         }
+
     }
 }
 
