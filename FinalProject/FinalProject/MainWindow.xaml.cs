@@ -65,7 +65,11 @@ namespace FinalProject
                 tw.Close();
             }
 
-            MainFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+            string login = "../../Users/" + student.Text + ".txt";
+            if (File.Exists(login))
+            {
+                MainFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+            }
         }
 
         private void MainFrame_Navigated(object sender, NavigationEventArgs e)
