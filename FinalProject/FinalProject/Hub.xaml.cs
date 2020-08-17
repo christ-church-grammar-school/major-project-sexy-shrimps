@@ -60,6 +60,11 @@ namespace FinalProject
         {
             HubFrame.Navigate(new Uri("Diary.xaml", UriKind.Relative));
         }
+
+        private void Map_Clicked(object sender, RoutedEventArgs e)
+        {
+
+        }
         private void HubFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
