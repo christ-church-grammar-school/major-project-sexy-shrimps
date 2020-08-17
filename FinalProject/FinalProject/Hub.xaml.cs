@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.IO;
+using System.Globalization;
 
 namespace FinalProject
 {
@@ -28,6 +29,7 @@ namespace FinalProject
 
             WelcomeUser();
             LoadTimetable();
+            GetDayOfFortnight();
         }
 
         private void WelcomeUser()
@@ -55,6 +57,43 @@ namespace FinalProject
                 sub6.Text = File.ReadLines(path2).ElementAt(10);
                 sub7.Text = File.ReadLines(path2).ElementAt(11);
             }
+        }
+
+        public static int GetWeekOfYear(DateTime time)
+        {
+            DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(time);
+            if (day >= DayOfWeek.Saturday && day <= DayOfWeek.Monday)
+            {
+                time = time.AddDays(3);
+            }
+
+            return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Saturday);
+        }
+
+        private void GetDayOfFortnight()
+        {
+            int weekOfYear = GetWeekOfYear(DateTime.Now) - 1;
+            DateTime now = DateTime.Now;
+            int day = 0;
+
+            if (weekOfYear % 2 == 0)
+            {
+                day = (int)now.DayOfWeek;
+                if (day == 6 || day == 0)
+                {
+                    day = 1;
+                }
+            }
+            else
+            {
+                day = (int)now.DayOfWeek + 5;
+                if (day == 11 || day == 5)
+                {
+                    day = 6;
+                }
+            }
+
+            TimetableDay.Text = "Timetable - Day " + day.ToString();
         }
         private void Diary_Clicked(object sender, RoutedEventArgs e)
         {
