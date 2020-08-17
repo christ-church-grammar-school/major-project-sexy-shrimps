@@ -1,26 +1,19 @@
+# Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
 # _Welcome to the Sexy Shrimps!!_
-
+[![Tom's github stats](https://github-readme-stats.vercel.app/api?username=salty-salter&theme=algolia&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats) [![Breen's github stats](https://github-readme-stats.vercel.app/api?username=callumbreen&theme=highcontrast&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats)
+[![Luke's github stats](https://github-readme-stats.vercel.app/api?username=1018752&theme=dracula&count_private=true&show_icons=true&hide=stars,prs,issues,contribs)](https://github.com/anuraghazra/github-readme-stats) [![Burnet's github stats](https://github-readme-stats.vercel.app/api?username=calcal29&theme=buefy&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
 ```diff
 - CALLUM BREEN
 + THOMAS SALTER
 ! LUKE COVENEY
-@@ CALLUM BURNET @@
-
-
-
-
-
-
-
-# FOR BEST VIEWING EXPERIENCE, ACCESS THIS README IN GITHUB
+@@ CALLUM BURNET @@  useless...
 ```
  
 ![Sexy Shrimp](https://cdn.shopify.com/s/files/1/0339/2831/5013/products/The-_Sexy_-Shrimp-Thor-amboinensis.jpg?v=1584449331)
-
-![Coronavirus](covid.gif)
-
 :shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit::shipit:
+
+![Coronavirus](ImageGif/covid.gif)
 
 - ![#FF0000](https://placehold.it/15/FF0000/000000?text=+) `#FF0000`
 - ![#FFA500](https://placehold.it/15/FFA500/000000?text=+) `#FFA500`
@@ -62,19 +55,7 @@
 :black_small_square:
 :black_medium_small_square:
 :black_medium_square:
-:black_large_square:                                                                                                                                                        .///,                                     
-                                                                                                                                                          /(*.. .                                       
-                                                                                                                                                       .,*#%##,/                                        
-                                                                                                                                                    (((/./#(*                                           
-                                                                                                                                                                                                     
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                                                                        
-                                                                                                                                                              .///,                                     
-                                                                                                                                                          */,.                                          
-                                                                                                                                                        ,,(#(#,*                                        
-                                                                                                                                                    (//*./(/,                                           
+:black_large_square:                                                                                                                                                                          
                                                                                                                                                                                                         
                                                                                                                                                                                                         
                                                                                                                                                                                                         
@@ -86,7 +67,7 @@
                                                                                                                                                     (//*./(/,                                           
                                                                                                                                                   #((/(  ..                                             
                                                                                                                                                    (//(*                                                
-                                                                .                                                                             (... ./#(                                                 
+                                                                ..                                                                             (... ./#(                                                 
                                                                  .                                                                          .(((#.....                                                  
                                                                 /*/,                                                      .,,,,...  */. ((/(((#(((#..                                                   
                                                                 /*(/                                                  /*..   ,...,..(#/(#((.,####(((/*                                                  
@@ -248,7 +229,20 @@ PogU PogU
 
 Starting Bid for CALLUM AND CALLUM: 14 Coding Hours
 
-we need to sell them ASAP
+we need to sell them ASAD
+please buy them
+
+
+SHUSH MR NOLAN!!!!!!
+
+
+please buy them
+
+PogU PogU
+
+no callums please
+get-rid-of-CB's
+
 
 Ignore Mr Nolan
 
@@ -258,3 +252,4 @@ I think we should keep both Callums
 GitHub Desktop seems pretty cool yo
 The command line is also good but has a steep learning curve and can be difficult to visualise what's going on.
 WE NEED TO GET 100 COMMITS WITHOUT EVEN CODING, JUST THE READ ME
+
