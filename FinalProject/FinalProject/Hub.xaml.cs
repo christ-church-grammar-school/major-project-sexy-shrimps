@@ -28,8 +28,8 @@ namespace FinalProject
             InitializeComponent();
 
             WelcomeUser();
-            LoadTimetable();
             GetDayOfFortnight();
+            LoadTimetable();
         }
 
         private void WelcomeUser()
@@ -43,20 +43,26 @@ namespace FinalProject
         }
         private void LoadTimetable()
         {
-            for (int i = 0; i < 7; i++)
-            {
-                string path = "../../user.txt";
-                string user = File.ReadLines(path).First();
-                string path2 = "../../Users/" + user + ".txt";
+            int day = GetDayOfFortnight();
+            TimetableDay.Text = "Timetable - Day " + day.ToString();
 
-                sub1.Text = File.ReadLines(path2).ElementAt(5);
-                sub2.Text = File.ReadLines(path2).ElementAt(6);
-                sub3.Text = File.ReadLines(path2).ElementAt(7);
-                sub4.Text = File.ReadLines(path2).ElementAt(8);
-                sub5.Text = File.ReadLines(path2).ElementAt(9);
-                sub6.Text = File.ReadLines(path2).ElementAt(10);
-                sub7.Text = File.ReadLines(path2).ElementAt(11);
+            string path = "../../user.txt";
+            string user = File.ReadLines(path).First();
+            string path2 = "../../Users/" + user + ".txt";
+
+            int i = 5;
+            while (File.ReadLines(path2).ElementAt(i) != day.ToString())
+            {
+                i += 8;
             }
+
+            sub1.Text = File.ReadLines(path2).ElementAt(i+1);
+            sub2.Text = File.ReadLines(path2).ElementAt(i+2);
+            sub3.Text = File.ReadLines(path2).ElementAt(i+3);
+            sub4.Text = File.ReadLines(path2).ElementAt(i+4);
+            sub5.Text = File.ReadLines(path2).ElementAt(i+5);
+            sub6.Text = File.ReadLines(path2).ElementAt(i+6);
+            sub7.Text = File.ReadLines(path2).ElementAt(i+7);
         }
 
         public static int GetWeekOfYear(DateTime time)
@@ -70,7 +76,7 @@ namespace FinalProject
             return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Saturday);
         }
 
-        private void GetDayOfFortnight()
+        public static int GetDayOfFortnight()
         {
             int weekOfYear = GetWeekOfYear(DateTime.Now) - 1;
             DateTime now = DateTime.Now;
@@ -92,8 +98,7 @@ namespace FinalProject
                     day = 6;
                 }
             }
-
-            TimetableDay.Text = "Timetable - Day " + day.ToString();
+            return day;
         }
         private void Diary_Clicked(object sender, RoutedEventArgs e)
         {
