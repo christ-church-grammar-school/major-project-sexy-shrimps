@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.IO;
+using System.Globalization;
 
 namespace FinalProject
 {
@@ -27,6 +28,7 @@ namespace FinalProject
             InitializeComponent();
 
             WelcomeUser();
+            GetDayOfFortnight();
             LoadTimetable();
         }
 
@@ -41,20 +43,62 @@ namespace FinalProject
         }
         private void LoadTimetable()
         {
-            for (int i = 0; i < 7; i++)
-            {
-                string path = "../../user.txt";
-                string user = File.ReadLines(path).First();
-                string path2 = "../../Users/" + user + ".txt";
+            int day = GetDayOfFortnight();
+            TimetableDay.Text = "Timetable - Day " + day.ToString();
 
-                sub1.Text = File.ReadLines(path2).ElementAt(5);
-                sub2.Text = File.ReadLines(path2).ElementAt(6);
-                sub3.Text = File.ReadLines(path2).ElementAt(7);
-                sub4.Text = File.ReadLines(path2).ElementAt(8);
-                sub5.Text = File.ReadLines(path2).ElementAt(9);
-                sub6.Text = File.ReadLines(path2).ElementAt(10);
-                sub7.Text = File.ReadLines(path2).ElementAt(11);
+            string path = "../../user.txt";
+            string user = File.ReadLines(path).First();
+            string path2 = "../../Users/" + user + ".txt";
+
+            int i = 5;
+            while (File.ReadLines(path2).ElementAt(i) != day.ToString())
+            {
+                i += 8;
             }
+
+            sub1.Text = File.ReadLines(path2).ElementAt(i+1);
+            sub2.Text = File.ReadLines(path2).ElementAt(i+2);
+            sub3.Text = File.ReadLines(path2).ElementAt(i+3);
+            sub4.Text = File.ReadLines(path2).ElementAt(i+4);
+            sub5.Text = File.ReadLines(path2).ElementAt(i+5);
+            sub6.Text = File.ReadLines(path2).ElementAt(i+6);
+            sub7.Text = File.ReadLines(path2).ElementAt(i+7);
+        }
+
+        public static int GetWeekOfYear(DateTime time)
+        {
+            DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(time);
+            if (day >= DayOfWeek.Saturday && day <= DayOfWeek.Monday)
+            {
+                time = time.AddDays(3);
+            }
+
+            return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Saturday);
+        }
+
+        public static int GetDayOfFortnight()
+        {
+            int weekOfYear = GetWeekOfYear(DateTime.Now) - 1;
+            DateTime now = DateTime.Now;
+            int day = 0;
+
+            if (weekOfYear % 2 == 0)
+            {
+                day = (int)now.DayOfWeek;
+                if (day == 6 || day == 0)
+                {
+                    day = 1;
+                }
+            }
+            else
+            {
+                day = (int)now.DayOfWeek + 5;
+                if (day == 11 || day == 5)
+                {
+                    day = 6;
+                }
+            }
+            return day;
         }
         private void Diary_Clicked(object sender, RoutedEventArgs e)
         {
