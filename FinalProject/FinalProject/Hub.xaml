@@ -8,12 +8,15 @@
       d:DesignHeight="415" d:DesignWidth="790"
       Title="Hub">
 
-    <Grid Background="#FFB46161">
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.239,0.295"/>
-        <Button x:Name="Diary" Click="Diary_Clicked" Content="Diary" HorizontalAlignment="Left" Height="45" Margin="35,200,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676"/>
-        <Button x:Name="Timetable" Click="Timetable_Clicked" Content="Timetable" HorizontalAlignment="Left" Height="45" Margin="35,265,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676"/>
-        <Button x:Name="Map" Content="Map" HorizontalAlignment="Left" Height="45" Margin="35,330,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="370" Margin="245,22.5,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="520"/>
+    <Grid Background="Gold">
+        <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="429" Margin="-9,0,0,-13.8" Stroke="#FF00305E" VerticalAlignment="Top" Width="229" RenderTransformOrigin="0.239,0.295"/>
+        <Button x:Name="Diary" Foreground="Navy" Click="Diary_Clicked" Content="Diary" HorizontalAlignment="Left" Height="36" Margin="35,182,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="Gold"/>
+        <Button x:Name="Timetable" Foreground="Navy" Content="Timetable" HorizontalAlignment="Left" Height="36" Margin="35,236,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="Gold"/>
+        <Button x:Name="Sport_Button" Foreground="Navy" Content="Sport" HorizontalAlignment="Left" Margin="35,344,0,0" VerticalAlignment="Top" Width="150" Height="36" Background="Gold" Click="Sport_Buton_clicked"/>
+
+        <Button x:Name="Map" Foreground="Navy" Content="Map" HorizontalAlignment="Left" Height="36" Margin="35,291,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="Gold"/>
+        <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="370" Margin="245,22.5,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="520"/>
+
         <Grid HorizontalAlignment="Left" Height="75" Margin="253,125,0,0" VerticalAlignment="Top" Width="504">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -27,7 +30,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Rectangle Grid.ColumnSpan="1" Fill="#FFFF2104" Height="75" Margin="0,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle Grid.ColumnSpan="1" Fill="#FFFF1D00" Height="75" Margin="0,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Rectangle Grid.ColumnSpan="2" Fill="#FFFF8000" Height="75" Margin="72,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Rectangle Grid.ColumnSpan="3" Fill="#FFE2FF00" Height="75" Margin="144,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Rectangle Grid.ColumnSpan="4" Fill="#FF3AFF00" Height="75" Margin="216,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -42,15 +45,15 @@
             <TextBlock x:Name="sub6" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="365,6,0,0" TextWrapping="Wrap" Text="Subject 6 " VerticalAlignment="Top" Width="62"/>
             <TextBlock x:Name="sub7" Grid.ColumnSpan="7" HorizontalAlignment="Left" Margin="437,6,0,0" TextWrapping="Wrap" Text="Subject 7 " VerticalAlignment="Top" Width="62"/>
         </Grid>
-        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Margin="258,60,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
-        <TextBlock x:Name="TimetableDay" HorizontalAlignment="Left" Margin="258,102,0,0" TextWrapping="Wrap" Text="Timetable - Day _" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF111111"/>
-        <TextBlock HorizontalAlignment="Left" Margin="265,212,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF111111" RenderTransformOrigin="0.47,5.432"/>
+        <TextBlock x:Name="welcome" Foreground="White" HorizontalAlignment="Left" Margin="258,60,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
+        <TextBlock x:Name="TimetableDay" Foreground="White" HorizontalAlignment="Left" Margin="258,102,0,0" TextWrapping="Wrap" Text="Timetable - Day _" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="265,212,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
         <ListBox HorizontalAlignment="Left" Height="140" Margin="258,236,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-1.145,0.824">
             <ListBoxItem Content="No Work"/>
             <ListBoxItem Content="Death"/>
         </ListBox>
-        <Image HorizontalAlignment="Left" Height="100" Margin="60,50,0,0" VerticalAlignment="Top" Width="100" Source="Images/CCGSCrest.jpg"/>
-        <Label x:Name="Time" HorizontalContentAlignment="Right" Content="Loading..." HorizontalAlignment="Left" Margin="665,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.737,0.692" Width="96"/>
+        <Image HorizontalAlignment="Left" Height="119" Margin="10,22,0,0" VerticalAlignment="Top" Width="195" Source="CCGS_logo.png"/>
+        <Label x:Name="Time" Foreground="White" HorizontalContentAlignment="Right" Content="Loading..." HorizontalAlignment="Left" Margin="665,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.737,0.692" Width="96"/>
         <local:Frame Name="HubFrame" NavigationUIVisibility="Hidden" Navigated="HubFrame_Navigated" >
         </local:Frame>
     </Grid>
