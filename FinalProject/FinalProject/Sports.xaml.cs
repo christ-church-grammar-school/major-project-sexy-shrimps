@@ -30,7 +30,11 @@ namespace FinalProject
 
         private void Return_Clicked(object sender, RoutedEventArgs e)
         {
-            SportPage.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+            SportsFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+        }
+        private void SportsFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }

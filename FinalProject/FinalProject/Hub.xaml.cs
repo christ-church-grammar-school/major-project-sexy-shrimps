@@ -113,14 +113,13 @@ namespace FinalProject
         {
             HubFrame.Navigate(new Uri("Diary.xaml", UriKind.Relative));
         }
-        private void HubFrame_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
-
         private void Sport_Buton_clicked(object sender, RoutedEventArgs e)
         {
             HubFrame.Navigate(new Uri("Sports.xaml", UriKind.Relative));
+        }
+        private void HubFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }
