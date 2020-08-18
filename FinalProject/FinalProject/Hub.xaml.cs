@@ -118,6 +118,10 @@ namespace FinalProject
 
         }
 
+        private void Sport_Buton_clicked(object sender, RoutedEventArgs e)
+        {
+            HubFrame.Navigate(new Uri("Sports.xaml", UriKind.Relative));
+        }
     }
 }
 

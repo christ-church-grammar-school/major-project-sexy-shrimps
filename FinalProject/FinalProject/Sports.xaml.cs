@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace FinalProject
 {
@@ -23,6 +24,11 @@ namespace FinalProject
         public Sports()
         {
             InitializeComponent();
+        }
+
+        private void Return_Clicked(object sender, RoutedEventArgs e)
+        {
+            SportPage.Content = new Hub();
         }
     }
 }
