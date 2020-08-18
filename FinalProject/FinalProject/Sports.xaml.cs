@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using System.IO;
+using System.Globalization;
 
 namespace FinalProject
 {
@@ -23,6 +26,15 @@ namespace FinalProject
         public Sports()
         {
             InitializeComponent();
+        }
+
+        private void Return_Clicked(object sender, RoutedEventArgs e)
+        {
+            SportsFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+        }
+        private void SportsFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }
