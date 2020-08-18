@@ -63,6 +63,7 @@ namespace FinalProject
 
         private void Map_Clicked(object sender, RoutedEventArgs e)
         {
+            HubFrame.Navigate(new Uri("Map.xaml", UriKind.Relative));
 
         }
         private void HubFrame_Navigated(object sender, NavigationEventArgs e)
