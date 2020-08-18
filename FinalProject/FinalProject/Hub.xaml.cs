@@ -27,11 +27,20 @@ namespace FinalProject
         {
             InitializeComponent();
 
+            DispatcherTimer LiveTime = new DispatcherTimer();
+            LiveTime.Interval = TimeSpan.FromSeconds(1);
+            LiveTime.Tick += timer_Tick;
+            LiveTime.Start();
+
             WelcomeUser();
             GetDayOfFortnight();
             LoadTimetable();
         }
 
+        void timer_Tick(object sender, EventArgs e)
+        {
+            Time.Content = DateTime.Now.ToString("hh:mm:ss");
+        }
         private void WelcomeUser()
         {
             string path = "../../user.txt";
