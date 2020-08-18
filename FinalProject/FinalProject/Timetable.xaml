@@ -1,0 +1,16 @@
+﻿<Page x:Class="FinalProject.Timetable"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
+      mc:Ignorable="d" 
+      d:DesignHeight="415" d:DesignWidth="790"
+      Title="Timetable">
+
+    <Grid Background="#FF161D74">
+        <Button x:Name="Return" Content="Home" HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" Click="Return_Clicked"/>
+        <local:Frame Name="TimetableFrame" NavigationUIVisibility="Hidden" Navigated="TimetableFrame_Navigated" >
+        </local:Frame>
+    </Grid>
+</Page>

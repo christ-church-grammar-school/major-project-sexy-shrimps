@@ -113,6 +113,10 @@ namespace FinalProject
         {
             HubFrame.Navigate(new Uri("Diary.xaml", UriKind.Relative));
         }
+        private void Timetable_Clicked(object sender, RoutedEventArgs e)
+        {
+            HubFrame.Navigate(new Uri("Timetable.xaml", UriKind.Relative));
+        }
         private void HubFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
