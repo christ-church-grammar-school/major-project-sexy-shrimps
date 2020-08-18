@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.IO;
+using System.Globalization;
 
 namespace FinalProject
 {
@@ -28,7 +30,7 @@ namespace FinalProject
 
         private void Return_Clicked(object sender, RoutedEventArgs e)
         {
-            SportPage.Content = new Hub();
+            SportPage.Navigate(new Uri("Hub.xaml", UriKind.Relative));
         }
     }
 }
