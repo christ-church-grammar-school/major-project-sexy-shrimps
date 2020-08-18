@@ -29,7 +29,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Rectangle Grid.ColumnSpan="1" Fill="#FFFF2104" Height="75" Margin="0,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle Grid.ColumnSpan="1" Fill="#FFFF1D00" Height="75" Margin="0,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Rectangle Grid.ColumnSpan="2" Fill="#FFFF8000" Height="75" Margin="72,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Rectangle Grid.ColumnSpan="3" Fill="#FFE2FF00" Height="75" Margin="144,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Rectangle Grid.ColumnSpan="4" Fill="#FF3AFF00" Height="75" Margin="216,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
