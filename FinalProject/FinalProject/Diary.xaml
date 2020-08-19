@@ -18,8 +18,6 @@
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="41" Margin="614,409,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="186"/>
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="409" Margin="764,0,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="36"/>
         <Label Content="Diary" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,122,0,0" Height="93" Width="161" Foreground="White" FontWeight="Bold" FontSize="48"/>
-        <local:Frame Name="DiaryFrame" NavigationUIVisibility="Hidden" Navigated="DiaryFrame_Navigated" Margin="56,67,-56,-67" >
-        </local:Frame>
-       
+        <local:Frame Name="DiaryFrame" NavigationUIVisibility="Hidden" Navigated="DiaryFrame_Navigated" />
     </Grid>
 </Page>
