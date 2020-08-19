@@ -28,8 +28,10 @@
         <TextBlock x:Name="sub5" HorizontalAlignment="Left" Margin="515,232,0,0" TextWrapping="Wrap" Text="Subject 5 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold"/>
         <TextBlock x:Name="sub6" HorizontalAlignment="Left" Margin="515,275,0,0" TextWrapping="Wrap" Text="Subject 6 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold"/>
         <TextBlock x:Name="sub7" HorizontalAlignment="Left" Margin="515,318,0,0" TextWrapping="Wrap" Text="Subject 7 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold"/>
+        <TextBlock x:Name="date_top" HorizontalAlignment="Left" Margin="235,39,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <local:Frame Name="DiaryFrame" NavigationUIVisibility="Hidden" Navigated="DiaryFrame_Navigated" >
         </local:Frame>
         
+
     </Grid>
 </Page>

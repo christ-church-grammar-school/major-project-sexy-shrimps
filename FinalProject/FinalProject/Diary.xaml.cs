@@ -25,27 +25,53 @@ namespace FinalProject
         {
             InitializeComponent();
 
-            string path = "../../Diary/17-8-2020.txt";
-            string hs = File.ReadAllText(path);
-            Diary.Text = hs;
+            string date = DateTime.Now.ToString("dd-MM-yyyy");
+            date_top.Text = DateTime.Now.ToString("D");
+
+            try
+            {
+                string path = $"../../Diary/{date}.txt";
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
+            catch (FileNotFoundException)
+            {
+                string path = $"../../Diary/{date}.txt";
+                using (FileStream fs = File.Create(path))
+                {
+                    // Add some text to file    
+                    Byte[] title = new UTF8Encoding(true).GetBytes("");
+                    fs.Write(title, 0, title.Length);
+                }
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
+            
+
+
 
             string path3 = "../../user.txt";
             string user = File.ReadLines(path3).First();
             string path2 = "../../Users/" + user + ".txt";
 
-            sub1.Text = File.ReadLines(path2).ElementAt(5);
-            sub2.Text = File.ReadLines(path2).ElementAt(6);
-            sub3.Text = File.ReadLines(path2).ElementAt(7);
-            sub4.Text = File.ReadLines(path2).ElementAt(8);
-            sub5.Text = File.ReadLines(path2).ElementAt(9);
-            sub6.Text = File.ReadLines(path2).ElementAt(10);
-            sub7.Text = File.ReadLines(path2).ElementAt(11);
+            sub1.Text = File.ReadLines(path2).ElementAt(6);
+            sub2.Text = File.ReadLines(path2).ElementAt(7);
+            sub3.Text = File.ReadLines(path2).ElementAt(8);
+            sub4.Text = File.ReadLines(path2).ElementAt(9);
+            sub5.Text = File.ReadLines(path2).ElementAt(10);
+            sub6.Text = File.ReadLines(path2).ElementAt(11);
+            sub7.Text = File.ReadLines(path2).ElementAt(12);
+
+            
+
 
         }
 
         private void save(object sender, RoutedEventArgs e)
         {
-            string path = "../../Diary/17-8-2020.txt";
+            string date = DateTime.Now.ToString("dd-MM-yyyy");
+
+            string path = $"../../Diary/{date}.txt";
             File.WriteAllText(path, String.Empty);
             TextWriter tw = new StreamWriter(path, true);
             tw.WriteLine(Diary.Text);
