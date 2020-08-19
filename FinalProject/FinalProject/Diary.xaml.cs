@@ -32,17 +32,19 @@ namespace FinalProject
             {
                 string path = $"../../Diary/{date}.txt";
                 string hs = File.ReadAllText(path);
-                Diary.Text = hs;
+                Diary.Text = hs.Remove(hs.LastIndexOf(Environment.NewLine));
             }
             catch (FileNotFoundException)
             {
                 string path = $"../../Diary/{date}.txt";
-                using (FileStream fs = File.Create(path))
-                {
-                    // Add some text to file    
-                    Byte[] title = new UTF8Encoding(true).GetBytes("");
-                    fs.Write(title, 0, title.Length);
-                }
+                File.WriteAllLines(path, new string[0]);
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                string path = $"../../Diary/{date}.txt";
+                File.WriteAllLines(path, new string[0]);
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
             }
@@ -70,12 +72,21 @@ namespace FinalProject
         private void save(object sender, RoutedEventArgs e)
         {
             string date = DateTime.Now.ToString("dd-MM-yyyy");
-
             string path = $"../../Diary/{date}.txt";
-            File.WriteAllText(path, String.Empty);
-            TextWriter tw = new StreamWriter(path, true);
-            tw.WriteLine(Diary.Text);
-            tw.Close();
+
+
+            if (Diary.Text == "")
+            {
+                File.Delete(path);
+            }
+            else
+            {
+                File.WriteAllText(path, String.Empty);
+                TextWriter tw = new StreamWriter(path, true);
+                tw.WriteLine(Diary.Text);
+                tw.Close();
+            }
+            
         }
 
         private void Return_Clicked(object sender, RoutedEventArgs e)
