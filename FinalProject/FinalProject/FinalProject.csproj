@@ -146,7 +146,10 @@
     <Resource Include="Images\CCGSCrest.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Back.png" />
+    <Resource Include="Images\diary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="diary.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="CCGS_logo.png" />
