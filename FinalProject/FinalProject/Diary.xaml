@@ -19,15 +19,16 @@
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="294,365,0,0" VerticalAlignment="Top" Width="74" Click="save"/>
 
         <Image HorizontalAlignment="Left" Height="100" Margin="28.5,100,0,0" VerticalAlignment="Top" Width="100" Source="home.png"/>
-        <Button x:Name="Return" HorizontalAlignment="Left" Height="100" Margin="28.5,100,0,0" VerticalAlignment="Top" Width="100" Click="Return_Clicked" Background="#00FFFFFF" BorderBrush="#00707070" Opacity="0.5"/>
+        <Button x:Name="Return" HorizontalAlignment="Left" Height="100" Margin="28.5,100,0,0" VerticalAlignment="Top" Width="100" Click="Return_Clicked" Background="#00FFFFFF" BorderBrush="#00707070" Opacity="0.25"/>
 
-        <Rectangle Fill="#7FFF2104" Height="43" Margin="74,60,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
-        <Rectangle Fill="#7FFF8000" Height="43" Margin="74,103,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
-        <Rectangle Fill="#7FE2FF00" Height="43" Margin="74,146,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
-        <Rectangle Fill="#7F3AFF00" Height="43" Margin="74,189,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
-        <Rectangle Fill="#7F00FFFF" Height="43" Margin="74,232,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
-        <Rectangle Fill="#7F002EFF" Height="43" Margin="74,275,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
-        <Rectangle Fill="#7F8500FF" Height="43" Margin="74,318,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+        <Rectangle x:Name="rect1" Fill="#7FFF2104" Height="43" Margin="74,60,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+        <Rectangle x:Name="rect2" Fill="#7FFF8000" Height="43" Margin="74,103,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+        <Rectangle x:Name="rect3" Fill="#7FE2FF00" Height="43" Margin="74,146,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+        <Rectangle x:Name="rect4" Fill="#7F3AFF00" Height="43" Margin="74,189,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+        <Rectangle x:Name="rect5" Fill="#7F00FFFF" Height="43" Margin="74,232,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+        <Rectangle x:Name="rect6" Fill="#7F002EFF" Height="43" Margin="74,275,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+        <Rectangle x:Name="rect7" Fill="#7F8500FF" Height="43" Margin="74,318,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+
         <TextBlock x:Name="sub1" HorizontalAlignment="Left" Margin="74,70,0,0" TextWrapping="Wrap" Text="Subject 1 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold" Grid.Column="1"/>
         <TextBlock x:Name="sub2" HorizontalAlignment="Left" Margin="74,113,0,0" TextWrapping="Wrap" Text="Subject 2 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold" Grid.Column="1"/>
         <TextBlock x:Name="sub3" HorizontalAlignment="Left" Margin="74,156,0,0" TextWrapping="Wrap" Text="Subject 3 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold" Grid.Column="1"/>
@@ -35,6 +36,16 @@
         <TextBlock x:Name="sub5" HorizontalAlignment="Left" Margin="74,242,0,0" TextWrapping="Wrap" Text="Subject 5 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold" Grid.Column="1"/>
         <TextBlock x:Name="sub6" HorizontalAlignment="Left" Margin="74,285,0,0" TextWrapping="Wrap" Text="Subject 6 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold" Grid.Column="1"/>
         <TextBlock x:Name="sub7" HorizontalAlignment="Left" Margin="74,328,0,0" TextWrapping="Wrap" Text="Subject 7 " VerticalAlignment="Top" Width="190" Height="43" FontSize="16" TextAlignment="Center" FontWeight="SemiBold" Grid.Column="1"/>
+
+        <Button x:Name="Button1" Height="43" Margin="74,60,0,0" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0.25" Click="subj1"/>
+        <Button x:Name="Button2" Height="43" Margin="74,103,0,0" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0.25" Click="subj2"/>
+        <Button x:Name="Button3" Height="43" Margin="74,146,0,0" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0.25" Click="subj3"/>
+        <Button x:Name="Button4" Height="43" Margin="74,189,0,0" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0.25" Click="subj4"/>
+        <Button x:Name="Button5" Height="43" Margin="74,232,0,0" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0.25" Click="subj5"/>
+        <Button x:Name="Button6" Height="43" Margin="74,275,0,0" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0.25" Click="subj6"/>
+        <Button x:Name="Button7" Height="43" Margin="74,318,0,0" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0.25" Click="subj7"/>
+
+        
         <TextBlock x:Name="date_top" HorizontalAlignment="Left" Margin="236,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="190" TextAlignment="Center"/>
         <Image HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="137" Source="CCGS_logo.png"/>
         <TextBlock x:Name="TimetableDay2" HorizontalAlignment="Left" Margin="74,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="190" TextAlignment="Center" Grid.Column="1"/>
@@ -84,8 +95,8 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="100" Margin="436,468,0,-153" VerticalAlignment="Top" Width="100"/>
-        <Button Grid.Column="1" HorizontalAlignment="Left" Margin="264,4,0,0" VerticalAlignment="Top" Width="79" Height="408" Background="#00FFFFFF" BorderBrush="#00707070" Opacity="0.5" Click="Next"/>
-        <Button HorizontalAlignment="Left" Margin="159,4,0,0" VerticalAlignment="Top" Width="77" Height="408" Background="#00FFFFFF" BorderBrush="#00707070" Opacity="0.5" Click="Previous"/>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Margin="264,4,0,0" VerticalAlignment="Top" Width="79" Height="408" Background="#00FFFFFF" BorderBrush="#00707070" Opacity="0.25" Click="Next"/>
+        <Button HorizontalAlignment="Left" Margin="159,4,0,0" VerticalAlignment="Top" Width="77" Height="408" Background="#00FFFFFF" BorderBrush="#00707070" Opacity="0.25" Click="Previous"/>
 
 
 

@@ -25,16 +25,18 @@ namespace FinalProject
         public Page1()
         {
             InitializeComponent();
+            rect1.Opacity = 0;
 
 
             DateTime date2 = DateTime.Now;
 
-            LoadTimetable(date2);
+            
 
             string date = date2.ToString("dd-MM-yyyy");
             date_top.Text = date2.ToString("D");
+            LoadTimetable(date2);
 
-            
+
 
             try
             {
@@ -82,6 +84,17 @@ namespace FinalProject
             sub5.Text = File.ReadLines(path2).ElementAt(i + 5);
             sub6.Text = File.ReadLines(path2).ElementAt(i + 6);
             sub7.Text = File.ReadLines(path2).ElementAt(i + 7);
+
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() == "Saturday" || date3.DayOfWeek.ToString() == "Sunday")
+            {
+                Weekend();
+            }
+            else
+            {
+                Weekday();
+            }
         }
 
         public static int GetWeekOfYear(DateTime time)
@@ -116,14 +129,74 @@ namespace FinalProject
                 {
                     day = 6;
                 }
+            
             }
             return day;
+        }
+
+        public void Weekend()
+        {
+            rect1.Opacity = 0;
+            rect2.Opacity = 0;
+            rect3.Opacity = 0;
+            rect4.Opacity = 0;
+            rect5.Opacity = 0;
+            rect6.Opacity = 0;
+            rect7.Opacity = 0;
+
+            sub1.Opacity = 0;
+            sub2.Opacity = 0;
+            sub3.Opacity = 0;
+            sub4.Opacity = 0;
+            sub5.Opacity = 0;
+            sub6.Opacity = 0;
+            sub7.Opacity = 0;
+
+            TimetableDay2.Opacity = 0;
+
+            Button1.Opacity = 0;
+            Button2.Opacity = 0;
+            Button3.Opacity = 0;
+            Button4.Opacity = 0;
+            Button5.Opacity = 0;
+            Button6.Opacity = 0;
+            Button7.Opacity = 0;
+        }
+
+        private void Weekday()
+        {
+            rect1.Opacity = 1;
+            rect2.Opacity = 1;
+            rect3.Opacity = 1;
+            rect4.Opacity = 1;
+            rect5.Opacity = 1;
+            rect6.Opacity = 1;
+            rect7.Opacity = 1;
+
+            sub1.Opacity = 1;
+            sub2.Opacity = 1;
+            sub3.Opacity = 1;
+            sub4.Opacity = 1;
+            sub5.Opacity = 1;
+            sub6.Opacity = 1;
+            sub7.Opacity = 1;
+
+            TimetableDay2.Opacity = 1;
+
+            Button1.Opacity = 0.25;
+            Button2.Opacity = 0.25;
+            Button3.Opacity = 0.25;
+            Button4.Opacity = 0.25;
+            Button5.Opacity = 0.25;
+            Button6.Opacity = 0.25;
+            Button7.Opacity = 0.25;
         }
 
 
 
 
-        
+
+
 
         private void save(object sender, RoutedEventArgs e)
         {
@@ -195,10 +268,11 @@ namespace FinalProject
             TimeSpan span = new TimeSpan(1, 0, 0, 0, 0);
             DateTime date2 = date3 + span;
 
-            LoadTimetable(date2);
+            
 
             string date = date2.ToString("dd-MM-yyyy");
             date_top.Text = date2.ToString("D");
+            LoadTimetable(date2);
 
 
 
@@ -246,10 +320,11 @@ namespace FinalProject
             DateTime date3 = Convert.ToDateTime(date_top.Text);
             TimeSpan span = new TimeSpan(1, 0, 0, 0, 0);
             DateTime date2 = date3 - span;
-            LoadTimetable(date2);
+            
 
             string date = date2.ToString("dd-MM-yyyy");
             date_top.Text = date2.ToString("D");
+            LoadTimetable(date2);
 
 
 
@@ -273,6 +348,42 @@ namespace FinalProject
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
             }
+        }
+
+        private void subj1(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub1.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
+        private void subj2(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void subj3(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void subj4(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void subj5(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void subj6(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void subj7(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
