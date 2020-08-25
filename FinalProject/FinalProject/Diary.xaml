@@ -13,7 +13,7 @@
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="450" Stroke="Black" VerticalAlignment="Top" Width="164" StrokeThickness="0"/>
         <TextBox Name="Diary" HorizontalAlignment="Left" Height="335" Margin="225,45,0,0" VerticalAlignment="Top" Width="507" RenderTransformOrigin="0.49,0.436"/>
         <Button Background="Gold" Content="Save" Foreground ="#FF00305E" HorizontalAlignment="Left" Margin="408,394,0,0" VerticalAlignment="Top" Width="148" Click="Save" Height="32" FontSize="18"/>
-        <Button x:Name="Return" Background="#FF00305E" Foreground="Gold" Content="Home" HorizontalAlignment="Left" Height="43" Margin="10,24,0,0" VerticalAlignment="Top" Width="124" Click="Return_Clicked"/>
+        <Button x:Name="Return" Background="#FF00305E" Foreground="Gold" Content="Home" HorizontalAlignment="Left" Height="43" Margin="32,24,0,0" VerticalAlignment="Top" Width="102" Click="Return_Clicked"/>
         <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="359" Margin="32,91,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="188"/>
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="41" Margin="614,409,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="186"/>
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="409" Margin="764,0,0,0" Stroke="Black" StrokeThickness="0" VerticalAlignment="Top" Width="36"/>
