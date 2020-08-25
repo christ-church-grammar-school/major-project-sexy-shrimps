@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Globalization;
 
 namespace FinalProject
 {
@@ -24,13 +25,59 @@ namespace FinalProject
         public Timetable()
         {
             InitializeComponent();
-            LoadTimetable();
+            LoadDay();
+            LoadSubjects();
+            LoadColors();
         }
-        private void LoadTimetable()
+
+        public static int GetWeekOfYear(DateTime time)
+        {
+            DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(time);
+            if (day >= DayOfWeek.Saturday && day <= DayOfWeek.Monday)
+            {
+                time = time.AddDays(3);
+            }
+
+            return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Saturday);
+        }
+
+        public static int GetDayOfFortnight()
+        {
+            int weekOfYear = GetWeekOfYear(DateTime.Now) - 1;
+            DateTime now = DateTime.Now;
+            int day = 0;
+
+            if (weekOfYear % 2 == 0)
+            {
+                day = (int)now.DayOfWeek;
+                if (day == 6 || day == 0)
+                {
+                    day = 1;
+                }
+            }
+            else
+            {
+                day = (int)now.DayOfWeek + 5;
+                if (day == 11 || day == 5)
+                {
+                    day = 6;
+                }
+            }
+            return day;
+        }
+
+        private void LoadDay()
+        {
+            int day = GetDayOfFortnight();
+            double dist = (day - 1) * 76.7;
+
+            box.Margin = new Thickness(dist,0,0,0);
+        }
+        private void LoadSubjects()
         {
             string path = "../../user.txt";
             string user = File.ReadLines(path).First();
-            string path2 = "../../Users/" + user + ".txt";
+            string path2 = "../../Users/" + user + "/student.txt";
 
             AA.Content = File.ReadLines(path2).ElementAt(6);
             BA.Content = File.ReadLines(path2).ElementAt(7);
@@ -111,6 +158,93 @@ namespace FinalProject
             EJ.Content = File.ReadLines(path2).ElementAt(82);
             FJ.Content = File.ReadLines(path2).ElementAt(83);
             GJ.Content = File.ReadLines(path2).ElementAt(84);
+        }
+
+        private void LoadColors()
+        {
+            string path = "../../user.txt";
+            string user = File.ReadLines(path).First();
+            string path2 = "../../Users/" + user + "/color.txt";
+
+            AAA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(0));
+            AAB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(1));
+            AAC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(2));
+            AAD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(3));
+            AAE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(4));
+            AAF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(5));
+            AAG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(6));
+
+            ABA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(7));
+            ABB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(8));
+            ABC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(9));
+            ABD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(10));
+            ABE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(11));
+            ABF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(12));
+            ABG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(13));
+
+            ACA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(14));
+            ACB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(15));
+            ACC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(16));
+            ACD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(17));
+            ACE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(18));
+            ACF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(19));
+            ACG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(20));
+
+            ADA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(21));
+            ADB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(22));
+            ADC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(23));
+            ADD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(24));
+            ADE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(25));
+            ADF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(26));
+            ADG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(27));
+
+            AEA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(28));
+            AEB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(29));
+            AEC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(30));
+            AED.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(31));
+            AEE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(32));
+            AEF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(33));
+            AEG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(34));
+
+            AFA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(35));
+            AFB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(36));
+            AFC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(37));
+            AFD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(38));
+            AFE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(39));
+            AFF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(40));
+            AFG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(41));
+
+            AGA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(42));
+            AGB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(43));
+            AGC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(44));
+            AGD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(45));
+            AGE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(46));
+            AGF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(47));
+            AGG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(48));
+
+            AHA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(49));
+            AHB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(50));
+            AHC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(51));
+            AHD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(52));
+            AHE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(53));
+            AHF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(54));
+            AHG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(55));
+
+            AIA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(56));
+            AIB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(57));
+            AIC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(58));
+            AID.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(59));
+            AIE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(60));
+            AIF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(61));
+            AIG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(62));
+
+            AJA.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(63));
+            AJB.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(64));
+            AJC.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(65));
+            AJD.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(66));
+            AJE.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(67));
+            AJF.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(68));
+            AJG.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path2).ElementAt(69));
         }
 
         private void Return_Clicked(object sender, RoutedEventArgs e)

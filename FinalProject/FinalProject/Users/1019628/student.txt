@@ -6,7 +6,7 @@ Callum Breen
 1
 Tutorial
 English
-Chinese
+HWB
 History
 Maths
 ASD
@@ -18,7 +18,7 @@ ASD
 Physics
 English
 History
-Chinese
+HWB
 3
 Tutorial
 HWB

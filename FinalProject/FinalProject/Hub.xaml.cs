@@ -46,7 +46,7 @@ namespace FinalProject
             string path = "../../user.txt";
             string user = File.ReadLines(path).First();
 
-            string path2 = "../../Users/" + user + ".txt";
+            string path2 = "../../Users/" + user + "/student.txt";
             string name = File.ReadLines(path2).ElementAt(3);
             welcome.Text = welcome.Text + name;
         }
@@ -57,7 +57,8 @@ namespace FinalProject
 
             string path = "../../user.txt";
             string user = File.ReadLines(path).First();
-            string path2 = "../../Users/" + user + ".txt";
+            string path2 = "../../Users/" + user + "/student.txt";
+            string path3 = "../../Users/" + user + "/color.txt";
 
             int i = 5;
             while (File.ReadLines(path2).ElementAt(i) != day.ToString())
@@ -72,6 +73,15 @@ namespace FinalProject
             sub5.Text = File.ReadLines(path2).ElementAt(i+5);
             sub6.Text = File.ReadLines(path2).ElementAt(i+6);
             sub7.Text = File.ReadLines(path2).ElementAt(i+7);
+
+            int dex = (day - 1) * 7;
+            Sub0.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex));
+            Sub1.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+1));
+            Sub2.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+2));
+            Sub3.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+3));
+            Sub4.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+4));
+            Sub5.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+5));
+            Sub6.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+6));
         }
 
         public static int GetWeekOfYear(DateTime time)
