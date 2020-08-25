@@ -49,7 +49,7 @@ namespace FinalProject
             }
             catch (DirectoryNotFoundException)
             {
-                string path = $"../../Diary/{date}.txt";
+                string path = $"../../Diary/{Subject9.Content}.txt";
                 File.WriteAllLines(path, new string[0]);
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
