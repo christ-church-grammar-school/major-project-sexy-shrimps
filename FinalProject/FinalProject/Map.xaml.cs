@@ -32,5 +32,10 @@ namespace FinalProject
         {
 
         }
+
+        private void Back_Clicked(object sender, RoutedEventArgs e)
+        {
+            MapFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+        }
     }
 }

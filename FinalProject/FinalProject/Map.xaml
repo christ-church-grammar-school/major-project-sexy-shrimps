@@ -9,12 +9,18 @@
       Title="Map">
 
     <Grid>
-        
-        <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" >
-            <Frame.Background>
-                <ImageBrush ImageSource="Images/CCGS-Campus-Map.png"/>
-            </Frame.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="347*"/>
+            <RowDefinition Height="104*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" Source="Images/CCGS-Campus-Map.png" Grid.RowSpan="2" Stretch="Fill"/>
+        <Button x:Name="Return" Click="Back_Clicked" Content="Return" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676" Grid.Row="1"/>
+
+
+
+        <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" Grid.RowSpan="2" >
         </local:Frame>
+
     </Grid>
 
 </Page>
