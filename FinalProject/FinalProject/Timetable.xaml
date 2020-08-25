@@ -9,7 +9,102 @@
       Title="Timetable">
 
     <Grid Background="#FF161D74">
-        <Button x:Name="Return" Content="Home" HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" Click="Return_Clicked"/>
+        <Button x:Name="Return" Content="Home" HorizontalAlignment="Left" Height="29" Margin="665,5,0,0" VerticalAlignment="Top" Width="112" Click="Return_Clicked"/>
+        <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="80" Margin="0,40,0,0" VerticalAlignment="Top" Width="790"/>
+        <TextBlock HorizontalAlignment="Left" Height="61" Margin="10,45,0,0" TextWrapping="Wrap" Text="WEEK TIMETABLE" VerticalAlignment="Top" Width="767" FontWeight="Bold" FontSize="48"/>
+        <Grid HorizontalAlignment="Left" Height="265" Margin="10,140,0,0" VerticalAlignment="Top" Width="767">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="AA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="AJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="0" Content="Hey"/>
+            <Label x:Name="BA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="BJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="1" Content="Hey"/>
+            <Label x:Name="CA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="CJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="2" Content="Hey"/>
+            <Label x:Name="DA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="DJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="3" Content="Hey"/>
+            <Label x:Name="EA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="ED" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="EJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="4" Content="Hey"/>
+            <Label x:Name="FA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="FJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="5" Content="Hey"/>
+            <Label x:Name="GA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="6" Content="Hey"/>
+            <Label x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6" Content="Hey"/>
+        </Grid>
         <local:Frame Name="TimetableFrame" NavigationUIVisibility="Hidden" Navigated="TimetableFrame_Navigated" >
         </local:Frame>
     </Grid>
