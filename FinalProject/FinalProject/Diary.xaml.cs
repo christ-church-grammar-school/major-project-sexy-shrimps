@@ -56,6 +56,13 @@ namespace FinalProject
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
             }
+            catch (DirectoryNotFoundException)
+            {
+                string path = $"../../Diary/{date}.txt";
+                File.WriteAllLines(path, new string[0]);
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
         }
 
 
