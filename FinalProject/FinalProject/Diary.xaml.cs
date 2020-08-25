@@ -25,8 +25,6 @@ namespace FinalProject
         public Page1()
         {
             InitializeComponent();
-            rect1.Opacity = 0;
-
 
             DateTime date2 = DateTime.Now;
 
@@ -363,27 +361,73 @@ namespace FinalProject
         }
         private void subj2(object sender, RoutedEventArgs e)
         {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub2.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
 
         }
         private void subj3(object sender, RoutedEventArgs e)
         {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub3.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
 
         }
         private void subj4(object sender, RoutedEventArgs e)
         {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub4.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
 
         }
         private void subj5(object sender, RoutedEventArgs e)
         {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub5.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
 
         }
         private void subj6(object sender, RoutedEventArgs e)
         {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
 
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub6.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
         }
         private void subj7(object sender, RoutedEventArgs e)
         {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
 
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub7.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
         }
     }
 }
