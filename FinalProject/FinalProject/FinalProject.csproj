@@ -170,5 +170,8 @@
   <ItemGroup>
     <Resource Include="lines.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Diary\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
