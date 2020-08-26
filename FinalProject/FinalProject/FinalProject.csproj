@@ -161,5 +161,8 @@
   <ItemGroup>
     <Resource Include="Images\CCGS_logo2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Diary\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
