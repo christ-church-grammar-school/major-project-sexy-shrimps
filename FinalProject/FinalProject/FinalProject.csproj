@@ -83,8 +83,6 @@
     </Compile>
     <Compile Include="Timetable.xaml.cs">
       <DependentUpon>Timetable.xaml</DependentUpon>
-    <Compile Include="Subject.xaml.cs">
-      <DependentUpon>Subject.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -111,7 +109,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Timetable.xaml">
-    <Page Include="Subject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -163,15 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CCGS_logo2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\home.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="home.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lines.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
