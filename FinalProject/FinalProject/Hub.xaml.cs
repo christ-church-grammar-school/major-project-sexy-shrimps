@@ -125,6 +125,12 @@ namespace FinalProject
             HubFrame.Navigate(new Uri("Diary.xaml", UriKind.Relative));
         }
 
+        private void Map_Clicked(object sender, RoutedEventArgs e)
+        {
+            HubFrame.Navigate(new Uri("Map.xaml", UriKind.Relative));
+
+        }
+
         private void Timetable_Clicked(object sender, RoutedEventArgs e)
         {
             HubFrame.Navigate(new Uri("Timetable.xaml", UriKind.Relative));
