@@ -27,7 +27,10 @@ namespace FinalProject
         {
             InitializeComponent();
         }
-
+        private void Return_Clicked(object sender, RoutedEventArgs e)
+        {
+            MapFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
+        }
         private void MapFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
