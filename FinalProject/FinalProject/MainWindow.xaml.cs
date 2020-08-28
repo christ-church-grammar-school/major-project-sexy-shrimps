@@ -88,7 +88,7 @@ namespace FinalProject
                 tw.Close();
             }
 
-            string login = "../../Users/" + student.Text + ".txt";
+            string login = "../../Users/" + student.Text + "/student.txt";
             if (File.Exists(login))
             {
                 if (File.ReadLines(login).ElementAt(1) == password.Password)

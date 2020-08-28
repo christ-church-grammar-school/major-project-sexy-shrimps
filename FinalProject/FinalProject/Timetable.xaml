@@ -1,0 +1,215 @@
+﻿<Page x:Class="FinalProject.Timetable"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
+      mc:Ignorable="d" 
+      d:DesignHeight="415" d:DesignWidth="790"
+      Title="Timetable">
+
+    <Grid Background="#FF161D74">
+        <Button x:Name="Return" Content="Home" HorizontalAlignment="Left" Height="29" Margin="665,5,0,0" VerticalAlignment="Top" Width="112" Click="Return_Clicked"/>
+        <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="70" Margin="0,40,0,0" VerticalAlignment="Top" Width="790"/>
+        <TextBlock HorizontalAlignment="Left" Height="61" Margin="10,42.5,0,0" TextWrapping="Wrap" Text="WEEK TIMETABLE" VerticalAlignment="Top" Width="767" FontWeight="Bold" FontSize="48"/>
+        <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767"/>
+        <Grid HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle x:Name="box" Grid.ColumnSpan="10" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Fill="CornflowerBlue" Opacity="0.5" Width="76.7" HorizontalAlignment="Left" Margin="0,0"/>
+            <Label x:Name="Day1" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="6" Content="Day 1" FontWeight="Bold"/>
+            <Label x:Name="Day2" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="6" Content="Day 2" FontWeight="Bold"/>
+            <Label x:Name="Day3" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="6" Content="Day 3" FontWeight="Bold"/>
+            <Label x:Name="Day4" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="6" Content="Day 4" FontWeight="Bold"/>
+            <Label x:Name="Day5" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="6" Content="Day 5" FontWeight="Bold"/>
+            <Label x:Name="Day6" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="6" Content="Day 6" FontWeight="Bold"/>
+            <Label x:Name="Day7" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="6" Content="Day 7" FontWeight="Bold"/>
+            <Label x:Name="Day8" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="6" Content="Day 8" FontWeight="Bold"/>
+            <Label x:Name="Day9" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="6" Content="Day 9" FontWeight="Bold"/>
+            <Label x:Name="Day10" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6" Content="Day 10" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="265" Margin="10,140,0,0" VerticalAlignment="Top" Width="767">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle x:Name="AAA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="AAB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="AAC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="AAD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="AAE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="AAF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="AAG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="ABA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="ABB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="ABC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="ABD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="ABE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="ABF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="ABG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="ACA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="ACB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="ACC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="ACD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="ACE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="ACF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="ACG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="ADA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="ADB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="ADC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="ADD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="ADE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="ADF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="ADG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="AEA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="AEB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="AEC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="AED" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="AEE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="AEF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="AEG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="AFA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="AFB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="AFC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="AFD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="AFE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="AFF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="AFG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="AGA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="AGB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="AGC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="AGD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="AGE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="AGF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="AGG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="AHA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="AHB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="AHC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="AHD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="AHE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="AHF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="AHG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="AIA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="AIB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="AIC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="AID" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="AIE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="AIF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="AIG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="6" Fill="AliceBlue"/>
+            <Rectangle x:Name="AJA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle x:Name="AJB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="1" Fill="AliceBlue"/>
+            <Rectangle x:Name="AJC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="2" Fill="AliceBlue"/>
+            <Rectangle x:Name="AJD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="3" Fill="AliceBlue"/>
+            <Rectangle x:Name="AJE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="4" Fill="AliceBlue"/>
+            <Rectangle x:Name="AJF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="5" Fill="AliceBlue"/>
+            <Rectangle x:Name="AJG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6" Fill="AliceBlue"/>
+
+            <Label x:Name="AA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="0" Content="Loading..."/>
+            <Label x:Name="AJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="0" Content="Loading..."/>
+            
+            <Label x:Name="BA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="1" Content="Loading..."/>
+            <Label x:Name="BJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="1" Content="Loading..."/>
+            
+            <Label x:Name="CA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="2" Content="Loading..."/>
+            <Label x:Name="CJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="2" Content="Loading..."/>
+            
+            <Label x:Name="DA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="3" Content="Loading..."/>
+            <Label x:Name="DJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="3" Content="Loading..."/>
+            
+            <Label x:Name="EA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="ED" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="4" Content="Loading..."/>
+            <Label x:Name="EJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="4" Content="Loading..."/>
+            
+            <Label x:Name="FA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="5" Content="Loading..."/>
+            <Label x:Name="FJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="5" Content="Loading..."/>
+            
+            <Label x:Name="GA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GD" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GE" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GF" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="6" Content="Loading..."/>
+            <Label x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6" Content="Loading..."/>
+        </Grid>
+        <local:Frame Name="TimetableFrame" NavigationUIVisibility="Hidden" Navigated="TimetableFrame_Navigated" >
+        </local:Frame>
+    </Grid>
+</Page>

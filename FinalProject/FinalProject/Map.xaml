@@ -1,0 +1,18 @@
+﻿<Page x:Class="FinalProject.Map"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
+      mc:Ignorable="d" 
+      d:DesignHeight="415" d:DesignWidth="790"
+      Title="Map">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="CCGS-Campus-Map.png" Stretch="Fill"/>
+        <Button Content="Home" Click="Return_Clicked" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top" Width="103" Height="39"/>
+        <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" >
+        </local:Frame>
+    </Grid>
+
+</Page>

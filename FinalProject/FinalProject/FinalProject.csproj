@@ -81,6 +81,9 @@
     <Compile Include="Sports.xaml.cs">
       <DependentUpon>Sports.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Timetable.xaml.cs">
+      <DependentUpon>Timetable.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -101,7 +104,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sports.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Timetable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,6 +123,9 @@
     </Compile>
     <Compile Include="Hub.xaml.cs">
       <DependentUpon>Hub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Map.xaml.cs">
+      <DependentUpon>Map.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -146,10 +160,22 @@
     <Resource Include="Images\CCGSCrest.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Back.png" />
+    <Resource Include="Images\diary.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="CCGS_logo.png" />
+    <Resource Include="diary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CCGS_logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Diary\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CCGS-Campus-Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CCGS-Campus-Map.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
