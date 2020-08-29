@@ -88,7 +88,12 @@ namespace FinalProject
 
             if (dayOfWeek != 0 && dayOfWeek != 6)
             {
+                current.Opacity = 100;
                 getCurrentPeriod();
+            }
+            else
+            {
+                current.Opacity = 0;
             }
         }
 
