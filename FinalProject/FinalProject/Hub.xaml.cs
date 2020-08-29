@@ -82,6 +82,14 @@ namespace FinalProject
             Sub4.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+4));
             Sub5.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+5));
             Sub6.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+6));
+
+            DateTime dateValue = DateTime.Now;
+            int dayOfWeek = (int)dateValue.DayOfWeek;
+
+            if (dayOfWeek != 0 && dayOfWeek != 6)
+            {
+                getCurrentPeriod();
+            }
         }
 
         public static int GetWeekOfYear(DateTime time)
@@ -118,6 +126,66 @@ namespace FinalProject
                 }
             }
             return day;
+        }
+        public void getCurrentPeriod()
+        {
+            TimeSpan TutorialStart = new TimeSpan(8, 30, 0); 
+            TimeSpan TutorialEnd = new TimeSpan(8, 50, 0);
+            TimeSpan Period1Start = new TimeSpan(8, 55, 0);
+            TimeSpan Period1End = new TimeSpan(9, 45, 0);
+            TimeSpan Period2Start = new TimeSpan(9, 50, 0);
+            TimeSpan Period2End = new TimeSpan(10, 40, 0);
+            TimeSpan Period3Start = new TimeSpan(11, 00, 0);
+            TimeSpan Period3End = new TimeSpan(11, 50, 0);
+            TimeSpan Period4Start = new TimeSpan(11, 55, 0);
+            TimeSpan Period4End = new TimeSpan(12, 45, 0);
+            TimeSpan Period5Start = new TimeSpan(13, 25, 0);
+            TimeSpan Period5End = new TimeSpan(14, 15, 0);
+            TimeSpan Period6Start = new TimeSpan(14, 20, 0);
+            TimeSpan Period6End = new TimeSpan(15, 05, 0);
+            TimeSpan now = DateTime.Now.TimeOfDay;
+
+            current.Opacity = 100;
+
+            if ((now >= TutorialStart) && (now <= TutorialEnd))
+            {
+                current.Margin = new Thickness(0, 0, 0, 0);
+            }
+
+            else if ((now >= Period1Start) && (now <= Period1End))
+            {
+                current.Margin = new Thickness(72, 0, 0, 0);
+            }
+
+            else if ((now >= Period2Start) && (now <= Period2End))
+            {
+                current.Margin = new Thickness(144, 0, 0, 0);
+            }
+
+            else if ((now >= Period3Start) && (now <= Period3End))
+            {
+                current.Margin = new Thickness(216, 0, 0, 0);
+            }
+
+            else if ((now >= Period4Start) && (now <= Period4End))
+            {
+                current.Margin = new Thickness(288, 0, 0, 0);
+            }
+
+            else if ((now >= Period5Start) && (now <= Period5End))
+            {
+                current.Margin = new Thickness(360, 0, 0, 0);
+            }
+
+            else if((now >= Period6Start) && (now <= Period6End))
+            {
+                current.Margin = new Thickness(432, 0, 0, 0);
+            }
+
+            else
+            {
+                current.Opacity = 0;
+            }
         }
         
         private void Diary_Clicked(object sender, RoutedEventArgs e)

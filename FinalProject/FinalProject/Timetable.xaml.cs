@@ -25,9 +25,21 @@ namespace FinalProject
         public Timetable()
         {
             InitializeComponent();
-            LoadDay();
             LoadSubjects();
             LoadColors();
+
+            DateTime dateValue = DateTime.Now;
+            int dayOfWeek = (int)dateValue.DayOfWeek;
+
+            if (dayOfWeek != 0 && dayOfWeek != 6)
+            {
+                box.Opacity = 100;
+                LoadDay();
+            }
+            else
+            {
+                box.Opacity = 0;
+            }
         }
 
         public static int GetWeekOfYear(DateTime time)
