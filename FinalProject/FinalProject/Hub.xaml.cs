@@ -83,7 +83,13 @@ namespace FinalProject
             Sub5.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+5));
             Sub6.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex+6));
 
-            getCurrentPeriod();
+            DateTime dateValue = DateTime.Now;
+            int dayOfWeek = (int)dateValue.DayOfWeek;
+
+            if (dayOfWeek != 0 && dayOfWeek != 6)
+            {
+                getCurrentPeriod();
+            }
         }
 
         public static int GetWeekOfYear(DateTime time)
@@ -121,7 +127,6 @@ namespace FinalProject
             }
             return day;
         }
-
         public void getCurrentPeriod()
         {
             TimeSpan TutorialStart = new TimeSpan(8, 30, 0); 
