@@ -8,10 +8,9 @@
       d:DesignHeight="415" d:DesignWidth="790"
       Title="Timetable">
 
-    <Grid Background="#FF161D74">
-        <Button x:Name="Return" Content="Home" HorizontalAlignment="Left" Height="29" Margin="665,5,0,0" VerticalAlignment="Top" Width="112" Click="Return_Clicked"/>
-        <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="70" Margin="0,40,0,0" VerticalAlignment="Top" Width="790"/>
-        <TextBlock HorizontalAlignment="Left" Height="61" Margin="10,42.5,0,0" TextWrapping="Wrap" Text="WEEK TIMETABLE" VerticalAlignment="Top" Width="767" FontWeight="Bold" FontSize="48"/>
+    <Grid Background="#FF00305E">
+        <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="11" Margin="0,73,0,0" VerticalAlignment="Top" Width="352" RenderTransformOrigin="0.5,1.607"/>
+        <TextBlock Foreground="White" HorizontalAlignment="Left" Height="61" Margin="10,22.5,0,0" TextWrapping="Wrap" Text="Weekly Timetable" VerticalAlignment="Top" Width="767" FontWeight="Bold" FontSize="36"/>
         <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767"/>
         <Grid HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767">
             <Grid.ColumnDefinitions>
@@ -142,7 +141,7 @@
             <Label x:Name="AH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="0" Content="Loading..."/>
             <Label x:Name="AI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="0" Content="Loading..."/>
             <Label x:Name="AJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="0" Content="Loading..."/>
-            
+
             <Label x:Name="BA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="1" Content="Loading..."/>
             <Label x:Name="BB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1" Content="Loading..."/>
             <Label x:Name="BC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="1" Content="Loading..."/>
@@ -153,7 +152,7 @@
             <Label x:Name="BH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="1" Content="Loading..."/>
             <Label x:Name="BI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="1" Content="Loading..."/>
             <Label x:Name="BJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="1" Content="Loading..."/>
-            
+
             <Label x:Name="CA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="2" Content="Loading..."/>
             <Label x:Name="CB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="2" Content="Loading..."/>
             <Label x:Name="CC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="2" Content="Loading..."/>
@@ -164,7 +163,7 @@
             <Label x:Name="CH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="2" Content="Loading..."/>
             <Label x:Name="CI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="2" Content="Loading..."/>
             <Label x:Name="CJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="2" Content="Loading..."/>
-            
+
             <Label x:Name="DA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="3" Content="Loading..."/>
             <Label x:Name="DB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="3" Content="Loading..."/>
             <Label x:Name="DC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="3" Content="Loading..."/>
@@ -175,7 +174,7 @@
             <Label x:Name="DH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="3" Content="Loading..."/>
             <Label x:Name="DI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="3" Content="Loading..."/>
             <Label x:Name="DJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="3" Content="Loading..."/>
-            
+
             <Label x:Name="EA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="4" Content="Loading..."/>
             <Label x:Name="EB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="4" Content="Loading..."/>
             <Label x:Name="EC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="4" Content="Loading..."/>
@@ -186,7 +185,7 @@
             <Label x:Name="EH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="4" Content="Loading..."/>
             <Label x:Name="EI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="4" Content="Loading..."/>
             <Label x:Name="EJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="4" Content="Loading..."/>
-            
+
             <Label x:Name="FA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="5" Content="Loading..."/>
             <Label x:Name="FB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="5" Content="Loading..."/>
             <Label x:Name="FC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="5" Content="Loading..."/>
@@ -197,7 +196,7 @@
             <Label x:Name="FH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="5" Content="Loading..."/>
             <Label x:Name="FI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="5" Content="Loading..."/>
             <Label x:Name="FJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="5" Content="Loading..."/>
-            
+
             <Label x:Name="GA" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="6" Content="Loading..."/>
             <Label x:Name="GB" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="6" Content="Loading..."/>
             <Label x:Name="GC" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="6" Content="Loading..."/>
@@ -209,6 +208,9 @@
             <Label x:Name="GI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="6" Content="Loading..."/>
             <Label x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6" Content="Loading..."/>
         </Grid>
+        <Button Name="return" Width="50" Height="50" Margin="710,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="Images\home.png"></Image>
+        </Button>
         <local:Frame Name="TimetableFrame" NavigationUIVisibility="Hidden" Navigated="TimetableFrame_Navigated" >
         </local:Frame>
     </Grid>
