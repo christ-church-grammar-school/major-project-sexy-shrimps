@@ -163,9 +163,6 @@
     <Resource Include="Images\diary.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="diary.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\CCGS_logo2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -180,8 +177,11 @@
   <ItemGroup>
     <Resource Include="Images\home.png" />
   </ItemGroup>
-   <ItemGroup>
+  <ItemGroup>
     <Resource Include="Images\nexus_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pending.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
