@@ -10,7 +10,7 @@
 
     <Grid>
         <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="CCGS-Campus-Map.png" Stretch="Fill"/>
-        <Button Name="return" Width="64" Height="63" Margin="10,342,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
+        <Button Name="return" Width="50" Height="50" Margin="710,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
             <Image Source="Images\home.png"></Image>
         </Button>
         <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" >
