@@ -13,7 +13,7 @@
         <Image HorizontalAlignment="Center" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Source="Images/diary.jpg"/>
         <TextBox Name="Diary" HorizontalAlignment="Right" Height="301" Margin="0,60,438,0" VerticalAlignment="Top" Width="190" Background="#00000000" TextWrapping="Wrap" AcceptsReturn="True" FontSize="11.3" CaretBrush="Black" BorderBrush="Black"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Right" Margin="0,365,495,0" VerticalAlignment="Top" Width="75" Click="save"/>
-        <Button Name="Return" Width="64" Height="63" Margin="710,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
+        <Button Name="Return" Width="50" Height="50" Margin="710,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
             <Image Source="Images\home.png"></Image>
         </Button>
         <Rectangle x:Name="Sub0" Fill="#7FFF2104" Height="43" Margin="437.5,60,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top"/>
