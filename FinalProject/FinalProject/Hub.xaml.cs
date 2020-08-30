@@ -218,6 +218,11 @@ namespace FinalProject
         {
 
         }
+
+        private void Nexus_clicked(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://nexus.ccgs.wa.edu.au/");
+        }
     }
 }
 
