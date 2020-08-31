@@ -81,6 +81,9 @@
     <Compile Include="Sports.xaml.cs">
       <DependentUpon>Sports.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Subject.xaml.cs">
+      <DependentUpon>Subject.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Timetable.xaml.cs">
       <DependentUpon>Timetable.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
     <Page Include="Sports.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Subject.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Timetable.xaml">
       <SubType>Designer</SubType>
@@ -163,9 +170,6 @@
     <Resource Include="Images\diary.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="diary.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\CCGS_logo2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -180,8 +184,23 @@
   <ItemGroup>
     <Resource Include="Images\home.png" />
   </ItemGroup>
-   <ItemGroup>
+  <ItemGroup>
     <Resource Include="Images\nexus_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
