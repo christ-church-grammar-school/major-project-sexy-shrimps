@@ -5,16 +5,43 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="415" d:DesignWidth="790"
       Title="Hub">
 
-    <Grid Background="#FFB46161">
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="450" Margin="0,0,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.239,0.295"/>
-        <Button x:Name="Diary" Click="Diary_Clicked" Content="Diary" HorizontalAlignment="Left" Height="45" Margin="35,200,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676"/>
-        <Button x:Name="Timetable" Content="Timetable" HorizontalAlignment="Left" Height="45" Margin="35,265,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676"/>
-        <Button x:Name="Map" Click="Map_Clicked" Content="Map" HorizontalAlignment="Left" Height="45" Margin="35,330,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="370" Margin="250,40,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="520"/>
-        <Grid HorizontalAlignment="Left" Height="75" Margin="258,125,0,0" VerticalAlignment="Top" Width="504">
+    <Grid Background="Gold">
+
+        <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="415" Margin="-9,0,0,-13.8" Stroke="#FF00305E" VerticalAlignment="Top" Width="229" RenderTransformOrigin="0.239,0.295"/>
+
+
+        <Button x:Name="Diary" Foreground="Navy" Click="Diary_Clicked" Content="Diary" HorizontalAlignment="Left" Height="36" Margin="35,182,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="Gold"/>
+        <Button x:Name="Timetable" Foreground="Navy" Content="Timetable" HorizontalAlignment="Left" Height="36" Margin="35,236,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="Gold" Click="Timetable_Clicked"/>
+        <Button x:Name="Sport_Button" Foreground="Navy" Content="Sport" HorizontalAlignment="Left" Margin="35,344,0,0" VerticalAlignment="Top" Width="150" Height="36" Background="Gold" Click="Sport_Buton_clicked"/>
+        <Button x:Name="Map" Foreground="Navy" Click="Map_Clicked" Content="Map" HorizontalAlignment="Left" Height="36" Margin="35,291,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="Gold"/>
+        <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="370" Margin="245,22.5,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="520"/>
+
+
+        <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="20" Margin="253,105,0,0" VerticalAlignment="Top" Width="504" Stroke="Black" StrokeThickness="0.5"/>
+        <Grid HorizontalAlignment="Left" Height="20" Margin="253,105,0,0" VerticalAlignment="Top" Width="504">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle x:Name="current" Fill="#7F6495ED" HorizontalAlignment="Left" Height="20" Margin="0,0,0,0" VerticalAlignment="Top" Width="72.7" Stroke="Black" Grid.ColumnSpan="10"/>
+            <Label x:Name="P0" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Content="Tutorial" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="P1" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="0" Content="Period 1" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="P2" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="0" Content="Period 2" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="P3" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="0" Content="Period 3" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="P4" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="4" Grid.Row="0" Content="Period 4" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="P5" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="5" Grid.Row="0" Content="Period 5" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="P6" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="0" Content="Period 6" Margin="-2,-5,0,0" FontWeight="Bold"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="75" Margin="253,125,0,0" VerticalAlignment="Top" Width="504">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -27,31 +54,40 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Rectangle Grid.ColumnSpan="1" Fill="#FFFF2104" Height="75" Margin="0,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Rectangle Grid.ColumnSpan="2" Fill="#FFFF8000" Height="75" Margin="72,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Rectangle Grid.ColumnSpan="3" Fill="#FFE2FF00" Height="75" Margin="144,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Rectangle Grid.ColumnSpan="4" Fill="#FF3AFF00" Height="75" Margin="216,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Rectangle Grid.ColumnSpan="5" Fill="Cyan" Height="75" Margin="288,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Rectangle Grid.ColumnSpan="6" Fill="#FF002EFF" Height="75" Margin="360,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Rectangle Grid.ColumnSpan="7" Fill="#FF8500FF" Height="75" Margin="432,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="Sub0" Grid.ColumnSpan="1" Fill="#FFFF1D00" Height="75" Margin="0,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="Sub1" Grid.ColumnSpan="2" Fill="#FFFF8000" Height="75" Margin="72,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="Sub2" Grid.ColumnSpan="3" Fill="#FFE2FF00" Height="75" Margin="144,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="Sub3" Grid.ColumnSpan="4" Fill="#FF3AFF00" Height="75" Margin="216,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="Sub4" Grid.ColumnSpan="5" Fill="Cyan" Height="75" Margin="288,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="Sub5" Grid.ColumnSpan="6" Fill="#FF002EFF" Height="75" Margin="360,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle x:Name="Sub6" Grid.ColumnSpan="7" Fill="#FF8500FF" Height="75" Margin="432,0,0,0" Stroke="#00000000" Width="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock x:Name="sub1" Grid.ColumnSpan="1" HorizontalAlignment="Left" Margin="5,6,0,0" TextWrapping="Wrap" Text="Subject 1 " VerticalAlignment="Top" Width="62"/>
+            <TextBlock x:Name="sub2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="77,6,0,0" TextWrapping="Wrap" Text="Subject 2 " VerticalAlignment="Top" Width="62"/>
+            <TextBlock x:Name="sub3" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="149,6,0,0" TextWrapping="Wrap" Text="Subject 3 " VerticalAlignment="Top" Width="62"/>
+            <TextBlock x:Name="sub4" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="221,6,0,0" TextWrapping="Wrap" Text="Subject 4 " VerticalAlignment="Top" Width="62"/>
+            <TextBlock x:Name="sub5" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="293,6,0,0" TextWrapping="Wrap" Text="Subject 5 " VerticalAlignment="Top" Width="62"/>
+            <TextBlock x:Name="sub6" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="365,6,0,0" TextWrapping="Wrap" Text="Subject 6 " VerticalAlignment="Top" Width="62"/>
+            <TextBlock x:Name="sub7" Grid.ColumnSpan="7" HorizontalAlignment="Left" Margin="437,6,0,0" TextWrapping="Wrap" Text="Subject 7 " VerticalAlignment="Top" Width="62"/>
         </Grid>
-        <TextBlock x:Name="sub1" HorizontalAlignment="Left" Margin="263,135,0,0" TextWrapping="Wrap" Text="Subject 1 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock x:Name="sub2" HorizontalAlignment="Left" Margin="335,135,0,0" TextWrapping="Wrap" Text="Subject 2 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock x:Name="sub3" HorizontalAlignment="Left" Margin="407,135,0,0" TextWrapping="Wrap" Text="Subject 3 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock x:Name="sub4" HorizontalAlignment="Left" Margin="479,135,0,0" TextWrapping="Wrap" Text="Subject 4 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock x:Name="sub5" HorizontalAlignment="Left" Margin="551,135,0,0" TextWrapping="Wrap" Text="Subject 5 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock x:Name="sub6" HorizontalAlignment="Left" Margin="623,135,0,0" TextWrapping="Wrap" Text="Subject 6 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock x:Name="sub7" HorizontalAlignment="Left" Margin="695,135,0,0" TextWrapping="Wrap" Text="Subject 7 " VerticalAlignment="Top" Width="62"/>
-        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Margin="258,50,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
-        <TextBlock x:Name="TimetableDay" HorizontalAlignment="Left" Margin="265,100,0,0" TextWrapping="Wrap" Text="Timetable - Day _" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF111111"/>
-        <TextBlock HorizontalAlignment="Left" Margin="265,220,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF111111" RenderTransformOrigin="0.47,5.432"/>
-        <ListBox HorizontalAlignment="Left" Height="140" Margin="258,245,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-1.145,0.824">
+        <TextBlock x:Name="welcome" Foreground="White" HorizontalAlignment="Left" Margin="258,45,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
+        <TextBlock x:Name="TimetableDay" Foreground="White" HorizontalAlignment="Left" Margin="258,85,0,0" TextWrapping="Wrap" Text="Timetable - Day _" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="265,212,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="525,212,0,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
+        <ListBox HorizontalAlignment="Left" Height="140" Margin="258,236,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-1.145,0.824">
             <ListBoxItem Content="No Work"/>
             <ListBoxItem Content="Death"/>
         </ListBox>
-        <Image HorizontalAlignment="Left" Height="100" Margin="60,50,0,0" VerticalAlignment="Top" Width="100" Source="Images/CCGSCrest.jpg"/>
+        <Button x:Name="Nexus" Foreground="Navy" Click="Nexus_clicked"  HorizontalAlignment="Left" Height="90" Margin="509,236,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-0.487,1.596" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/nexus_logo.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="119" Margin="10,22,0,0" VerticalAlignment="Top" Width="195" Source="Images/CCGS_logo2.png"/>
+        <Label x:Name="Time" Foreground="White" HorizontalContentAlignment="Right" Content="Loading..." HorizontalAlignment="Left" Margin="665,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.737,0.692" Width="96"/>
         <local:Frame Name="HubFrame" NavigationUIVisibility="Hidden" Navigated="HubFrame_Navigated" >
         </local:Frame>
+
+
     </Grid>
 </Page>
 

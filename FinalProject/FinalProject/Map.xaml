@@ -5,22 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="415" d:DesignWidth="790"
       Title="Map">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="347*"/>
-            <RowDefinition Height="104*"/>
-        </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" Source="Images/CCGS-Campus-Map.png" Grid.RowSpan="2" Stretch="Fill"/>
-        <Button x:Name="Return" Click="Back_Clicked" Content="Return" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.487,1.596" Background="#FFD57676" Grid.Row="1"/>
-
-
-
-        <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" Grid.RowSpan="2" >
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="CCGS-Campus-Map.png" Stretch="Fill"/>
+        <Button Name="return" Width="50" Height="50" Margin="710,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="Images\home.png"></Image>
+        </Button>
+        <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" >
         </local:Frame>
-
     </Grid>
 
 </Page>
