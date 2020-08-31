@@ -69,6 +69,7 @@
             <Image HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="122" Source="Images/badminton_image.png" Margin="4,-141,0,0" Grid.Column="1"/>
 
         </Grid>
+        <Image HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="447" Source="pending.png" Margin="400,250,0,0"/>
         <local:Frame Name="SportsFrame" NavigationUIVisibility="Hidden" Navigated="SportsFrame_Navigated" >
         </local:Frame>
 
