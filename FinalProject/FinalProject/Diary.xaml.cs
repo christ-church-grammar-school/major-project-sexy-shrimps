@@ -29,22 +29,23 @@ namespace FinalProject
             string date = DateTime.Now.ToString("dd-MM-yyyy");
             date_top.Text = DateTime.Now.ToString("D");
 
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path = $"../../Users/{user}/Diary/{date}.txt";
+
             try
             {
-                string path = $"../../Diary/{date}.txt";
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs.Remove(hs.LastIndexOf(Environment.NewLine));
             }
             catch (FileNotFoundException)
             {
-                string path = $"../../Diary/{date}.txt";
                 File.WriteAllLines(path, new string[0]);
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
             }
             catch (ArgumentOutOfRangeException)
             {
-                string path = $"../../Diary/{date}.txt";
                 File.WriteAllLines(path, new string[0]);
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
@@ -56,7 +57,9 @@ namespace FinalProject
         private void save(object sender, RoutedEventArgs e)
         {
             string date = DateTime.Now.ToString("dd-MM-yyyy");
-            string path = $"../../Diary/{date}.txt";
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path = $"../../Users/{user}/Diary/{date}.txt";
 
 
             if (Diary.Text == "")
