@@ -10,17 +10,68 @@
 
     <Grid Background="#FF00305E">
         <Label Foreground ="White" BorderThickness ="15"  Content="Sport Fixtures" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" BorderBrush="#00FFD700"/>
-        <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="112" Margin="578,0,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="167"/>
+        <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="112" Margin="560,0,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="185"/>
 
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="450" Margin="711,0,-2,0" Stroke="#00000000" VerticalAlignment="Top" Width="91"/>
-        <Image HorizontalAlignment="Left" Height="96" Margin="596,0,-2,0" VerticalAlignment="Top" Width="206" Source="Images/CCGS_logo2.png"/>
+        <Image HorizontalAlignment="Left" Height="98" Margin="584,0,0,0" VerticalAlignment="Top" Width="206" Source="Images/CCGS_logo2.png"/>
         <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="342" Margin="734,85,-2,0" Stroke="#00000000" VerticalAlignment="Top" Width="68"/>
-        <Rectangle Fill="#0000305E" HorizontalAlignment="Left" Height="286" Margin="-89,-126,0,0" Stroke="Gold" StrokeThickness="15" VerticalAlignment="Top" Width="415"/>
-        <Image HorizontalAlignment="Left" Height="303" Margin="0,112,0,0" VerticalAlignment="Top" Width="790" Source="pending.png"/>
+        <Rectangle Fill="#0000305E" HorizontalAlignment="Left" Height="16" Margin="0,85,0,0" Stroke="Gold" StrokeThickness="15" VerticalAlignment="Top" Width="306" RenderTransformOrigin="0.492,-0.617"/>
+
         <Button Name="_return" Width="76" Height="72" Margin="10,200,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
             <Image Source="Images\home.png"></Image>
         </Button>
+        <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="20" Margin="154,130,0,0" VerticalAlignment="Top" Width="504" Stroke="Black" StrokeThickness="0.5"/>
+        <Grid HorizontalAlignment="Left" Height="20" Margin="154,130,0,0" VerticalAlignment="Top" Width="504">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <Rectangle x:Name="current" Fill="#7F6495ED" HorizontalAlignment="Left" Height="20" Margin="0,0,0,0" VerticalAlignment="Top" Width="72.7" Stroke="Black" Grid.ColumnSpan="10"/>
+            <Label x:Name="F0" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Content="Date/Time" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="F1" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="0" Content="Venue" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="F2" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="0" Content="Opponent" Margin="-2,-5,0,0" FontWeight="Bold"/>
+            <Label x:Name="F3" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="0" Content="Result" Margin="-2,-5,0,0" FontWeight="Bold"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="95" Margin="154,155,0,0" VerticalAlignment="Top" Width="504" RenderTransformOrigin="0.5,0.513">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Rectangle x:Name="Fixture_0" StrokeThickness="5" Grid.ColumnSpan="1" Height="95" Margin="0,0,0,0" Stroke="Black" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Fill="Gold" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-0.886"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.735"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle x:Name="Fixture_1" StrokeThickness="5" Fill="Gold" Height="95" Stroke="Black" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
+            <Rectangle x:Name="Fixture_2" StrokeThickness="5" Fill="Gold" Height="95" Stroke="Black" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="2"/>
+            <Rectangle x:Name="Fixture_3" StrokeThickness="5" Fill="Gold" Height="95" Stroke="Black" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="3"/>
+            <TextBlock x:Name="date_text" Foreground="Black" HorizontalAlignment="Left" Margin="10,25,0,0" TextWrapping="Wrap" Text="9:00 Sat 05/09/2020" VerticalAlignment="Top" FontFamily="Arial" Height="28" Width="116" FontWeight="Bold"/>
+            <TextBlock x:Name="venue_text" Foreground="Black" HorizontalAlignment="Left" Margin="35,21,0,0" TextWrapping="Wrap" Text="Away" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Column="1" Width="62" Height="18"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="Black" Margin="24,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432" Grid.Column="2" Width="60" Height="28"><Run Text="Aquinas"/><InlineUIContainer>
+                    <Image Height="100" Width="100"/>
+                </InlineUIContainer></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Foreground="Black" Margin="34,25,0,0" TextWrapping="Wrap" Text="TBC" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432" Grid.Column="3" Width="60" Height="28"/>
+            <Image HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="122" Source="Images/badminton_image.png" Margin="4,-141,0,0" Grid.Column="1"/>
+
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="447" Source="pending.png" Margin="400,250,0,0"/>
         <local:Frame Name="SportsFrame" NavigationUIVisibility="Hidden" Navigated="SportsFrame_Navigated" >
         </local:Frame>
+
     </Grid>
 </Page>
