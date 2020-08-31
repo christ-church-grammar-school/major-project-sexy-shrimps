@@ -37,10 +37,10 @@ We have not changed the purpose or functionality of our program.
 
 3. Which of the functional requirements have you personally implemented so far?
 ```
-Salter - Login, Mainscreen, Timetable, Many bug fixes, Github Manager, Design Manager.
+Salter - Login, Mainscreen, Timetable, Diary, Map, Many bug fixes, Github Manager, Design Manager, Project Lead.
 Breen - Diary and Time
-Burnet - Map
-Coveney - Assisted UI Design, Bug fixes
+Burnet - Map, Sport Fixtures
+Coveney - Assisted UI Design, Bug fixes,Sport Fixtures
 ```
 
 4. Which new features are you working on at the moment?
