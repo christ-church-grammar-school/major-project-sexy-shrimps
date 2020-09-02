@@ -9,7 +9,7 @@
       Title="Map">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="CCGS-Campus-Map.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\CCGS-Campus-Map.png" Stretch="Fill"/>
         <Button Name="return" Width="74" Height="74" Margin="10,331,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
             <Image Source="Images\home.png"></Image>
         </Button>
