@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
       d:DesignHeight="415" d:DesignWidth="790"
@@ -11,7 +12,7 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\CCGS-Campus-Map.png" Stretch="Fill"/>
         <Button Name="return" Width="74" Height="74" Margin="10,331,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
-            <Image Source="Images\home.png"></Image>
+            <materialDesign:PackIcon Kind="Home" Width="74" Height="74" Foreground="Gold"></materialDesign:PackIcon>
         </Button>
         <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" >
         </local:Frame>

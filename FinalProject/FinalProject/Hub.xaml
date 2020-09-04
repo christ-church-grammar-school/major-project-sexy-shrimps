@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
       d:DesignHeight="415" d:DesignWidth="790"
@@ -80,7 +81,7 @@
                 <DropShadowEffect/>
             </TextBlock.Effect>
         </TextBlock>
-        <TextBlock Foreground="White" Margin="525,212,232,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432">
+        <TextBlock Foreground="White" Margin="525,212,212,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432">
             <TextBlock.Effect>
                 <DropShadowEffect/>
             </TextBlock.Effect>
@@ -96,8 +97,8 @@
         </Button>
         <Image HorizontalAlignment="Left" Height="119" Margin="10,22,0,0" VerticalAlignment="Top" Width="195" Source="Images/CCGS_logo2.png"/>
         <Label x:Name="Time" Foreground="White" HorizontalContentAlignment="Right" Content="Loading..." HorizontalAlignment="Left" Margin="665,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.737,0.692" Width="96"/>
-        <Button Name="settings" Width="30" Height="30" Margin="175,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Settings_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
-            <Image Source="Images\settings.png"></Image>
+        <Button Name="settings" Width="40" Height="40" Margin="175,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Settings_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
+            <materialDesign:PackIcon Kind="Settings" Width="40" Height="40" Foreground="Gold"></materialDesign:PackIcon>
         </Button>
         <local:Frame Name="HubFrame" NavigationUIVisibility="Hidden" Navigated="HubFrame_Navigated" >
         </local:Frame>
