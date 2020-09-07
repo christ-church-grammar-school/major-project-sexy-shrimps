@@ -25,52 +25,76 @@ namespace FinalProject
         public Page1()
         {
             InitializeComponent();
+            rect1.Opacity = 0;
 
-            string date = DateTime.Now.ToString("dd-MM-yyyy");
-            date_top.Text = DateTime.Now.ToString("D");
+
+            DateTime date2 = DateTime.Now;
+
+
+
+            string date = date2.ToString("dd-MM-yyyy");
+            date_top.Text = date2.ToString("D");
+            LoadTimetable(date2);
+
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path = $"../../Users/{user}/Diary/{date}.txt";
+
 
             try
             {
-                string path = $"../../Diary/{date}.txt";
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs.Remove(hs.LastIndexOf(Environment.NewLine));
             }
             catch (FileNotFoundException)
             {
-                string path = $"../../Diary/{date}.txt";
                 File.WriteAllLines(path, new string[0]);
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
             }
             catch (ArgumentOutOfRangeException)
             {
-                string path = $"../../Diary/{date}.txt";
                 File.WriteAllLines(path, new string[0]);
                 string hs = File.ReadAllText(path);
                 Diary.Text = hs;
             }
-
-            LoadTimetable();
         }
 
-        private void save(object sender, RoutedEventArgs e)
+
+
+        private void LoadTimetable(DateTime date)
         {
-            string date = DateTime.Now.ToString("dd-MM-yyyy");
-            string path = $"../../Diary/{date}.txt";
+            int day = GetDayOfFortnight(date);
+            TimetableDay2.Text = "Timetable - Day " + day.ToString();
 
+            string path = "../../user.txt";
+            string user = File.ReadLines(path).First();
+            string path2 = "../../Users/" + user + "/student.txt";
 
-            if (Diary.Text == "")
+            int i = 5;
+            while (File.ReadLines(path2).ElementAt(i) != day.ToString())
             {
-                File.Delete(path);
+                i += 8;
+            }
+
+            sub1.Text = File.ReadLines(path2).ElementAt(i + 1);
+            sub2.Text = File.ReadLines(path2).ElementAt(i + 2);
+            sub3.Text = File.ReadLines(path2).ElementAt(i + 3);
+            sub4.Text = File.ReadLines(path2).ElementAt(i + 4);
+            sub5.Text = File.ReadLines(path2).ElementAt(i + 5);
+            sub6.Text = File.ReadLines(path2).ElementAt(i + 6);
+            sub7.Text = File.ReadLines(path2).ElementAt(i + 7);
+
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() == "Saturday" || date3.DayOfWeek.ToString() == "Sunday")
+            {
+                Weekend();
             }
             else
             {
-                File.WriteAllText(path, String.Empty);
-                TextWriter tw = new StreamWriter(path, true);
-                tw.WriteLine(Diary.Text);
-                tw.Close();
+                Weekday();
             }
-            
         }
 
         public static int GetWeekOfYear(DateTime time)
@@ -84,10 +108,10 @@ namespace FinalProject
             return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Saturday);
         }
 
-        public static int GetDayOfFortnight()
+        public static int GetDayOfFortnight(DateTime date)
         {
-            int weekOfYear = GetWeekOfYear(DateTime.Now) - 1;
-            DateTime now = DateTime.Now;
+            int weekOfYear = GetWeekOfYear(date) - 1;
+            DateTime now = date;
             int day = 0;
 
             if (weekOfYear % 2 == 0)
@@ -105,45 +129,120 @@ namespace FinalProject
                 {
                     day = 6;
                 }
+
             }
             return day;
         }
 
-        private void LoadTimetable()
+        public void Weekend()
         {
-            int day = GetDayOfFortnight();
+            rect1.Opacity = 0;
+            rect2.Opacity = 0;
+            rect3.Opacity = 0;
+            rect4.Opacity = 0;
+            rect5.Opacity = 0;
+            rect6.Opacity = 0;
+            rect7.Opacity = 0;
 
-            string path = "../../user.txt";
-            string user = File.ReadLines(path).First();
-            string path2 = "../../Users/" + user + "/student.txt";
-            string path3 = "../../Users/" + user + "/color.txt";
+            sub1.Opacity = 0;
+            sub2.Opacity = 0;
+            sub3.Opacity = 0;
+            sub4.Opacity = 0;
+            sub5.Opacity = 0;
+            sub6.Opacity = 0;
+            sub7.Opacity = 0;
 
-            int i = 5;
-            while (File.ReadLines(path2).ElementAt(i) != day.ToString())
+            TimetableDay2.Opacity = 0;
+
+            Button1.Opacity = 0;
+            Button2.Opacity = 0;
+            Button3.Opacity = 0;
+            Button4.Opacity = 0;
+            Button5.Opacity = 0;
+            Button6.Opacity = 0;
+            Button7.Opacity = 0;
+        }
+
+        private void Weekday()
+        {
+            rect1.Opacity = 1;
+            rect2.Opacity = 1;
+            rect3.Opacity = 1;
+            rect4.Opacity = 1;
+            rect5.Opacity = 1;
+            rect6.Opacity = 1;
+            rect7.Opacity = 1;
+
+            sub1.Opacity = 1;
+            sub2.Opacity = 1;
+            sub3.Opacity = 1;
+            sub4.Opacity = 1;
+            sub5.Opacity = 1;
+            sub6.Opacity = 1;
+            sub7.Opacity = 1;
+
+            TimetableDay2.Opacity = 1;
+
+            Button1.Opacity = 0.25;
+            Button2.Opacity = 0.25;
+            Button3.Opacity = 0.25;
+            Button4.Opacity = 0.25;
+            Button5.Opacity = 0.25;
+            Button6.Opacity = 0.25;
+            Button7.Opacity = 0.25;
+        }
+
+
+
+
+
+
+
+        private void save(object sender, RoutedEventArgs e)
+        {
+            DateTime date2 = Convert.ToDateTime(date_top.Text);
+            string date = date2.ToString("dd-MM-yyyy");
+
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path = $"../../Users/{user}/Diary/{date}.txt";
+
+
+            if (Diary.Text == "")
             {
-                i += 8;
+                File.Delete(path);
+            }
+            else
+            {
+                File.WriteAllText(path, String.Empty);
+                TextWriter tw = new StreamWriter(path, true);
+                tw.WriteLine(Diary.Text);
+                tw.Close();
             }
 
-            sub1.Text = File.ReadLines(path2).ElementAt(i + 1);
-            sub2.Text = File.ReadLines(path2).ElementAt(i + 2);
-            sub3.Text = File.ReadLines(path2).ElementAt(i + 3);
-            sub4.Text = File.ReadLines(path2).ElementAt(i + 4);
-            sub5.Text = File.ReadLines(path2).ElementAt(i + 5);
-            sub6.Text = File.ReadLines(path2).ElementAt(i + 6);
-            sub7.Text = File.ReadLines(path2).ElementAt(i + 7);
-
-            int dex = (day - 1) * 7;
-            Sub0.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex));
-            Sub1.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex + 1));
-            Sub2.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex + 2));
-            Sub3.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex + 3));
-            Sub4.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex + 4));
-            Sub5.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex + 5));
-            Sub6.Fill = (SolidColorBrush)new BrushConverter().ConvertFromString(File.ReadLines(path3).ElementAt(dex + 6));
         }
 
         private void Return_Clicked(object sender, RoutedEventArgs e)
         {
+            DateTime date2 = Convert.ToDateTime(date_top.Text);
+            string date = date2.ToString("dd-MM-yyyy");
+
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path = $"../../Users/{user}/Diary/{date}.txt";
+
+
+            if (Diary.Text == "")
+            {
+                File.Delete(path);
+            }
+            else
+            {
+                File.WriteAllText(path, String.Empty);
+                TextWriter tw = new StreamWriter(path, true);
+                tw.WriteLine(Diary.Text);
+                tw.Close();
+            }
             DiaryFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
         }
 
@@ -151,5 +250,193 @@ namespace FinalProject
         {
 
         }
+
+        private void Next(object sender, RoutedEventArgs e)
+        {
+            DateTime date4 = Convert.ToDateTime(date_top.Text);
+            string date5 = date4.ToString("dd-MM-yyyy");
+
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path2 = $"../../Users/{user}/Diary/{date5}.txt";
+
+
+            if (Diary.Text == "")
+            {
+                File.Delete(path2);
+            }
+            else
+            {
+                File.WriteAllText(path2, String.Empty);
+                TextWriter tw = new StreamWriter(path2, true);
+                tw.WriteLine(Diary.Text);
+                tw.Close();
+            }
+
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+            TimeSpan span = new TimeSpan(1, 0, 0, 0, 0);
+            DateTime date2 = date3 + span;
+
+
+
+            string date = date2.ToString("dd-MM-yyyy");
+            date_top.Text = date2.ToString("D");
+            LoadTimetable(date2);
+
+            string path = $"../../Users/{user}/Diary/{date}.txt";
+
+            try
+            {
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs.Remove(hs.LastIndexOf(Environment.NewLine));
+            }
+            catch (FileNotFoundException)
+            {
+                File.WriteAllLines(path, new string[0]);
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                File.WriteAllLines(path, new string[0]);
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
+        }
+
+        private void Previous(object sender, RoutedEventArgs e)
+        {
+            DateTime date4 = Convert.ToDateTime(date_top.Text);
+            string date5 = date4.ToString("dd-MM-yyyy");
+
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path2 = $"../../Users/{user}/Diary/{date5}.txt";
+
+
+            if (Diary.Text == "")
+            {
+                File.Delete(path2);
+            }
+            else
+            {
+                File.WriteAllText(path2, String.Empty);
+                TextWriter tw = new StreamWriter(path2, true);
+                tw.WriteLine(Diary.Text);
+                tw.Close();
+            }
+
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+            TimeSpan span = new TimeSpan(1, 0, 0, 0, 0);
+            DateTime date2 = date3 - span;
+
+
+            string date = date2.ToString("dd-MM-yyyy");
+            date_top.Text = date2.ToString("D");
+            LoadTimetable(date2);
+
+            string path = $"../../Users/{user}/Diary/{date}.txt";
+
+
+
+            try
+            {
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs.Remove(hs.LastIndexOf(Environment.NewLine));
+            }
+            catch (FileNotFoundException)
+            {
+                File.WriteAllLines(path, new string[0]);
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                File.WriteAllLines(path, new string[0]);
+                string hs = File.ReadAllText(path);
+                Diary.Text = hs;
+            }
+        }
+
+        private void subj1(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub1.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
+        private void subj2(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub2.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
+        private void subj3(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub3.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
+        private void subj4(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub4.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
+        private void subj5(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub5.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
+        private void subj6(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub6.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
+        private void subj7(object sender, RoutedEventArgs e)
+        {
+            DateTime date3 = Convert.ToDateTime(date_top.Text);
+
+            if (date3.DayOfWeek.ToString() != "Saturday" && date3.DayOfWeek.ToString() != "Sunday")
+            {
+                string subject = sub7.Text;
+                Subject newpage = new Subject(subject);
+                this.NavigationService.Navigate(newpage, subject);
+            }
+        }
     }
 }
+
+
+
