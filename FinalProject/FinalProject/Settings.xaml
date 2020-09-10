@@ -10,6 +10,8 @@
 
     <Grid>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="300" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="600"/>
+        <Label x:Name="txtLat" Content="Label" HorizontalAlignment="Left" Height="74" Margin="278,198,0,0" VerticalAlignment="Top" Width="212"/>
+        <Label x:Name="txtLong" Content="Label" HorizontalAlignment="Left" Height="74" Margin="278,254,0,0" VerticalAlignment="Top" Width="212"/>
 
     </Grid>
 </Page>

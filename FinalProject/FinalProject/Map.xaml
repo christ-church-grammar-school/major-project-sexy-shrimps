@@ -10,7 +10,34 @@
       Title="Map">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\CCGS-Campus-Map.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\background.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\grass.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Pool.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Senior.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Nets.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Junior.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\B.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\F.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\J.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\I.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\H.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\E.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\C.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\G.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\D.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\V.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\W.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\K.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\L.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Q.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\M.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\T.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\S.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\R.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\P.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\N.png" Stretch="Fill" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\All.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Labels.png" Stretch="Fill"/>
         <Button Name="return" Width="74" Height="74" Margin="10,331,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
             <materialDesign:PackIcon Kind="Home" Width="74" Height="74" Foreground="Gold"></materialDesign:PackIcon>
         </Button>

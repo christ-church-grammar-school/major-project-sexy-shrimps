@@ -60,6 +60,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Device" />
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http.Extensions, Version=2.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
@@ -86,6 +87,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Homework.xaml.cs">
+      <DependentUpon>Homework.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -119,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Map.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Homework.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -191,12 +199,6 @@
     <Folder Include="Diary\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\CCGS-Campus-Map.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\home.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\nexus_logo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -206,10 +208,91 @@
     <Resource Include="Images\badminton_image.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\settings.png" />
+    <Resource Include="Images\pending.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\pending.png" />
+    <Resource Include="Images\Map\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\V.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\Pool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\Senior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\Nets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\Junior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\Q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\Labels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\All.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.3.1.3\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.1.3\build\MaterialDesignThemes.targets')" />
