@@ -116,5 +116,11 @@ namespace FinalProject
         {
 
         }
+
+        private void New_User_Click(object sender, RoutedEventArgs e)
+        {
+            UsInfo win2 = new UsInfo();
+            win2.Show();
+        }
     }
 }
