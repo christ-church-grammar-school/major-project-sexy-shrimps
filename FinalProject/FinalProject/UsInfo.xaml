@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
         Title="UsInfo" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="187,0,0,0.5">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/CCGS.png"/>
+        </Grid.Background>
+
     </Grid>
 </Window>

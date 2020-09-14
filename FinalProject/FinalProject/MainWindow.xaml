@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="New_User"  Content="New Student" HorizontalAlignment="Left" Margin="139,310,0,0" VerticalAlignment="Top" Width="76" Height="18" Background="White" Foreground="#FF252526" BorderBrush="Black" FontSize="10"/>
+        <Button x:Name="New_User"  Content="New Student" HorizontalAlignment="Left" Margin="139,310,0,0" VerticalAlignment="Top" Width="76" Height="18" Background="White" Foreground="#FF252526" BorderBrush="Black" FontSize="10" Click="User_win"/>
 
         <Image HorizontalAlignment="Left" Height="450" Margin="220,0,0,0" VerticalAlignment="Top" Width="575" Source="Images/CCGS.png" Stretch="Fill"/>
         <Label Name="Date" Content="Date" HorizontalAlignment="Left" Height="40" Margin="5,10,0,0" VerticalAlignment="Top" Width="176"/>
