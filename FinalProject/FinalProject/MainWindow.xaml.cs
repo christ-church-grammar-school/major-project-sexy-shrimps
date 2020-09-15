@@ -121,7 +121,7 @@ namespace FinalProject
 
         private void User_win(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Button workey");
+            
             UsInfo win2 = new UsInfo();
             win2.Show();
         }
