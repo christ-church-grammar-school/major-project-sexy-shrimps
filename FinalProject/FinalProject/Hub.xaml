@@ -74,8 +74,8 @@
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="265,212,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
         <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="525,212,0,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
         <ListBox HorizontalAlignment="Left" Height="140" Margin="258,236,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-1.145,0.824">
-            <ListBoxItem Content="This is under development"/>
-            <ListBoxItem Content="Death"/>
+            <ListBoxItem Content="Find Mr Nolans Address"/>
+            <ListBoxItem Content="Finish School"/>
         </ListBox>
         <Button x:Name="Nexus" Foreground="Navy" Click="Nexus_clicked"  HorizontalAlignment="Left" Height="90" Margin="509,236,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-0.487,1.596" BorderBrush="{x:Null}">
             <Button.Background>

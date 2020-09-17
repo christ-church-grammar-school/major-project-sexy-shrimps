@@ -21,8 +21,8 @@
                 <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions >
-            <Rectangle x:Name="box" Grid.ColumnSpan="10" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Fill="CornflowerBlue" Opacity="0.5" Width="76.7" HorizontalAlignment="Left" Margin="0,0"/>
-            <Label x:Name="Day1" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="0" Grid.Row="6" Content="Day 1" FontWeight="Bold"/>
+            <Rectangle x:Name="box" Grid.ColumnSpan="10" Grid.RowSpan="1" Grid.Column="0" Grid.Row="0" Fill="CornflowerBlue" Opacity="0.5" Width="505" HorizontalAlignment="Left" Margin="0,0"/>
+            <Label x:Name="Day1" Grid.ColumnSpan="2" Grid.RowSpan="1" Grid.Column="0" Content="Day 1" FontWeight="Bold" Margin="0,0,50,0"/>
             <Label x:Name="Day2" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="1" Grid.Row="6" Content="Day 2" FontWeight="Bold"/>
             <Label x:Name="Day3" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="2" Grid.Row="6" Content="Day 3" FontWeight="Bold"/>
             <Label x:Name="Day4" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Grid.Row="6" Content="Day 4" FontWeight="Bold"/>
