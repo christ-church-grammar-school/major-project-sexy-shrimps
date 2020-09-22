@@ -204,7 +204,15 @@
             <TextBox x:Name="GI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="6"  />
             <Label x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6"  />
         </Grid>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="-208,334,0,0" VerticalAlignment="Top" Width="56" Height="22" Background="#FF097AAA" Foreground="#FF7A1A81" BorderBrush="{x:Null}"/>
+        <Button x:Name="save_btn" Content="Save" HorizontalAlignment="Left" Margin="-208,334,0,0" VerticalAlignment="Top" Width="56" Height="22" Background="#FF097AAA" Foreground="#FF7A1A81" BorderBrush="{x:Null}" RenderTransformOrigin="0.679,-0.977" Click="save_clicked"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="student_name" HorizontalAlignment="Left" Height="28" Margin="-246,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="student_password" HorizontalAlignment="Left" Height="24" Margin="-246,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-246,33,0,0" TextWrapping="Wrap" Text="Student Details:" VerticalAlignment="Top" Height="30" Width="138" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-246,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run FontWeight="Bold" FontSize="14" Text="Name"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="-246,176,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="student_id" HorizontalAlignment="Left" Height="22" Margin="-246,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-246,78,0,0" TextWrapping="Wrap" Text="Student ID:" VerticalAlignment="Top" Height="20" Width="102" FontSize="14" FontWeight="Bold"/>
     </Grid>
 
 </Window>

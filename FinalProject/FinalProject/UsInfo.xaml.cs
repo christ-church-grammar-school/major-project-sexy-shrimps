@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,8 +25,23 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+ 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void save_clicked(object sender, RoutedEventArgs e)
+        {
+            string login = "../../Users/" + student_id.Text;
+            if (Directory.Exists(login))
+            {
+                this.Close();
+                return;
+            }
+            DirectoryInfo di = Directory.CreateDirectory(login);
+
+
 
             this.Close();
         }
