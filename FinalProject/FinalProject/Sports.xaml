@@ -60,18 +60,21 @@
             <Rectangle x:Name="Fixture_1" StrokeThickness="5" Fill="Gold" Height="95" Stroke="Black" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
             <Rectangle x:Name="Fixture_2" StrokeThickness="5" Fill="Gold" Height="95" Stroke="Black" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="2"/>
             <Rectangle x:Name="Fixture_3" StrokeThickness="5" Fill="Gold" Height="95" Stroke="Black" Width="126" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="3"/>
-            <TextBlock x:Name="date_text" Foreground="Black" HorizontalAlignment="Left" Margin="10,25,0,0" TextWrapping="Wrap" Text="9:00 Sat 05/09/2020" VerticalAlignment="Top" FontFamily="Arial" Height="28" Width="116" FontWeight="Bold"/>
-            <TextBlock x:Name="venue_text" Foreground="Black" HorizontalAlignment="Left" Margin="35,21,0,0" TextWrapping="Wrap" Text="Away" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Column="1" Width="62" Height="18"/>
-            <TextBlock HorizontalAlignment="Left" Foreground="Black" Margin="24,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432" Grid.Column="2" Width="60" Height="28"><Run Text="Aquinas"/><InlineUIContainer>
+            <TextBlock x:Name="date_text" Foreground="Black" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="loading..." VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Width="106" Height="75"/>
+            <TextBlock x:Name="venue_text" Foreground="Black" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="loading..." VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Column="1" Width="106" Height="75"/>
+            <TextBlock x:Name="opponent_text" HorizontalAlignment="Left" Foreground="Black" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432" Grid.Column="2" Width="106" Height="75"><Run Text="loading..."/><InlineUIContainer>
                     <Image Height="100" Width="100"/>
                 </InlineUIContainer></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Foreground="Black" Margin="34,25,0,0" TextWrapping="Wrap" Text="TBC" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432" Grid.Column="3" Width="60" Height="28"/>
+            <TextBlock x:Name="result_text" HorizontalAlignment="Left" Foreground="Black" Margin="10,10,0,0" TextWrapping="Wrap" Text="loading..." VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432" Grid.Column="3" Width="106" Height="75"/>
             <Image HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="122" Source="Images/badminton_image.png" Margin="4,-141,0,0" Grid.Column="1"/>
 
         </Grid>
-        <Image HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="447" Source="pending.png" Margin="400,250,0,0"/>
+
         <local:Frame Name="SportsFrame" NavigationUIVisibility="Hidden" Navigated="SportsFrame_Navigated" >
         </local:Frame>
+
+
+
 
     </Grid>
 </Page>
