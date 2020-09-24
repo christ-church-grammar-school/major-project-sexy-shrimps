@@ -8,8 +8,18 @@
       d:DesignHeight="415" d:DesignWidth="790"
       Title="Sports">
 
-    <Grid Background="#FF00305E">
-        <Label Foreground ="White" BorderThickness ="15"  Content="Sport Fixtures" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" BorderBrush="#00FFD700"/>
+    <Grid>
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="White" Offset="0.0" />
+                    <GradientStop Color="WhiteSmoke" Offset="0.25" />
+                    <GradientStop Color="LightBlue" Offset="0.75" />
+                    <GradientStop Color="LightSkyBlue" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Foreground ="Black" BorderThickness ="15"  Content="Sport Fixtures" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" BorderBrush="#00FFD700"/>
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="112" Margin="560,0,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="185"/>
 
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="450" Margin="711,0,-2,0" Stroke="#00000000" VerticalAlignment="Top" Width="91"/>
