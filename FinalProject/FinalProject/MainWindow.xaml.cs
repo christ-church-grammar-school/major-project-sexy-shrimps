@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.IO;
+using HtmlAgilityPack;
 
 namespace FinalProject
 {
@@ -87,6 +88,15 @@ namespace FinalProject
                 tw.WriteLine("..");
                 tw.Close();
             }
+            var html = @"https://nexus.ccgs.wa.edu.au/calendar";
+
+            HtmlWeb web = new HtmlWeb();
+
+            var htmlDoc = web.Load(html);
+
+            var node = htmlDoc.DocumentNode.SelectSingleNode("//head/title");
+
+            Console.WriteLine("Node Name: " + node.Name + "\n" + node.OuterHtml);
 
             string login = "../../Users/" + student.Text + "/student.txt";
             if (File.Exists(login))
