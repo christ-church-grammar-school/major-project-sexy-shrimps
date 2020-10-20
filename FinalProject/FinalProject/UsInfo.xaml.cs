@@ -12,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 
 namespace FinalProject
 {
@@ -23,6 +25,10 @@ namespace FinalProject
         public UsInfo()
         {
             InitializeComponent();
+            IWebDriver driver = new FirefoxDriver();
+            driver.Url = "nexus.ccgs.wa.edu.au";
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait(TimeSpan.FromSeconds(10));
         }
 
  
@@ -30,7 +36,7 @@ namespace FinalProject
         {
 
         }
-
+ 
         private void save_clicked(object sender, RoutedEventArgs e)
         {
             string login = "../../Users/" + student_id.Text;

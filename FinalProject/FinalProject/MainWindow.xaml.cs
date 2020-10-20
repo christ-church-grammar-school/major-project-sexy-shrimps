@@ -14,19 +14,26 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.IO;
-using HtmlAgilityPack;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Chrome;
+
+
 
 namespace FinalProject
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+        {   
             InitializeComponent();
-
+            IWebDriver driver = new ChromeDriver();
+            IWebElement element = driver.FindElement(By.Id("cheese"));
             DispatcherTimer LiveTime = new DispatcherTimer();
             LiveTime.Interval = TimeSpan.FromSeconds(1);
             LiveTime.Tick += timer_Tick;
@@ -88,15 +95,9 @@ namespace FinalProject
                 tw.WriteLine("..");
                 tw.Close();
             }
-            var html = @"https://nexus.ccgs.wa.edu.au/calendar";
+           
 
-            HtmlWeb web = new HtmlWeb();
-
-            var htmlDoc = web.Load(html);
-
-            var node = htmlDoc.DocumentNode.SelectSingleNode("//head/title");
-
-            Console.WriteLine("Node Name: " + node.Name + "\n" + node.OuterHtml);
+           
 
             string login = "../../Users/" + student.Text + "/student.txt";
             if (File.Exists(login))
