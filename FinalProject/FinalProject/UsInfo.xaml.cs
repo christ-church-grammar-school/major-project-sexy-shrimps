@@ -25,10 +25,7 @@ namespace FinalProject
         public UsInfo()
         {
             InitializeComponent();
-            IWebDriver driver = new FirefoxDriver();
-            driver.Url = "nexus.ccgs.wa.edu.au";
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait(TimeSpan.FromSeconds(10));
+            
         }
 
  
@@ -42,6 +39,12 @@ namespace FinalProject
             string login = "../../Users/" + student_id.Text;
             string student_path = "../../Users/" + student_id.Text + "/student.txt";
             string studentpath_color = "../../Users/" + student_id.Text + "/color.txt";
+            IWebDriver driver = new FirefoxDriver();
+            driver.Url = "http://nexus.ccgs.wa.edu.au";
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait.
+            driver.FindElement(By.Id("i0116")).SendKeys("1013483" + Keys.Enter);
+            driver.FindElement(By.Id("i0118")).SendKeys("Houseglen22" + Keys.Enter);
             if (Directory.Exists(login))
             {
                 this.Close();
