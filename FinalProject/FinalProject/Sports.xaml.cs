@@ -76,7 +76,6 @@ namespace FinalProject
             }
         }
 
-
         private void ScrapeWebsite(string link)
         {
             HtmlWeb web = new HtmlWeb();
@@ -120,6 +119,11 @@ namespace FinalProject
             {
                 i = fixtures.Length - 1;
             }
+
+            if (i < 0)
+            {
+                i = 0;
+            }
             HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
             if (opponent[0].InnerText == "CCGS BYE")
             {
@@ -127,11 +131,14 @@ namespace FinalProject
                 venue_text.Text = "";
                 opponent_text.Text = "CCGS BYE";
                 result_text.Text = "";
+                number.Text = i.ToString();
+                link2.Text = link;
             }
             else
             {
                 HtmlNode[] venue = fixtures[i].SelectNodes(".//a[@class='pu_MapLink']").ToArray();
                 HtmlNode[] result = fixtures[i].SelectNodes(".//td[@style='white-space:nowrap']").ToArray();
+
 
                 List<string> result2 = result[0].InnerHtml.Split(new string[] { "<br>" }, StringSplitOptions.None).Select(s => HtmlNode.CreateNode($"<span>{s}</span>").InnerText).ToList();
 
@@ -139,6 +146,8 @@ namespace FinalProject
                 venue_text.Text = venue[0].GetAttributeValue("title", string.Empty);
                 opponent_text.Text = opponent[0].InnerText;
                 result_text.Text = $"{result2[0]}\n{result2[1]}";
+                number.Text = i.ToString();
+                link2.Text = link;
             }
             
         }
@@ -150,6 +159,96 @@ namespace FinalProject
         private void SportsFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+        private void previous_fixture(object sender, RoutedEventArgs e)
+        {
+            HtmlWeb web = new HtmlWeb();
+            HtmlDocument doc = web.Load(link2.Text);
+
+            int i = Convert.ToInt32(number.Text) - 1;
+
+            HtmlNode[] fixtures = doc.DocumentNode.SelectNodes(".//tr[@class='FixtureSummary']").ToArray();
+
+            if (i > fixtures.Length - 1)
+            {
+                i = fixtures.Length - 1;
+            }
+
+            if (i < 0)
+            {
+                i = 0;
+            }
+            HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
+            if (opponent[0].InnerText == "CCGS BYE")
+            {
+                date_text.Text = "";
+                venue_text.Text = "";
+                opponent_text.Text = "CCGS BYE";
+                result_text.Text = "";
+                number.Text = i.ToString();
+            }
+            else
+            {
+                HtmlNode[] venue = fixtures[i].SelectNodes(".//a[@class='pu_MapLink']").ToArray();
+                HtmlNode[] result = fixtures[i].SelectNodes(".//td[@style='white-space:nowrap']").ToArray();
+
+                HtmlNode[] date = doc.DocumentNode.SelectNodes(".//td[@style='white-space:nowrap; text-align:center']").ToArray();
+
+                List<string> date2 = date[i].InnerHtml.Split(new string[] { "<br>" }, StringSplitOptions.None).Select(s => HtmlNode.CreateNode($"<span>{s}</span>").InnerText).ToList();
+                List<string> result2 = result[0].InnerHtml.Split(new string[] { "<br>" }, StringSplitOptions.None).Select(s => HtmlNode.CreateNode($"<span>{s}</span>").InnerText).ToList();
+
+                date_text.Text = $"{date2[0]}\n{date2[1]}\n{date2[2]}";
+                venue_text.Text = venue[0].GetAttributeValue("title", string.Empty);
+                opponent_text.Text = opponent[0].InnerText;
+                result_text.Text = $"{result2[0]}\n{result2[1]}";
+                number.Text = i.ToString();
+            }
+        }
+
+        private void next_fixture(object sender, RoutedEventArgs e)
+        {
+            HtmlWeb web = new HtmlWeb();
+            HtmlDocument doc = web.Load(link2.Text);
+
+            int i = Convert.ToInt32(number.Text) + 1;
+
+            HtmlNode[] fixtures = doc.DocumentNode.SelectNodes(".//tr[@class='FixtureSummary']").ToArray();
+
+            if (i > fixtures.Length - 1)
+            {
+                i = fixtures.Length - 1;
+            }
+
+            if (i < 0)
+            {
+                i = 0;
+            }
+            HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
+            if (opponent[0].InnerText == "CCGS BYE")
+            {
+                date_text.Text = "";
+                venue_text.Text = "";
+                opponent_text.Text = "CCGS BYE";
+                result_text.Text = "";
+                number.Text = i.ToString();
+            }
+            else
+            {
+                HtmlNode[] venue = fixtures[i].SelectNodes(".//a[@class='pu_MapLink']").ToArray();
+                HtmlNode[] result = fixtures[i].SelectNodes(".//td[@style='white-space:nowrap']").ToArray();
+                HtmlNode[] date = doc.DocumentNode.SelectNodes(".//td[@style='white-space:nowrap; text-align:center']").ToArray();
+
+                List<string> date2 = date[i].InnerHtml.Split(new string[] { "<br>" }, StringSplitOptions.None).Select(s => HtmlNode.CreateNode($"<span>{s}</span>").InnerText).ToList();
+
+                List<string> result2 = result[0].InnerHtml.Split(new string[] { "<br>" }, StringSplitOptions.None).Select(s => HtmlNode.CreateNode($"<span>{s}</span>").InnerText).ToList();
+
+                date_text.Text = $"{date2[0]}\n{date2[1]}\n{date2[2]}";
+                venue_text.Text = venue[0].GetAttributeValue("title", string.Empty);
+                opponent_text.Text = opponent[0].InnerText;
+                result_text.Text = $"{result2[0]}\n{result2[1]}";
+                number.Text = i.ToString();
+            }
         }
     }
 }
