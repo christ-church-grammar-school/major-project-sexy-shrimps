@@ -69,8 +69,8 @@
             <Image HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="122" Source="Images/badminton_image.png" Margin="4,-141,0,0" Grid.Column="1"/>
 
         </Grid>
-        <Button Content="Previous Fixture" HorizontalAlignment="Left" Margin="200,300,0,0" VerticalAlignment="Top" Width="125" Height="40" BorderBrush="Black" BorderThickness="5" Background="#FFFFF1A8" FontWeight="Bold" Click="previous_fixture"/>
-        <Button Content="Next Fixture" HorizontalAlignment="Left" Margin="470,300,0,0" VerticalAlignment="Top" Width="125" Height="40" BorderBrush="Black" BorderThickness="5" Background="#FFFFF1A8" FontWeight="Bold" Click="next_fixture"/>
+        <Button x:Name="previous" Content="Previous Fixture" HorizontalAlignment="Left" Margin="200,300,0,0" VerticalAlignment="Top" Width="125" Height="40" BorderBrush="Black" BorderThickness="5" Background="#FFFFF1A8" FontWeight="Bold" Click="previous_fixture"/>
+        <Button x:Name="next" Content="Next Fixture" HorizontalAlignment="Left" Margin="470,300,0,0" VerticalAlignment="Top" Width="125" Height="40" BorderBrush="Black" BorderThickness="5" Background="#FFFFF1A8" FontWeight="Bold" Click="next_fixture"/>
         <TextBox x:Name="number" HorizontalAlignment="Left" Height="23" Margin="670,392,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Opacity="0"/>
         <TextBox x:Name="link2" HorizontalAlignment="Left" Height="23" Margin="670,392,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Opacity="0"/>
         <local:Frame Name="SportsFrame" NavigationUIVisibility="Hidden" Navigated="SportsFrame_Navigated" >

@@ -133,6 +133,16 @@ namespace FinalProject
                 result_text.Text = "";
                 number.Text = i.ToString();
                 link2.Text = link;
+
+                if (i == 0)
+                {
+                    previous.Opacity = 0;
+                }
+
+                if (i == fixtures.Length - 1)
+                {
+                    next.Opacity = 0;
+                }
             }
             else
             {
@@ -148,6 +158,16 @@ namespace FinalProject
                 result_text.Text = $"{result2[0]}\n{result2[1]}";
                 number.Text = i.ToString();
                 link2.Text = link;
+
+                if (i == 0)
+                {
+                    previous.Opacity = 0;
+                }
+
+                if (i == fixtures.Length - 1)
+                {
+                    next.Opacity = 0;
+                }
             }
             
         }
@@ -163,6 +183,8 @@ namespace FinalProject
 
         private void previous_fixture(object sender, RoutedEventArgs e)
         {
+            next.Opacity = 1;
+            previous.Opacity = 1;
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load(link2.Text);
 
@@ -187,6 +209,16 @@ namespace FinalProject
                 opponent_text.Text = "CCGS BYE";
                 result_text.Text = "";
                 number.Text = i.ToString();
+
+                if (i == 0)
+                {
+                    previous.Opacity = 0;
+                }
+
+                if (i == fixtures.Length - 1)
+                {
+                    next.Opacity = 0;
+                }
             }
             else
             {
@@ -203,11 +235,23 @@ namespace FinalProject
                 opponent_text.Text = opponent[0].InnerText;
                 result_text.Text = $"{result2[0]}\n{result2[1]}";
                 number.Text = i.ToString();
+
+                if (i == 0)
+                {
+                    previous.Opacity = 0;
+                }
+
+                if (i == fixtures.Length - 1)
+                {
+                    next.Opacity = 0;
+                }
             }
         }
 
         private void next_fixture(object sender, RoutedEventArgs e)
         {
+            next.Opacity = 1;
+            previous.Opacity = 1;
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load(link2.Text);
 
@@ -232,6 +276,16 @@ namespace FinalProject
                 opponent_text.Text = "CCGS BYE";
                 result_text.Text = "";
                 number.Text = i.ToString();
+
+                if (i == 0)
+                {
+                    previous.Opacity = 0;
+                }
+
+                if (i == fixtures.Length - 1)
+                {
+                    next.Opacity = 0;
+                }
             }
             else
             {
@@ -248,6 +302,16 @@ namespace FinalProject
                 opponent_text.Text = opponent[0].InnerText;
                 result_text.Text = $"{result2[0]}\n{result2[1]}";
                 number.Text = i.ToString();
+
+                if (i == 0)
+                {
+                    previous.Opacity = 0;
+                }
+
+                if (i == fixtures.Length - 1)
+                {
+                    next.Opacity = 0;
+                }
             }
         }
     }
