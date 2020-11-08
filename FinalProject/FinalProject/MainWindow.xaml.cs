@@ -17,7 +17,7 @@ using System.IO;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium.Chrome;
+
 
 
 
@@ -32,8 +32,7 @@ namespace FinalProject
         public MainWindow()
         {   
             InitializeComponent();
-            IWebDriver driver = new ChromeDriver();
-            IWebElement element = driver.FindElement(By.Id("cheese"));
+          
             DispatcherTimer LiveTime = new DispatcherTimer();
             LiveTime.Interval = TimeSpan.FromSeconds(1);
             LiveTime.Tick += timer_Tick;
