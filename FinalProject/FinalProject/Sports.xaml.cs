@@ -122,7 +122,7 @@ namespace FinalProject
                 string[] MonthNames = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
                 monthIndex = Array.IndexOf(MonthNames, desiredMonth) + 1;
 
-                DateTime date6 = Convert.ToDateTime($"{monthIndex.ToString()}/{date10[0].ToString()}/{date10[2].ToString()}");
+                DateTime date6 = Convert.ToDateTime($"{date10[0].ToString()}/{monthIndex.ToString()}/{date10[2].ToString()}");
 
                 DateTime datenow = DateTime.Today;///Convert.ToDateTime("01/01/2020")
                 TimeSpan span = new TimeSpan(2, 0, 0, 0, 0);
