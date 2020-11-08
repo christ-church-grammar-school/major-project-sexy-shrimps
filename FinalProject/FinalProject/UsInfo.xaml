@@ -202,7 +202,7 @@
             <TextBox x:Name="GG" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="6" Grid.Row="6"  />
             <TextBox x:Name="GH" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="7" Grid.Row="6"  />
             <TextBox x:Name="GI" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="8" Grid.Row="6"  />
-            <TextBox x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6"  />
+            <Label x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6"  />
         </Grid>
         <Button x:Name="save_btn" Content="Save" HorizontalAlignment="Left" Margin="-208,334,0,0" VerticalAlignment="Top" Width="56" Height="22" Background="#FF097AAA" Foreground="#FF7A1A81" BorderBrush="{x:Null}" RenderTransformOrigin="0.679,-0.977" Click="save_clicked"/>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
