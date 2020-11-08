@@ -20,7 +20,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="11" Margin="0,73,0,0" VerticalAlignment="Top" Width="352" RenderTransformOrigin="0.5,1.607"/>
+        <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="11" Margin="0,73,0,0" VerticalAlignment="Top" Width="352" RenderTransformOrigin="0.5,1.607"/>
         <TextBlock Foreground="Black" HorizontalAlignment="Left" Height="61" Margin="10,22.5,0,0" TextWrapping="Wrap" Text="Weekly Timetable" VerticalAlignment="Top" Width="767" FontWeight="Bold" FontSize="36"/>
         <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767"/>
         <Grid HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767">
@@ -220,7 +220,7 @@
             <Label x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6" Content="Loading..."/>
         </Grid>
         <Button Name="return" Width="50" Height="50" Margin="710,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
-            <materialDesign:PackIcon Kind="Home" Width="50" Height="50" Foreground="Gold"></materialDesign:PackIcon>
+            <materialDesign:PackIcon Kind="Home" Width="50" Height="50" Foreground="#FF00305E"></materialDesign:PackIcon>
         </Button>
         <local:Frame Name="TimetableFrame" NavigationUIVisibility="Hidden" Navigated="TimetableFrame_Navigated" >
         </local:Frame>

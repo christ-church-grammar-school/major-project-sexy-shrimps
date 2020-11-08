@@ -107,22 +107,10 @@
             <TextBlock x:Name="sub6" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="365,6,0,0" TextWrapping="Wrap" Text="Subject 6 " VerticalAlignment="Top" Width="62"/>
             <TextBlock x:Name="sub7" Grid.ColumnSpan="7" HorizontalAlignment="Left" Margin="437,6,0,0" TextWrapping="Wrap" Text="Subject 7 " VerticalAlignment="Top" Width="62"/>
         </Grid>
-        <TextBlock x:Name="welcome" Foreground="White" HorizontalAlignment="Left" Margin="258,45,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
-        <TextBlock x:Name="TimetableDay" Foreground="White" HorizontalAlignment="Left" Margin="258,85,0,0" TextWrapping="Wrap" Text="Timetable - Day _" VerticalAlignment="Top" FontWeight="Bold" FontSize="14">
-            <TextBlock.Effect>
-                <DropShadowEffect/>
-            </TextBlock.Effect>
-        </TextBlock>
-        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="265,212,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432">
-            <TextBlock.Effect>
-                <DropShadowEffect/>
-            </TextBlock.Effect>
-        </TextBlock>
-        <TextBlock Foreground="White" Margin="525,212,212,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432">
-            <TextBlock.Effect>
-                <DropShadowEffect/>
-            </TextBlock.Effect>
-        </TextBlock>
+        <TextBlock x:Name="welcome" Foreground="#FF747474" HorizontalAlignment="Left" Margin="258,45,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
+        <TextBlock x:Name="TimetableDay" Foreground="#FF747474" HorizontalAlignment="Left" Margin="258,85,0,0" TextWrapping="Wrap" Text="Timetable - Day _" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="#FF747474" Margin="265,212,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
+        <TextBlock Foreground="#FF747474" Margin="525,212,212,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
         <ListBox HorizontalAlignment="Left" Height="140" Margin="258,236,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-1.145,0.824">
             <ListBoxItem Content="This is under development"/>
             <ListBoxItem Content="Death"/>
@@ -133,7 +121,7 @@
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="119" Margin="10,22,0,0" VerticalAlignment="Top" Width="195" Source="Images/CCGS_logo2.png"/>
-        <Label x:Name="Time" Foreground="White" HorizontalContentAlignment="Right" Content="Loading..." HorizontalAlignment="Left" Margin="665,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.737,0.692" Width="96"/>
+        <Label x:Name="Time" Foreground="#FF747474" HorizontalContentAlignment="Right" Content="Loading..." HorizontalAlignment="Left" Margin="665,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.737,0.692" Width="96"/>
         <local:Frame Name="HubFrame" NavigationUIVisibility="Hidden" Navigated="HubFrame_Navigated" >
         </local:Frame>
 
