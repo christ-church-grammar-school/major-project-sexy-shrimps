@@ -3,7 +3,6 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
       d:DesignHeight="415" d:DesignWidth="785"
@@ -23,10 +22,9 @@
         <TextBox Name="Diary" HorizontalAlignment="Left" Height="301" Margin="236,60,0,0" VerticalAlignment="Top" Width="190" Background="#00000000" TextWrapping="Wrap" AcceptsReturn="True" FontSize="11.3" CaretBrush="Black" BorderBrush="Black" Grid.RowSpan="2"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="294,161,0,0" VerticalAlignment="Top" Width="74" Click="save" Grid.Row="1"/>
 
-        <Button Name="return" Width="100" Height="100" Margin="28.5,100,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
-            <materialDesign:PackIcon Kind="Home" Width="100" Height="100" Foreground="Gold"></materialDesign:PackIcon>
-        </Button>
-        
+        <Image HorizontalAlignment="Left" Height="100" Margin="28,100,0,0" VerticalAlignment="Top" Width="100" Source="home.png"/>
+        <Button x:Name="Return" HorizontalAlignment="Left" Height="100" Margin="28,100,0,0" VerticalAlignment="Top" Width="100" Click="Return_Clicked" Background="#00FFFFFF" BorderBrush="#00707070" Opacity="0.25"/>
+
         <Rectangle x:Name="rect1" Fill="#7FFF2104" Height="43" Margin="74,60,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
         <Rectangle x:Name="rect2" Fill="#7FFF8000" Height="43" Margin="74,103,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
         <Rectangle x:Name="rect3" Fill="#7FE2FF00" Height="43" Margin="74,146,0,0" Stroke="#000000" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
@@ -53,7 +51,7 @@
 
 
         <TextBlock x:Name="date_top" HorizontalAlignment="Left" Margin="236,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="190" TextAlignment="Center"/>
-        <Image HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="137" Source="Images\CCGS_logo2.png"/>
+        <Image HorizontalAlignment="Left" Height="119" Margin="10,10,0,0" VerticalAlignment="Top" Width="137" Source="CCGS_logo.png"/>
         <TextBlock x:Name="TimetableDay2" HorizontalAlignment="Left" Margin="74,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="190" TextAlignment="Center" Grid.Column="1"/>
 
         <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="4" Margin="157,0,0,0" Stroke="#FF00305E" VerticalAlignment="Top" Width="628" Grid.ColumnSpan="2"/>
