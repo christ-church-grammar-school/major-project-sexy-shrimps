@@ -9,9 +9,19 @@
       d:DesignHeight="415" d:DesignWidth="790"
       Title="Timetable">
 
-    <Grid Background="#FF00305E">
+    <Grid>
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="White" Offset="0.0" />
+                    <GradientStop Color="WhiteSmoke" Offset="0.25" />
+                    <GradientStop Color="LightBlue" Offset="0.75" />
+                    <GradientStop Color="LightSkyBlue" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="11" Margin="0,73,0,0" VerticalAlignment="Top" Width="352" RenderTransformOrigin="0.5,1.607"/>
-        <TextBlock Foreground="White" HorizontalAlignment="Left" Height="61" Margin="10,22.5,0,0" TextWrapping="Wrap" Text="Weekly Timetable" VerticalAlignment="Top" Width="767" FontWeight="Bold" FontSize="36"/>
+        <TextBlock Foreground="Black" HorizontalAlignment="Left" Height="61" Margin="10,22.5,0,0" TextWrapping="Wrap" Text="Weekly Timetable" VerticalAlignment="Top" Width="767" FontWeight="Bold" FontSize="36"/>
         <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767"/>
         <Grid HorizontalAlignment="Left" Height="30" Margin="10,110,0,0" VerticalAlignment="Top" Width="767">
             <Grid.ColumnDefinitions>
