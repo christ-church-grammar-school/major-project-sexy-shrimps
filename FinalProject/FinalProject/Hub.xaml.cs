@@ -214,11 +214,6 @@ namespace FinalProject
             HubFrame.Navigate(new Uri("Sports.xaml", UriKind.Relative));
         }
 
-        private void Settings_Clicked(object sender, RoutedEventArgs e)
-        {
-            HubFrame.Navigate(new Uri("Settings.xaml", UriKind.Relative));
-        }
-
         private void HubFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
