@@ -98,6 +98,8 @@ namespace FinalProject
 
         private void ScrapeWebsite(string link)
         {
+            next.Opacity = 1;
+            previous.Opacity = 1;
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load(link);
 
@@ -145,7 +147,7 @@ namespace FinalProject
                 i = 0;
             }
             HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
-            if(opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE")
+            if (opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE" || opponent[0].InnerText == "CCGS BYE / NO FIXTURE")
             {
                 date_text.Text = "";
                 venue_text.Text = "";
@@ -174,7 +176,14 @@ namespace FinalProject
                 date_text.Text = $"{date2[0]}\n{date2[1]}\n{date2[2]}";
                 venue_text.Text = venue[0].GetAttributeValue("title", string.Empty);
                 opponent_text.Text = opponent[0].InnerText;
-                result_text.Text = $"{result2[0]}\n{result2[1]}";
+                if (result2.Count == 2)
+                {
+                    result_text.Text = $"{result2[0]}\n{result2[1]}";
+                }
+                else
+                {
+                    result_text.Text = result2[0];
+                }
                 number.Text = i.ToString();
                 link2.Text = link;
 
@@ -221,7 +230,7 @@ namespace FinalProject
                 i = 0;
             }
             HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
-            if (opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE")
+            if (opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE" || opponent[0].InnerText == "CCGS BYE / NO FIXTURE")
             {
                 date_text.Text = "";
                 venue_text.Text = "";
@@ -252,7 +261,14 @@ namespace FinalProject
                 date_text.Text = $"{date2[0]}\n{date2[1]}\n{date2[2]}";
                 venue_text.Text = venue[0].GetAttributeValue("title", string.Empty);
                 opponent_text.Text = opponent[0].InnerText;
-                result_text.Text = $"{result2[0]}\n{result2[1]}";
+                if (result2.Count == 2)
+                {
+                    result_text.Text = $"{result2[0]}\n{result2[1]}";
+                }
+                else
+                {
+                    result_text.Text = result2[0];
+                }
                 number.Text = i.ToString();
 
                 if (i == 0)
@@ -288,7 +304,7 @@ namespace FinalProject
                 i = 0;
             }
             HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
-            if (opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE")
+            if (opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE" || opponent[0].InnerText == "CCGS BYE / NO FIXTURE")
             {
                 date_text.Text = "";
                 venue_text.Text = "";
@@ -319,7 +335,14 @@ namespace FinalProject
                 date_text.Text = $"{date2[0]}\n{date2[1]}\n{date2[2]}";
                 venue_text.Text = venue[0].GetAttributeValue("title", string.Empty);
                 opponent_text.Text = opponent[0].InnerText;
-                result_text.Text = $"{result2[0]}\n{result2[1]}";
+                if (result2.Count == 2)
+                {
+                    result_text.Text = $"{result2[0]}\n{result2[1]}";
+                }
+                else
+                {
+                    result_text.Text = result2[0];
+                }
                 number.Text = i.ToString();
 
                 if (i == 0)
