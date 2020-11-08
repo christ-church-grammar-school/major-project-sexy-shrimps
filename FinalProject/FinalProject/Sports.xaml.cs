@@ -34,22 +34,42 @@ namespace FinalProject
     {
         public Sports()
         {
+            
             InitializeComponent();
-
-            Navigate();
-        }
-
-
-
-        private void Navigate()
-        {
 
 
             string pathuser = "../../user.txt";
             string user = File.ReadLines(pathuser).First();
             string path = $"../../Users/{user}/sport.txt";
-            string sport = File.ReadLines(path).First();
-            string team = File.ReadLines(path).Skip(1).Take(1).First();
+            DateTime now = DateTime.Now;//Convert.ToDateTime("06/06/2020")
+            if (now.Month >= 5 && now.Month <= 9)
+            {
+                
+                string sport = File.ReadLines(path).Skip(3).Take(1).First();
+                string team = File.ReadLines(path).Skip(4).Take(1).First();
+                winter.Content = sport;
+                summer.Content = File.ReadLines(path).First();
+                Navigate(sport, team);
+            }
+
+            else
+            {
+                string sport = File.ReadLines(path).First();
+                string team = File.ReadLines(path).Skip(1).Take(1).First();
+                winter.Content = File.ReadLines(path).Skip(3).Take(1).First();
+                summer.Content = sport;
+                Navigate(sport, team);
+            }
+
+        }
+
+
+
+        private void Navigate(string sport, string team)
+        {
+
+
+            
 
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load("http://sport.ccgs.wa.edu.au/Fixtures_Teams.asp?Id=28729");
@@ -125,14 +145,13 @@ namespace FinalProject
                 i = 0;
             }
             HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
-            if (opponent[0].InnerText == "CCGS BYE")
+            if(opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE")
             {
                 date_text.Text = "";
                 venue_text.Text = "";
-                opponent_text.Text = "CCGS BYE";
+                opponent_text.Text = "NO PSA FIXTURE";
                 result_text.Text = "";
                 number.Text = i.ToString();
-                link2.Text = link;
 
                 if (i == 0)
                 {
@@ -202,11 +221,11 @@ namespace FinalProject
                 i = 0;
             }
             HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
-            if (opponent[0].InnerText == "CCGS BYE")
+            if (opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE")
             {
                 date_text.Text = "";
                 venue_text.Text = "";
-                opponent_text.Text = "CCGS BYE";
+                opponent_text.Text = "NO PSA FIXTURE";
                 result_text.Text = "";
                 number.Text = i.ToString();
 
@@ -269,11 +288,11 @@ namespace FinalProject
                 i = 0;
             }
             HtmlNode[] opponent = fixtures[i].SelectNodes(".//span[@class='FixtureListOpponent']").ToArray();
-            if (opponent[0].InnerText == "CCGS BYE")
+            if (opponent[0].InnerText == "CCGS BYE" || opponent[0].InnerText == "NO PSA FIXTURE")
             {
                 date_text.Text = "";
                 venue_text.Text = "";
-                opponent_text.Text = "CCGS BYE";
+                opponent_text.Text = "NO PSA FIXTURE";
                 result_text.Text = "";
                 number.Text = i.ToString();
 
@@ -312,6 +331,28 @@ namespace FinalProject
                 {
                     next.Opacity = 0;
                 }
+            }
+
+        }
+        private void changed(object sender, SelectionChangedEventArgs e)
+        {
+            
+            string pathuser = "../../user.txt";
+            string user = File.ReadLines(pathuser).First();
+            string path = $"../../Users/{user}/sport.txt";
+            if (combo.SelectedIndex == 1)
+            {
+                string sport = File.ReadLines(path).First();
+                string team = File.ReadLines(path).Skip(1).Take(1).First();
+                
+                Navigate(sport, team);
+            }
+
+            else if (combo.SelectedIndex == 2)
+            {
+                string sport = File.ReadLines(path).Skip(3).Take(1).First();
+                string team = File.ReadLines(path).Skip(4).Take(1).First();
+                Navigate(sport, team);
             }
         }
     }
