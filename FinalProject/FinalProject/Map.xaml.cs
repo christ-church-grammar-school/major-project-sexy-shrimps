@@ -27,6 +27,11 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+
+        private void imagesComboBox_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
         private void Return_Clicked(object sender, RoutedEventArgs e)
         {
             MapFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));

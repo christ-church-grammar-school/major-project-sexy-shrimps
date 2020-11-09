@@ -203,6 +203,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Diary\" />
+    <Folder Include="Users\1013483\Diary\" />
+    <Folder Include="Users\1014217\Diary\" />
+    <Folder Include="Users\1018752\Diary\" />
+    <Folder Include="Users\1019628\Diary\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CCGS-Campus-Map.png" />
@@ -230,6 +234,61 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map\All.png" />
+    <Resource Include="Images\Map\B.png" />
+    <Resource Include="Images\Map\Back.png" />
+    <Resource Include="Images\Map\C.png" />
+    <Resource Include="Images\Map\D.png" />
+    <Resource Include="Images\Map\E.png" />
+    <Resource Include="Images\Map\F.png" />
+    <Resource Include="Images\Map\G.png" />
+    <Resource Include="Images\Map\grass.png" />
+    <Resource Include="Images\Map\H.png" />
+    <Resource Include="Images\Map\I.png" />
+    <Resource Include="Images\Map\J.png" />
+    <Resource Include="Images\Map\Junior.png" />
+    <Resource Include="Images\Map\K.png" />
+    <Resource Include="Images\Map\L.png" />
+    <Resource Include="Images\Map\Labels.png" />
+    <Resource Include="Images\Map\M.png" />
+    <Resource Include="Images\Map\N.png" />
+    <Resource Include="Images\Map\Nets.png" />
+    <Resource Include="Images\Map\P.png" />
+    <Resource Include="Images\Map\Pool.png" />
+    <Resource Include="Images\Map\Q.png" />
+    <Resource Include="Images\Map\R.png" />
+    <Resource Include="Images\Map\S.png" />
+    <Resource Include="Images\Map\Senior.png" />
+    <Resource Include="Images\Map\T.png" />
+    <Resource Include="Images\Map\V.png" />
+    <Resource Include="Images\Map\W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="color.txt" />
+    <Resource Include="sport.txt" />
+    <Resource Include="student.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="user.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="password.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Users\1013483\color.txt" />
+    <Resource Include="Users\1013483\sport.txt" />
+    <Resource Include="Users\1013483\student.txt" />
+    <Resource Include="Users\1014217\color.txt" />
+    <Resource Include="Users\1014217\sport.txt" />
+    <Resource Include="Users\1014217\student.txt" />
+    <Resource Include="Users\1018752\color.txt" />
+    <Resource Include="Users\1018752\sport.txt" />
+    <Resource Include="Users\1018752\student.txt" />
+    <Resource Include="Users\1019628\color.txt" />
+    <Resource Include="Users\1019628\sport.txt" />
+    <Resource Include="Users\1019628\student.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
