@@ -205,7 +205,6 @@
             <TextBox x:Name="GJ" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="9" Grid.Row="6"  />
         </Grid>
         <Button x:Name="save_btn" Content="Save" HorizontalAlignment="Left" Margin="-208,334,0,0" VerticalAlignment="Top" Width="56" Height="22" Background="#FF097AAA" Foreground="#FF7A1A81" BorderBrush="{x:Null}" RenderTransformOrigin="0.679,-0.977" Click="save_clicked"/>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="student_name" HorizontalAlignment="Left" Height="28" Margin="-246,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="student_password" HorizontalAlignment="Left" Height="24" Margin="-246,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="-246,33,0,0" TextWrapping="Wrap" Text="Student Details:" VerticalAlignment="Top" Height="30" Width="138" FontSize="18" FontWeight="Bold"/>
@@ -213,6 +212,14 @@
         <TextBlock HorizontalAlignment="Left" Margin="-246,176,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <TextBox x:Name="student_id" HorizontalAlignment="Left" Height="22" Margin="-246,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="-246,78,0,0" TextWrapping="Wrap" Text="Student ID:" VerticalAlignment="Top" Height="20" Width="102" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="summersport" HorizontalAlignment="Left" Height="24" Margin="10,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="summersporteam" HorizontalAlignment="Left" Height="24" Margin="10,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="wintersport" HorizontalAlignment="Left" Height="24" Margin="227,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="wintersportteam" HorizontalAlignment="Left" Height="24" Margin="227,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Summer Sport" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="Summer Sport Team" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,10,0,0" TextWrapping="Wrap" Text="Winter Sport" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,62,0,0" TextWrapping="Wrap" Text="Winter Sport Team" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
     </Grid>
 
 </Window>

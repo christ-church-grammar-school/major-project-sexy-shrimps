@@ -175,7 +175,7 @@ namespace FinalProject
                 // Create a file to write to.
                 using (StreamWriter sw = File.CreateText(studentpath_sport))
                 {
-                    sw.WriteLine("Tennis" + Environment.NewLine + "10B" + Environment.NewLine + "" + Environment.NewLine + "Hockey" + Environment.NewLine + "3rds");
+                    sw.WriteLine(summersport.Text + Environment.NewLine + summersporteam.Text + Environment.NewLine + "" + Environment.NewLine + wintersport.Text + Environment.NewLine + wintersportteam.Text);
                 }
             }
 
