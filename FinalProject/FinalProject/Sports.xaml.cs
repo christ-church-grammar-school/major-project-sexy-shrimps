@@ -153,6 +153,7 @@ namespace FinalProject
                 venue_text.Text = "";
                 opponent_text.Text = "NO PSA FIXTURE";
                 result_text.Text = "";
+                link2.Text = link;
                 number.Text = i.ToString();
 
                 if (i == 0)
