@@ -150,6 +150,131 @@ namespace FinalProject
                     sw.WriteLine(FJ.Text);
                     sw.WriteLine(GJ.Text);
                 }
+
+                using (StreamWriter sw = File.CreateText(studentpath_color))
+                {
+                    sw.WriteLine(AA.Text);
+                    sw.WriteLine(BA.Text);
+                    sw.WriteLine(CA.Text);
+                    sw.WriteLine(DA.Text);
+                    sw.WriteLine(EA.Text);
+                    sw.WriteLine(FA.Text);
+                    sw.WriteLine(GA.Text);
+                    sw.WriteLine(AB.Text);
+                    sw.WriteLine(BB.Text);
+                    sw.WriteLine(CB.Text);
+                    sw.WriteLine(DB.Text);
+                    sw.WriteLine(EB.Text);
+                    sw.WriteLine(FB.Text);
+                    sw.WriteLine(GB.Text);
+                    sw.WriteLine(AC.Text);
+                    sw.WriteLine(BC.Text);
+                    sw.WriteLine(CC.Text);
+                    sw.WriteLine(DC.Text);
+                    sw.WriteLine(EC.Text);
+                    sw.WriteLine(FC.Text);
+                    sw.WriteLine(GC.Text);
+                    sw.WriteLine(AD.Text);
+                    sw.WriteLine(BD.Text);
+                    sw.WriteLine(CD.Text);
+                    sw.WriteLine(DD.Text);
+                    sw.WriteLine(ED.Text);
+                    sw.WriteLine(FD.Text);
+                    sw.WriteLine(GD.Text);
+                    sw.WriteLine(AE.Text);
+                    sw.WriteLine(BE.Text);
+                    sw.WriteLine(CE.Text);
+                    sw.WriteLine(DE.Text);
+                    sw.WriteLine(EE.Text);
+                    sw.WriteLine(FE.Text);
+                    sw.WriteLine(GE.Text);
+                    sw.WriteLine(AF.Text);
+                    sw.WriteLine(BF.Text);
+                    sw.WriteLine(CF.Text);
+                    sw.WriteLine(DF.Text);
+                    sw.WriteLine(EF.Text);
+                    sw.WriteLine(FF.Text);
+                    sw.WriteLine(GF.Text);
+                    sw.WriteLine(AG.Text);
+                    sw.WriteLine(BG.Text);
+                    sw.WriteLine(CG.Text);
+                    sw.WriteLine(DG.Text);
+                    sw.WriteLine(EG.Text);
+                    sw.WriteLine(FG.Text);
+                    sw.WriteLine(GG.Text);
+                    sw.WriteLine(AH.Text);
+                    sw.WriteLine(BH.Text);
+                    sw.WriteLine(CH.Text);
+                    sw.WriteLine(DH.Text);
+                    sw.WriteLine(EH.Text);
+                    sw.WriteLine(FH.Text);
+                    sw.WriteLine(GH.Text);
+                    sw.WriteLine(AI.Text);
+                    sw.WriteLine(BI.Text);
+                    sw.WriteLine(CI.Text);
+                    sw.WriteLine(DI.Text);
+                    sw.WriteLine(EI.Text);
+                    sw.WriteLine(FI.Text);
+                    sw.WriteLine(GI.Text);
+                    sw.WriteLine(AJ.Text);
+                    sw.WriteLine(BJ.Text);
+                    sw.WriteLine(CJ.Text);
+                    sw.WriteLine(DJ.Text);
+                    sw.WriteLine(EJ.Text);
+                    sw.WriteLine(FJ.Text);
+                    sw.WriteLine(GJ.Text);
+                }
+
+                string sub = " ";
+                string[] arrLine = { " ", " " };
+                for (int i = 0; i < File.ReadLines(studentpath_color).Count(); i++)
+                {
+                    sub = File.ReadLines(studentpath_color).ElementAt(i);
+                    arrLine = File.ReadAllLines(studentpath_color);
+
+                    if (sub == sub1.Text)
+                    {
+                        arrLine[i] = col1.Text;
+                    }
+                    else if (sub == sub2.Text)
+                    {
+                        arrLine[i] = col2.Text;
+                    }
+                    else if (sub == sub3.Text)
+                    {
+                        arrLine[i] = col3.Text;
+                    }
+                    else if (sub == sub4.Text)
+                    {
+                        arrLine[i] = col4.Text;
+                    }
+                    else if (sub == sub5.Text)
+                    {
+                        arrLine[i] = col5.Text;
+                    }
+                    else if (sub == sub6.Text)
+                    {
+                        arrLine[i] = col6.Text;
+                    }
+                    else if (sub == sub7.Text)
+                    {
+                        arrLine[i] = col7.Text;
+                    }
+                    else if (sub == sub8.Text)
+                    {
+                        arrLine[i] = col8.Text;
+                    }
+                    else if (sub == sub9.Text)
+                    {
+                        arrLine[i] = col9.Text;
+                    }
+                    else if (sub == sub10.Text)
+                    {
+                        arrLine[i] = col10.Text;
+                    }
+
+                    File.WriteAllLines(studentpath_color, arrLine);
+                }
             }
 
             // Open the file to read from.
@@ -159,14 +284,6 @@ namespace FinalProject
                 while ((s = sr.ReadLine()) != null)
                 {
                     Console.WriteLine(s);
-                }
-            }
-            if (!File.Exists(studentpath_color))
-            {
-                // Create a file to write to.
-                using (StreamWriter sw = File.CreateText(studentpath_color))
-                {
-                    sw.WriteLine("#ffe0cc"+Environment.NewLine+ "#ccffcc" + Environment.NewLine+ "#ffccf5"+ Environment.NewLine+ "#f5ffcc"+ Environment.NewLine+ "#ccffe0"+ Environment.NewLine +"#ffcce0"+ Environment.NewLine+ "#ccccff"+ Environment.NewLine+ "#ffe0cc"+ Environment.NewLine+ "#cce0ff"+ Environment.NewLine+ "#ffcce0"+ Environment.NewLine+ "#ccccff"+ Environment.NewLine+"#ccffcc"+ Environment.NewLine+ "#f5ffcc"+Environment.NewLine+ "#ffccf5"+ Environment.NewLine+ "#ffe0cc"+ Environment.NewLine+ "#ffccf5"+ Environment.NewLine+ "#f5ffcc"+ Environment.NewLine+ "#ccffe0"+Environment.NewLine+ "#cce0ff"+ Environment.NewLine+ "#ccfff5"+ Environment.NewLine + "#ccffcc" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#f5ffcc" + Environment.NewLine + "#cce0ff" + Environment.NewLine + "#ccfff5" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccffcc" + Environment.NewLine + "#ffcce0" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccffcc" + Environment.NewLine + "#cce0ff" + Environment.NewLine + "#f5ffcc" + Environment.NewLine + "#ffcce0" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#ffcce0" + Environment.NewLine + "#cce0ff" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#ccfff5"  + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#f5ffcc"+ Environment.NewLine + "#ccffcc"+ Environment.NewLine + "#e4e6e4"+ Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4");
                 }
             }
 
