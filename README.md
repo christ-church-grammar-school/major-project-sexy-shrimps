@@ -1,3 +1,102 @@
+# Sexy Shrimps Prototype
+> Prototype of student education assistant application
+> By Callum Breen, Callum Burnet, Luke Coveney and Thomas Salter
+
+## SETUP / Usage
+```
+The setup of our application is simple it is a WPF application that is coded in visual studio and runs in the students "User Program Files". 
+To use our prototype for testing purpose you can use the following:
+
+Usernames:
+1014217
+1013483
+1018752
+1019628
+
+Password:
+SexyShrimps
+
+The password works for all usernames. 
+Our program is able to identify which of these accounts is logged in and display their information including their name, timetable and homework diary entries. 
+```
+
+## Questions
+1. What functional requirements (those necessary for a basic functional application) still need to be met to make your team's application useful?
+```
+We have met all functional requirements laid out inside of our Design Document though in a minimalisitic way.
+Especially in terms of the diary which we would like to develop further with sorting lists and allowing it to link to the home screen.
+As a whole we would like our program to run off of a database for our final submission that would allow usage across computers and a more secure way of running it.
+```
+
+2. Has your team deviated from your original design? If so, why?
+```
+We have deviated from our original UI design as it was not very clean or professional looking.
+We have created a new christ church theme instead of the dark theme we were originally planning on going with.
+We have not changed the purpose or functionality of our program.
+```
+
+3. Which of the functional requirements have you personally implemented so far?
+```
+Salter - Login, Mainscreen, Timetable, Diary, Map, Many bug fixes, Github Manager, Design Manager, Project Lead.
+Breen - Diary and Time
+Burnet - Map, Sport Fixtures
+Coveney - Assisted UI Design, Bug fixes,Sport Fixtures
+```
+
+4. Which new features are you working on at the moment?
+```
+Currently we are working on our first "Should have" which is the sport fixtures.
+We are about to further develop the map to be interactive instead of just a picture, this is also a should have.
+The diary is also about to see some changes, mainly linking to the main screen.
+The big change will be implementing a database into our design.
+```
+
+5. Are there any major bugs or complications slowing you down?
+```
+We have luckily ironed out any bugs or issues slowing us down.
+Our method of collaboration and research has made it possible for us to adapt code easily for our purpose.
+Due to this our prototype is better and even further than we wanted.
+```
+.
+
+..
+
+...
+
+..
+
+.
+
+..
+
+...
+
+....
+
+.....
+
+......
+
+.....
+
+....
+
+...
+
+..
+
+.
+
+..
+
+...
+
+..
+
+.
+
+
+
 # Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
 # _Welcome to the Sexy Shrimps!!_
@@ -252,4 +351,3 @@ I think we should keep both Callums
 GitHub Desktop seems pretty cool yo
 The command line is also good but has a steep learning curve and can be difficult to visualise what's going on.
 WE NEED TO GET 100 COMMITS WITHOUT EVEN CODING, JUST THE READ ME
-
