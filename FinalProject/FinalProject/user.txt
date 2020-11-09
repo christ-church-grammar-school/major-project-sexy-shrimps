@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-1014217a
-=======
-diary
->>>>>>> parent of be80879... Revert "Implementation of New User"
+11
