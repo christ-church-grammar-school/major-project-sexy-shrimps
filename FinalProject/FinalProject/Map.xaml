@@ -11,7 +11,7 @@
 
     <Grid>
         <Image x:Name="background" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Back.png" Stretch="Fill"/>
-        <Image x:Name="grass" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\grass.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="grass" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\grass.png" Stretch="Fill" Opacity="100"/>
         <Image x:Name="pool" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Pool.png" Stretch="Fill" Opacity="0"/>
         <Image x:Name="senior" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Senior.png" Stretch="Fill" Opacity="0"/>
         <Image x:Name="nets" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Nets.png" Stretch="Fill" Opacity="0"/>
