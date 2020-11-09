@@ -30,7 +30,21 @@ namespace FinalProject
 
         private void imagesComboBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
+            if (selectionComboBox.SelectedItem != null)
+            {
+                ComboBoxItem comboItem = (ComboBoxItem)(selectionComboBox.ItemContainerGenerator.ContainerFromIndex(selectionComboBox.SelectedIndex));
+                string comboImg = comboItem.Content.ToString();
 
+                if (comboImg == "Select All")
+                {
+                    all.Opacity = 100;
+                }
+
+                else
+                {
+                    all.Opacity = 0;
+                }
+            }
         }
         private void Return_Clicked(object sender, RoutedEventArgs e)
         {
