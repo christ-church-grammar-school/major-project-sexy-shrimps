@@ -1,3 +1,78 @@
+# New User Instructions 
+```
+Student ID: Input a sample student ID for a new user
+Name: Input a sample students name for a new user
+Password: Set a sample password
+
+Subject Boxes: Each student has 10 subjects (Including Tutorial and Friday activities), input the name of their subjects in these boxes
+Colour Boxes: These choose the colour each subject will be represented by on the timetable, input word names or use the nexus colour codes:
+---#ffe0cc (Tutorial)
+---#ccffcc
+---#ffccf5
+---#f5ffcc
+---#ccffe0
+---#ffcce0
+---#ccccff
+---#cce0ff
+---#ccfff5
+---#e4e6e4 (Friday Activity)
+Room Boxes: Once again there is 10 room boxes. In these boxes place the the letter of the block of the school that classroom is in (examples: S, N, T)
+
+Summer and Winter Sport Boxes: Place the name of the students summer and winter sports respectively (examples: Tennis, Volleyball, Hockey)
+Summ and Winter Sport Teams Boxes: Place the corresponding teams the student is in in these boxes (examples: 10A, 1sts, 3rds)
+
+Timetable boxes: place the students timetable in these boxes. Ensure that the spelling of each subject is the same as in the subject declaration boxes.
+```
+
+FINAL PRODUCT NOTE: Make sure your computer is in Australian time mode, not American
+
+.
+
+..
+
+...
+
+....
+
+...
+
+..
+
+.
+
+..
+
+...
+
+....
+
+.....
+
+....
+
+...
+
+..
+
+.
+
+..
+
+...
+
+....
+
+...
+
+..
+
+.
+
+
+
+
+
+
 # Sexy Shrimps Prototype
 > Prototype of student education assistant application
 > By Callum Breen, Callum Burnet, Luke Coveney and Thomas Salter
