@@ -39,6 +39,7 @@ namespace FinalProject
             string diary = "../../Users/" + student_id.Text + "/diary";
             string student_path = "../../Users/" + student_id.Text + "/student.txt";
             string studentpath_color = "../../Users/" + student_id.Text + "/color.txt";
+            string studentpath_sport = "../../Users/" + student_id.Text + "/sport.txt";
 
             
             if (Directory.Exists(login))
@@ -166,6 +167,15 @@ namespace FinalProject
                 using (StreamWriter sw = File.CreateText(studentpath_color))
                 {
                     sw.WriteLine("#ffe0cc"+Environment.NewLine+ "#ccffcc" + Environment.NewLine+ "#ffccf5"+ Environment.NewLine+ "#f5ffcc"+ Environment.NewLine+ "#ccffe0"+ Environment.NewLine +"#ffcce0"+ Environment.NewLine+ "#ccccff"+ Environment.NewLine+ "#ffe0cc"+ Environment.NewLine+ "#cce0ff"+ Environment.NewLine+ "#ffcce0"+ Environment.NewLine+ "#ccccff"+ Environment.NewLine+"#ccffcc"+ Environment.NewLine+ "#f5ffcc"+Environment.NewLine+ "#ffccf5"+ Environment.NewLine+ "#ffe0cc"+ Environment.NewLine+ "#ffccf5"+ Environment.NewLine+ "#f5ffcc"+ Environment.NewLine+ "#ccffe0"+Environment.NewLine+ "#cce0ff"+ Environment.NewLine+ "#ccfff5"+ Environment.NewLine + "#ccffcc" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#f5ffcc" + Environment.NewLine + "#cce0ff" + Environment.NewLine + "#ccfff5" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccffcc" + Environment.NewLine + "#ffcce0" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccffcc" + Environment.NewLine + "#cce0ff" + Environment.NewLine + "#f5ffcc" + Environment.NewLine + "#ffcce0" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#ffcce0" + Environment.NewLine + "#cce0ff" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#ccfff5"  + Environment.NewLine + "#ffe0cc" + Environment.NewLine + "#ccccff" + Environment.NewLine + "#ccffe0" + Environment.NewLine + "#f5ffcc"+ Environment.NewLine + "#ccffcc"+ Environment.NewLine + "#e4e6e4"+ Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4" + Environment.NewLine + "#e4e6e4");
+                }
+            }
+
+            if (!File.Exists(studentpath_sport))
+            {
+                // Create a file to write to.
+                using (StreamWriter sw = File.CreateText(studentpath_sport))
+                {
+                    sw.WriteLine("Tennis" + Environment.NewLine + "10B" + Environment.NewLine + "" + Environment.NewLine + "Hockey" + Environment.NewLine + "3rds");
                 }
             }
 
