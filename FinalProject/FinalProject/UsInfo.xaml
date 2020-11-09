@@ -231,19 +231,31 @@
         <TextBox x:Name="sub8" HorizontalAlignment="Left" Height="14" Margin="-246,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
         <TextBox x:Name="sub9" HorizontalAlignment="Left" Height="14" Margin="-246,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
         <TextBox x:Name="sub10" HorizontalAlignment="Left" Height="14" Margin="-246,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBlock HorizontalAlignment="Left" Margin="-246,220,0,0" TextWrapping="Wrap" Text="Subjects" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-246,220,0,0" TextWrapping="Wrap" Text="Subject" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
 
-        <TextBox x:Name="col1" HorizontalAlignment="Left" Height="14" Margin="-120,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col2" HorizontalAlignment="Left" Height="14" Margin="-120,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col3" HorizontalAlignment="Left" Height="14" Margin="-120,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col4" HorizontalAlignment="Left" Height="14" Margin="-120,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col5" HorizontalAlignment="Left" Height="14" Margin="-120,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col6" HorizontalAlignment="Left" Height="14" Margin="-120,308,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col7" HorizontalAlignment="Left" Height="14" Margin="-120,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col8" HorizontalAlignment="Left" Height="14" Margin="-120,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col9" HorizontalAlignment="Left" Height="14" Margin="-120,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBox x:Name="col10" HorizontalAlignment="Left" Height="14" Margin="-120,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
-        <TextBlock HorizontalAlignment="Left" Margin="-120,220,0,0" TextWrapping="Wrap" Text="Colours" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="col1" HorizontalAlignment="Left" Height="14" Margin="-144,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col2" HorizontalAlignment="Left" Height="14" Margin="-144,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col3" HorizontalAlignment="Left" Height="14" Margin="-144,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col4" HorizontalAlignment="Left" Height="14" Margin="-144,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col5" HorizontalAlignment="Left" Height="14" Margin="-144,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col6" HorizontalAlignment="Left" Height="14" Margin="-144,308,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col7" HorizontalAlignment="Left" Height="14" Margin="-144,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col8" HorizontalAlignment="Left" Height="14" Margin="-144,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col9" HorizontalAlignment="Left" Height="14" Margin="-144,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBox x:Name="col10" HorizontalAlignment="Left" Height="14" Margin="-144,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="78" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-144,220,0,0" TextWrapping="Wrap" Text="Colour" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+
+        <TextBox x:Name="bl1" HorizontalAlignment="Left" Height="14" Margin="-42,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl2" HorizontalAlignment="Left" Height="14" Margin="-42,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl3" HorizontalAlignment="Left" Height="14" Margin="-42,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl4" HorizontalAlignment="Left" Height="14" Margin="-42,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl5" HorizontalAlignment="Left" Height="14" Margin="-42,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl6" HorizontalAlignment="Left" Height="14" Margin="-42,308,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl7" HorizontalAlignment="Left" Height="14" Margin="-42,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl8" HorizontalAlignment="Left" Height="14" Margin="-42,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl9" HorizontalAlignment="Left" Height="14" Margin="-42,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBox x:Name="bl10" HorizontalAlignment="Left" Height="14" Margin="-42,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-42,220,0,0" TextWrapping="Wrap" Text="Room" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
     </Grid>
 
 </Window>

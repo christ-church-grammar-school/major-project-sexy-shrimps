@@ -28,7 +28,8 @@
         <Rectangle Fill="#FF00305E" HorizontalAlignment="Left" Height="342" Margin="734,85,-2,0" Stroke="#00000000" VerticalAlignment="Top" Width="68"/>
         <Rectangle Fill="#0000305E" HorizontalAlignment="Left" Height="16" Margin="0,85,0,0" Stroke="Gold" StrokeThickness="15" VerticalAlignment="Top" Width="306" RenderTransformOrigin="0.492,-0.617"/>
 
-        <Button Name="_return" Width="76" Height="72" Margin="10,200,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="beige" BorderBrush="black">
+        <Button Name="_return" Width="76" Height="72" Margin="10,200,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
+            <Image Source="Images\home.png"></Image>
         </Button>
         <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="20" Margin="154,130,0,0" VerticalAlignment="Top" Width="504" Stroke="Black" StrokeThickness="0.5"/>
         <Grid HorizontalAlignment="Left" Height="20" Margin="154,130,0,0" VerticalAlignment="Top" Width="504">

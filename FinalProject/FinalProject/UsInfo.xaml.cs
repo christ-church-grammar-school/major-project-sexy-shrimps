@@ -40,8 +40,9 @@ namespace FinalProject
             string student_path = "../../Users/" + student_id.Text + "/student.txt";
             string studentpath_color = "../../Users/" + student_id.Text + "/color.txt";
             string studentpath_sport = "../../Users/" + student_id.Text + "/sport.txt";
+            string studentpath_classes = "../../Users/" + student_id.Text + "/classes.txt";
 
-            
+
             if (Directory.Exists(login))
             {
                 this.Close();
@@ -274,6 +275,20 @@ namespace FinalProject
                     }
 
                     File.WriteAllLines(studentpath_color, arrLine);
+                }
+
+                using (StreamWriter sw = File.CreateText(studentpath_classes))
+                {
+                    sw.WriteLine(bl1.Text);
+                    sw.WriteLine(bl2.Text);
+                    sw.WriteLine(bl3.Text);
+                    sw.WriteLine(bl4.Text);
+                    sw.WriteLine(bl5.Text);
+                    sw.WriteLine(bl6.Text);
+                    sw.WriteLine(bl7.Text);
+                    sw.WriteLine(bl8.Text);
+                    sw.WriteLine(bl9.Text);
+                    sw.WriteLine(bl10.Text);
                 }
             }
 
