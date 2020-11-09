@@ -36,27 +36,9 @@ namespace FinalProject
 
         }
 
-        private void imagesComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Back_Clicked(object sender, RoutedEventArgs e)
         {
-            ComboBoxItem comboItem = (ComboBoxItem)(selectionComboBox.ItemContainerGenerator.ContainerFromIndex(selectionComboBox.SelectedIndex));
-            string comboSelection = comboItem.Content.ToString();
-
-            if (comboSelection == "Select All")
-            {
-                all.Opacity = 100;
-            }
-            else if (comboSelection == "My Classes")
-            {
-
-            }
-            else if (comboSelection == "Today's Classes")
-            {
-
-            }
-            else
-            {
-
-            }
+            MapFrame.Navigate(new Uri("Hub.xaml", UriKind.Relative));
         }
     }
 }

@@ -14,18 +14,25 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using System.IO;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
+
+
+
 
 namespace FinalProject
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+        {   
             InitializeComponent();
-
+          
             DispatcherTimer LiveTime = new DispatcherTimer();
             LiveTime.Interval = TimeSpan.FromSeconds(1);
             LiveTime.Tick += timer_Tick;
@@ -87,6 +94,9 @@ namespace FinalProject
                 tw.WriteLine("..");
                 tw.Close();
             }
+           
+
+           
 
             string login = "../../Users/" + student.Text + "/student.txt";
             if (File.Exists(login))
@@ -115,6 +125,15 @@ namespace FinalProject
         private void MainFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+      
+
+        private void User_win(object sender, RoutedEventArgs e)
+        {
+            
+            UsInfo win2 = new UsInfo();
+            win2.Show();
         }
     }
 }
