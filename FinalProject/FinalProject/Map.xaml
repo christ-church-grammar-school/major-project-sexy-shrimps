@@ -3,16 +3,56 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
       d:DesignHeight="415" d:DesignWidth="790"
       Title="Map">
 
     <Grid>
-        <Image HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="CCGS-Campus-Map.png" Stretch="Fill"/>
+        <Image x:Name="background" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Back.png" Stretch="Fill"/>
+        <Image x:Name="grass" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\grass.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="pool" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Pool.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="senior" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Senior.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="nets" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Nets.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="junior" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Junior.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="b" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\B.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="f" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\F.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="j" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\J.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="i" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\I.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="h" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\H.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="e" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\E.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="c" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\C.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="g" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\G.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="d" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\D.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="v" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\V.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="w" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\W.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="k" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\K.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="l" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\L.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="q" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Q.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="m" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\M.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="t" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\T.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="s" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\S.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="r" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\R.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="p" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\P.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="n" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\N.png" Stretch="Fill" Opacity="0"/>
+        <Image x:Name="all" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\All.png" Stretch="Fill" Opacity="100"/>
+        <Image x:Name="labels" HorizontalAlignment="Left" Height="415" Margin="0,0,0,0" VerticalAlignment="Top" Width="790" Source="Images\Map\Labels.png" Stretch="Fill"/>
         <Button Name="return" Width="74" Height="74" Margin="10,331,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
-            <Image Source="Images\home.png"></Image>
+            <materialDesign:PackIcon Kind="Home" Width="74" Height="74" Foreground="Gold"></materialDesign:PackIcon>
         </Button>
+        <ComboBox x:Name="selectionComboBox" HorizontalAlignment="Center" Margin="660,10,10,0" VerticalAlignment="Top" Width="120" SelectionChanged="imagesComboBox_SelectionChanged">
+            <ComboBoxItem>Select All</ComboBoxItem>
+            <ComboBoxItem>My Classes</ComboBoxItem>
+            <ComboBoxItem>Today's Classes</ComboBoxItem>
+            <ComboBoxItem>Manual</ComboBoxItem>
+        </ComboBox>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="325" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="325"/>
+        <Label Content="CLASS SELECTION" HorizontalAlignment="Center" Height="50" Margin="0,50,0,0" VerticalAlignment="Top" Width="320" FontWeight="Bold" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <ScrollViewer HorizontalAlignment="Center" Height="225" Margin="0,30,0,0" VerticalAlignment="Center" Width="235">
+
+
+        </ScrollViewer>
         <local:Frame Name="MapFrame" NavigationUIVisibility="Hidden" Navigated="MapFrame_Navigated" >
         </local:Frame>
     </Grid>
