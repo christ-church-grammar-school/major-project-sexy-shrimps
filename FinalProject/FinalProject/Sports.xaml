@@ -77,7 +77,6 @@
                     <Image Height="100" Width="100"/>
                 </InlineUIContainer></TextBlock>
             <TextBlock x:Name="result_text" HorizontalAlignment="Left" Foreground="Black" Margin="10,10,0,0" TextWrapping="Wrap" Text="loading..." VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432" Grid.Column="3" Width="106" Height="75"/>
-            <Image HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="122" Source="Images/badminton_image.png" Margin="4,-141,0,0" Grid.Column="1"/>
 
         </Grid>
         <Button x:Name="previous" Content="Previous Fixture" HorizontalAlignment="Left" Margin="200,300,0,0" VerticalAlignment="Top" Width="125" Height="40" BorderBrush="Black" BorderThickness="5" Background="#FFFFF1A8" FontWeight="Bold" Click="previous_fixture"/>

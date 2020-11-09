@@ -191,9 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CCGS.png" />
-    <Resource Include="Users\1014217\color.txt" />
-    <Resource Include="Users\1014217\sport.txt" />
-    <Resource Include="Users\1014217\student.txt" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CCGSCrest.jpg" />
@@ -206,10 +203,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Diary\" />
-    <Folder Include="Users\1013483\Diary\" />
-    <Folder Include="Users\1014217\Diary\" />
-    <Folder Include="Users\1018752\Diary\" />
-    <Folder Include="Users\1019628\Diary\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\CCGS-Campus-Map.png" />
@@ -278,20 +271,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="password.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Users\1013483\color.txt" />
-    <Resource Include="Users\1013483\sport.txt" />
-    <Resource Include="Users\1013483\student.txt" />
-    <Resource Include="Users\1018752\color.txt" />
-    <Resource Include="Users\1018752\sport.txt" />
-    <Resource Include="Users\1018752\student.txt" />
-    <Resource Include="Users\1019628\color.txt" />
-    <Resource Include="Users\1019628\sport.txt" />
-    <Resource Include="Users\1019628\student.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Users\1014217\classes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
