@@ -3,13 +3,24 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
       mc:Ignorable="d" 
       d:DesignHeight="415" d:DesignWidth="790"
       Title="Sports">
 
-    <Grid Background="#FF00305E">
-        <Label Foreground ="White" BorderThickness ="15"  Content="Sport Fixtures" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" BorderBrush="#00FFD700"/>
+    <Grid>
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="White" Offset="0.0" />
+                    <GradientStop Color="WhiteSmoke" Offset="0.25" />
+                    <GradientStop Color="LightBlue" Offset="0.75" />
+                    <GradientStop Color="LightSkyBlue" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Foreground ="Black" BorderThickness ="15"  Content="Sport Fixtures" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" BorderBrush="#00FFD700"/>
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="112" Margin="560,0,0,0" Stroke="#00000000" VerticalAlignment="Top" Width="185"/>
 
         <Rectangle Fill="Gold" HorizontalAlignment="Left" Height="450" Margin="711,0,-2,0" Stroke="#00000000" VerticalAlignment="Top" Width="91"/>
@@ -18,7 +29,7 @@
         <Rectangle Fill="#0000305E" HorizontalAlignment="Left" Height="16" Margin="0,85,0,0" Stroke="Gold" StrokeThickness="15" VerticalAlignment="Top" Width="306" RenderTransformOrigin="0.492,-0.617"/>
 
         <Button Name="_return" Width="76" Height="72" Margin="10,200,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Return_Clicked" Background="{x:Null}" BorderBrush="{x:Null}">
-            <Image Source="Images\home.png"></Image>
+            <materialDesign:PackIcon Kind="Home" Width="72" Height="72" Foreground="Gold"></materialDesign:PackIcon>
         </Button>
         <Rectangle Fill="AliceBlue" HorizontalAlignment="Left" Height="20" Margin="154,130,0,0" VerticalAlignment="Top" Width="504" Stroke="Black" StrokeThickness="0.5"/>
         <Grid HorizontalAlignment="Left" Height="20" Margin="154,130,0,0" VerticalAlignment="Top" Width="504">
@@ -80,6 +91,7 @@
         </StackPanel>
         <TextBox x:Name="number" HorizontalAlignment="Left" Height="23" Margin="670,392,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Opacity="0"/>
         <TextBox x:Name="link2" HorizontalAlignment="Left" Height="23" Margin="670,392,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Opacity="0"/>
+        <Image HorizontalAlignment="Left" Height="165" VerticalAlignment="Top" Width="447" Source="Images\pending.png" Margin="400,250,0,0"/>
         <local:Frame Name="SportsFrame" NavigationUIVisibility="Hidden" Navigated="SportsFrame_Navigated" >
         </local:Frame>
 
