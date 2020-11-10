@@ -109,12 +109,20 @@
         <TextBlock x:Name="welcome" Foreground="Black" HorizontalAlignment="Left" Margin="258,45,0,0" TextWrapping="Wrap" Text="Good Evening, " VerticalAlignment="Top" FontSize="30" FontFamily="Arial"/>
         <TextBlock x:Name="TimetableDay" Foreground="Black" HorizontalAlignment="Left" Margin="258,85,0,0" TextWrapping="Wrap" Text="Timetable - Day _" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Foreground="Black"  Margin="265,212,0,0" TextWrapping="Wrap" Text="Due Work" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
-        <TextBlock HorizontalAlignment="Left" Foreground="Black" Margin="525,212,0,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
-        <ListBox HorizontalAlignment="Left" Height="140" Margin="258,236,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="-1.145,0.824">
-            <ListBoxItem Content="This is under development"/>
-            <ListBoxItem Content="Death"/>
+        <TextBlock HorizontalAlignment="Left" Foreground="Black" Margin="575,212,0,0" TextWrapping="Wrap" Text="Links" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.47,5.432"/>
+        <ListBox x:Name="due" HorizontalAlignment="Left" Height="140" Margin="258,236,0,0" VerticalAlignment="Top" Width="281" RenderTransformOrigin="-1.145,0.824">
+            <ListBoxItem x:Name="due1" Content="No Due Work"/>
+            <ListBoxItem x:Name="due2" Content=""/>
+            <ListBoxItem x:Name="due3" Content=""/>
+            <ListBoxItem x:Name="due4" Content=""/>
+            <ListBoxItem x:Name="due5" Content=""/>
+            <ListBoxItem x:Name="due6" Content=""/>
+            <ListBoxItem x:Name="due7" Content=""/>
+            <ListBoxItem x:Name="due8" Content=""/>
+            <ListBoxItem x:Name="due9" Content=""/>
+            <ListBoxItem x:Name="due10" Content=""/>
         </ListBox>
-        <Button x:Name="Nexus" Foreground="Navy" Click="Nexus_clicked"  HorizontalAlignment="Left" Height="90" Margin="509,236,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-0.487,1.596" BorderBrush="{x:Null}">
+        <Button x:Name="Nexus" Foreground="Navy" Click="Nexus_clicked"  HorizontalAlignment="Left" Height="90" Margin="550,236,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="-0.487,1.596" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Images/nexus_logo.png" Stretch="Uniform"/>
             </Button.Background>
