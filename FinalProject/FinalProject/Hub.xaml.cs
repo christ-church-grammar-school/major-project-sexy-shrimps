@@ -54,32 +54,34 @@ namespace FinalProject
 
                 for (int i = 0; i < File.ReadLines(path2).Count(); i++)
                 {
-                    if (i == 0) { due1.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 1) { due2.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 2) { due3.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 3) { due4.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 4) { due5.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 5) { due6.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 6) { due7.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 7) { due8.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 8) { due9.Content = File.ReadLines(path2).ElementAt(i); }
-                    else if (i == 9) { due10.Content = File.ReadLines(path2).ElementAt(i); }
+                    if (File.ReadLines(path2).ElementAt(i) != "Diary")
+                    {
+                        if (i == 0) { due1.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 1) { due2.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 2) { due3.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 3) { due4.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 4) { due5.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 5) { due6.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 6) { due7.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 7) { due8.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 8) { due9.Content = File.ReadLines(path2).ElementAt(i); }
+                        else if (i == 9) { due10.Content = File.ReadLines(path2).ElementAt(i); }
+                    }
 
+                    else
+                    {
+                        due1.Content = "No Due Work";
+                        due2.Content = "";
+                        due3.Content = "";
+                        due4.Content = "";
+                        due5.Content = "";
+                        due6.Content = "";
+                        due7.Content = "";
+                        due8.Content = "";
+                        due9.Content = "";
+                        due10.Content = "";
+                    }
                 }
-            }
-
-            else
-            {
-                due1.Content = "No Due Work";
-                due2.Content = "";
-                due3.Content = "";
-                due4.Content = "";
-                due5.Content = "";
-                due6.Content = "";
-                due7.Content = "";
-                due8.Content = "";
-                due9.Content = "";
-                due10.Content = "";
             }
         }
         void timer_Tick(object sender, EventArgs e)
